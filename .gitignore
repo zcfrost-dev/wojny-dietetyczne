@@ -1,5 +1,8 @@
 *.zip
-deploy-*
-*.tmp
-.DS_Store
-Thumbs.db
+*.ps1
+*.bat
+content/
+admin.html
+editor.js
+deploy-*/
+*.png

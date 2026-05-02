@@ -180,32 +180,65 @@ function renderPoll(war) {
 
 function getComments(id) {
   const seeded = [
-    { id: "seed-1", author: "Czytelnik", text: "Najbardziej brakuje mi w social media dawki i kontekstu. Jedna rzecz może być ryzykiem populacyjnym, ale nie wyrokiem dla każdego.", likes: 18 },
-    { id: "seed-2", author: "Analityczna", text: "Dobre, że są linki do źródeł. Bez tego każdy spór zmienia się w konkurs, kto mówi pewniej.", likes: 12 }
+    { id: "seed-1", side: "a", author: "Czytelnik", text: "Po tej stronie przekonuje mnie ostrożność: w zdrowiu publicznym nawet niewielkie ryzyko może mieć duże znaczenie, jeśli dotyczy milionów ludzi.", likes: 18 },
+    { id: "seed-2", side: "b", author: "Analityczna", text: "Po drugiej stronie ważny jest kontekst. Bez rozróżnienia dawki, jakości produktu i stylu życia każdy spór zmienia się w hasło z social mediów.", likes: 12 }
   ];
-  return readJson(`comments:${id}`, seeded).sort((a, b) => b.likes - a.likes);
+  return readJson(`comments:${id}`, seeded)
+    .map((comment, index) => ({
+      ...comment,
+      side: comment.side === "b" ? "b" : (comment.side === "a" ? "a" : (index % 2 ? "b" : "a")),
+      likes: Number(comment.likes) || 0
+    }))
+    .sort((a, b) => b.likes - a.likes);
 }
 
 function renderComments(war) {
   const comments = getComments(war.id);
+  const groups = {
+    a: comments.filter(comment => comment.side === "a"),
+    b: comments.filter(comment => comment.side === "b")
+  };
+  const renderColumn = (side, title) => {
+    const items = groups[side];
+    return `
+      <div class="comment-column ${side === "a" ? "red" : "blue"}">
+        <div class="comment-column-head">
+          <span>${side === "a" ? "Strona A" : "Strona B"}</span>
+          <h3>${title}</h3>
+          <small>${items.length} komentarzy, najmocniejsze na górze</small>
+        </div>
+        <div class="comment-list">
+          ${items.length ? items.map((comment, index) => `
+            <article class="comment ${index === 0 ? "top-comment" : ""}">
+              <div>
+                ${index === 0 ? `<em>Najmocniejszy głos tej strony</em>` : ""}
+                <strong>${comment.author}</strong>
+                <p>${comment.text}</p>
+              </div>
+              <button class="like-button" data-comment="${comment.id}" type="button">${comment.likes} lubię</button>
+            </article>
+          `).join("") : `<p class="empty-comments">Tu czeka miejsce na pierwszy mocny argument.</p>`}
+        </div>
+      </div>
+    `;
+  };
+
   return `
     <section class="comments-panel">
       <h2>Komentarze</h2>
       <form class="comment-form" id="commentForm">
+        <fieldset class="comment-side-picker">
+          <legend>Po której stronie komentujesz?</legend>
+          <label><input type="radio" name="side" value="a" checked> ${war.sideA}</label>
+          <label><input type="radio" name="side" value="b"> ${war.sideB}</label>
+        </fieldset>
         <input name="author" maxlength="40" placeholder="Podpis" required>
         <textarea name="text" maxlength="500" placeholder="Dodaj argument, pytanie albo kontrargument" required></textarea>
         <button class="primary-button" type="submit">Opublikuj</button>
       </form>
-      <div class="comment-list">
-        ${comments.map(comment => `
-          <article class="comment">
-            <div>
-              <strong>${comment.author}</strong>
-              <p>${comment.text}</p>
-            </div>
-            <button class="like-button" data-comment="${comment.id}" type="button">${comment.likes} lubię</button>
-          </article>
-        `).join("")}
+      <div class="comment-columns">
+        ${renderColumn("a", war.sideA)}
+        ${renderColumn("b", war.sideB)}
       </div>
     </section>
   `;
@@ -283,6 +316,7 @@ function renderDetail() {
     const comments = getComments(war.id);
     comments.push({
       id: `local-${Date.now()}`,
+      side: form.side.value === "b" ? "b" : "a",
       author: form.author.value.trim(),
       text: form.text.value.trim(),
       likes: 0

@@ -776,6 +776,37 @@ main {
   margin: 16px 0;
 }
 
+.comment-side-picker {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.comment-side-picker legend {
+  grid-column: 1 / -1;
+  margin-bottom: 2px;
+  font-weight: 900;
+}
+
+.comment-side-picker label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  background: #f7f7f7;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.comment-side-picker input {
+  width: auto;
+}
+
 input,
 textarea {
   width: 100%;
@@ -795,6 +826,49 @@ textarea {
   gap: 10px;
 }
 
+.comment-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+
+.comment-column {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+
+.comment-column-head {
+  border-top: 5px solid var(--ink);
+  padding: 12px;
+  background: #f7f7f7;
+  border-left: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.comment-column.red .comment-column-head {
+  border-top-color: var(--red);
+}
+
+.comment-column.blue .comment-column-head {
+  border-top-color: var(--blue);
+}
+
+.comment-column-head span,
+.comment-column-head small {
+  display: block;
+  color: var(--muted);
+  font-weight: 900;
+}
+
+.comment-column-head h3 {
+  margin: 5px 0;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
 .comment {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -804,10 +878,34 @@ textarea {
   border: 1px solid var(--line);
 }
 
+.comment.top-comment {
+  background: white;
+  border-color: #d6d6d6;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, .07);
+}
+
+.comment em {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: var(--red);
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 .comment p {
   margin: 6px 0 0;
   color: #444;
   line-height: 1.45;
+}
+
+.empty-comments {
+  margin: 0;
+  padding: 14px;
+  color: var(--muted);
+  background: #f7f7f7;
+  border: 1px dashed var(--line);
 }
 
 .like-button {
@@ -1075,6 +1173,8 @@ select {
   .conflict-panel,
   .poll-actions,
   .comment-form,
+  .comment-side-picker,
+  .comment-columns,
   .comment,
   .map-links {
     grid-template-columns: 1fr;

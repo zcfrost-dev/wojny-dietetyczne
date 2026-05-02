@@ -1004,6 +1004,12 @@ textarea {
   line-height: 1;
 }
 
+.like-button:disabled {
+  opacity: .58;
+  cursor: default;
+  background: #7f97ad;
+}
+
 .admin-shell {
   max-width: 920px;
   padding: 22px 0 38px;
@@ -1147,6 +1153,13 @@ textarea {
   display: grid;
   gap: 7px;
   font-weight: 900;
+}
+
+.field-hint {
+  margin: -4px 0 2px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
 }
 
 .editor-form textarea {

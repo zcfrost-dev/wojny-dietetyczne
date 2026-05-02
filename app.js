@@ -192,6 +192,21 @@ function getComments(id) {
     .sort((a, b) => b.likes - a.likes);
 }
 
+function getLikedComments(id) {
+  const liked = readJson(`liked-comments:${id}`, []);
+  return Array.isArray(liked) ? liked : [];
+}
+
+function hasLikedComment(warId, commentId) {
+  return getLikedComments(warId).includes(commentId);
+}
+
+function markCommentLiked(warId, commentId) {
+  const liked = new Set(getLikedComments(warId));
+  liked.add(commentId);
+  writeJson(`liked-comments:${warId}`, Array.from(liked));
+}
+
 function renderComments(war) {
   const comments = getComments(war.id);
   const groups = {
@@ -215,7 +230,9 @@ function renderComments(war) {
                 <strong>${comment.author}</strong>
                 <p>${comment.text}</p>
               </div>
-              <button class="like-button" data-comment="${comment.id}" type="button" aria-label="Polub komentarz"><span aria-hidden="true">👍</span> ${comment.likes}</button>
+              <button class="like-button" data-comment="${comment.id}" type="button" aria-label="${hasLikedComment(war.id, comment.id) ? "Ten komentarz jest już polubiony" : "Polub komentarz"}" ${hasLikedComment(war.id, comment.id) ? "disabled" : ""}>
+                <span aria-hidden="true">👍</span> ${comment.likes}
+              </button>
             </article>
           `).join("") : `<p class="empty-comments">Tu czeka miejsce na pierwszy mocny argument.</p>`}
         </div>
@@ -327,9 +344,12 @@ function renderDetail() {
 
   $all(".like-button").forEach(button => {
     button.addEventListener("click", () => {
+      if (hasLikedComment(war.id, button.dataset.comment)) return;
       const comments = getComments(war.id);
       const item = comments.find(comment => comment.id === button.dataset.comment);
-      if (item) item.likes += 1;
+      if (!item) return;
+      item.likes += 1;
+      markCommentLiked(war.id, item.id);
       writeJson(`comments:${war.id}`, comments);
       renderDetail();
     });

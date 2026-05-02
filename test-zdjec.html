@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test zdjęć</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid #ddd; }
+    h1 { margin-top: 0; }
+  </style>
+</head>
+<body>
+  <h1>Test zdjęć</h1>
+  <p>Jeśli ta strona pokazuje zdjęcia, hosting poprawnie widzi folder <strong>photos</strong>.</p>
+  <div class="grid">
+    <img src="photos/mieso-rak-czy-mit.jpg" alt="mieso-rak-czy-mit">
+    <img src="photos/tluszcze-czy-weglowodany.jpg" alt="tluszcze-czy-weglowodany">
+    <img src="photos/nabial-zdrowy-czy-nie.jpg" alt="nabial-zdrowy-czy-nie">
+    <img src="photos/ile-jajek-dziennie.jpg" alt="ile-jajek-dziennie">
+    <img src="photos/post-przerywany.jpg" alt="post-przerywany">
+    <img src="photos/sol-niszczy-czy-ratuje.jpg" alt="sol-niszczy-czy-ratuje">
+    <img src="photos/deficyt-kaloryczny.jpg" alt="deficyt-kaloryczny">
+    <img src="photos/keto-odchudza-czy-oszukuje.jpg" alt="keto-odchudza-czy-oszukuje">
+    <img src="photos/autofagia-przelom-czy-marketing.jpg" alt="autofagia-przelom-czy-marketing">
+    <img src="photos/dieta-dabrowskiej.jpg" alt="dieta-dabrowskiej">
+  </div>
+</body>
+</html>

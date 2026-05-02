@@ -1,0 +1,5 @@
+*.zip
+deploy-*
+*.tmp
+.DS_Store
+Thumbs.db

@@ -203,7 +203,7 @@ function renderComments(war) {
     return `
       <div class="comment-column ${side === "a" ? "red" : "blue"}">
         <div class="comment-column-head">
-          <span>${side === "a" ? "Strona A" : "Strona B"}</span>
+          <span>${side === "a" ? "Za" : "Przeciw"}</span>
           <h3>${title}</h3>
           <small>${items.length} komentarzy, najmocniejsze na górze</small>
         </div>
@@ -215,7 +215,7 @@ function renderComments(war) {
                 <strong>${comment.author}</strong>
                 <p>${comment.text}</p>
               </div>
-              <button class="like-button" data-comment="${comment.id}" type="button">${comment.likes} lubię</button>
+              <button class="like-button" data-comment="${comment.id}" type="button" aria-label="Polub komentarz"><span aria-hidden="true">👍</span> ${comment.likes}</button>
             </article>
           `).join("") : `<p class="empty-comments">Tu czeka miejsce na pierwszy mocny argument.</p>`}
         </div>
@@ -264,12 +264,12 @@ function renderDetail() {
 
     <section class="argument-ring">
       <div class="corner red">
-        <h2>Argumenty: ${war.sideA}</h2>
+        <h2>Argumenty za</h2>
         <h3>${war.authorityA || ""}</h3>
         ${war.argumentsFor.map(item => `<p>${item}</p>`).join("")}
       </div>
       <div class="corner blue">
-        <h2>Argumenty: ${war.sideB}</h2>
+        <h2>Argumenty przeciw</h2>
         <h3>${war.authorityB || ""}</h3>
         ${war.argumentsAgainst.map(item => `<p>${item}</p>`).join("")}
       </div>
@@ -281,7 +281,7 @@ function renderDetail() {
         ${(war.contradiction || []).map(item => `<p>${item}</p>`).join("")}
       </div>
       <aside>
-        <h2>Wniosek roboczy</h2>
+        <h2>Moim zdaniem</h2>
         <p>${war.conclusion || "Tu pojawi się Twój wniosek po opracowaniu sporu."}</p>
         <strong>${war.question || "Kto ma rację?"}</strong>
       </aside>

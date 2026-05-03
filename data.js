@@ -5,8 +5,8 @@ window.DIET_WARS = [
         "kicker":  "American Cancer Society ostrzega: mięso powoduje raka, Bracia Rodzeń mówią: mięso jest najlepszym pożywieniem dla człowieka. Kto ma rację?",
         "badge":  "kontrowersyjne",
         "category":  "Onkologia, choroby",
-        "sideA":  "Rakotwórcze ryzyko",
-        "sideB":  "Przesadzony strach",
+        "sideA":  "Mięso powoduje raka",
+        "sideB":  "Mięso to najlepszy pokarm dla ludzi",
         "authorityA":  "American Cancer Society / IARC / WCRF",
         "authorityB":  "Bracia Rodzeń i nurt low-carb",
         "votes":  1842,
@@ -25,11 +25,11 @@ window.DIET_WARS = [
                              "- Grillowanie, wędzenie i mocne smażenie mogą tworzyć potencjalnie szkodliwe związki.",
                              "- Część zaleceń sugeruje ograniczanie czerwonego mięsa i minimalizowanie mięsa przetworzonego.",
                              "- Porównuje się szkodliwość mięsa do palenia papierosów.",
-                             "- w temperaturze powyżej 130C azotyn zmienia się w potencjalnie rakotwórcze nitrozoaminy."
+                             "- w temperaturze powyżej 130C azotyn sodu zmienia się w potencjalnie rakotwórcze nitrozoaminy."
                          ],
         "argumentsAgainst":  [
                                  "- Mięso dostarcza B12, żelaza hemowego, cynku i pełnowartościowego białka.",
-                                 "Dowody dla mięsa nieprzetworzonego są mniej jednoznaczne niż dla mięsa przetworzonego.",
+                                 "- Dowody dla mięsa nieprzetworzonego są mniej jednoznaczne niż dla mięsa przetworzonego.",
                                  "- \"80% azotanów, które zjadamy, pochodzi z warzyw.",
                                  "Nie z boczku. Nie z kiełbasy.",
                                  "Z sałaty, buraków, selera i szpinaku\"",
@@ -62,10 +62,10 @@ window.DIET_WARS = [
         "kicker":  "Keto mówi: tnij węgle. Klasyczna dietetyka odpowiada: tłuszcz ma najwięcej kalorii.",
         "badge":  "wieczny spór",
         "category":  "Redukcja",
-        "sideA":  "Ogranicz węgle",
+        "sideA":  "Ogranicz lub wyeliminuj węgle",
         "sideB":  "Ogranicz tłuszcz",
         "authorityA":  "Diety keto / low-carb",
-        "authorityB":  "Współczesna dietetyka populacyjna",
+        "authorityB":  "Współczesna dietetyka",
         "votes":  1390,
         "comments":  211,
         "heat":  94,
@@ -76,7 +76,7 @@ window.DIET_WARS = [
                      "kalorie"
                  ],
         "summary":  "Jedni widzą problem w insulinie i cukrze, inni w gęstości kalorycznej tłuszczu. Użytkownik zostaje z pytaniem: co naprawdę tuczy?",
-        "hook":  "Co bardziej tuczy: tłuszcz czy węglowodany? Co bardziej szkodzi: cukry czy tłuszcze?",
+        "hook":  "Co powoduje tycie: tłuszcz czy węglowodany? Co bardziej szkodzi: cukry czy tłuszcze? Co z insuliną?",
         "argumentsFor":  [
                              "Ograniczenie węglowodanów może stabilizować cukier we krwi.",
                              "Low-carb u części osób zmniejsza napady głodu i ułatwia deficyt.",
@@ -85,14 +85,15 @@ window.DIET_WARS = [
         "argumentsAgainst":  [
                                  "Tłuszcz ma najwięcej kalorii na gram, więc łatwo przesadzić z energią.",
                                  "Węglowodany są głównym paliwem organizmu, zwłaszcza przy wysiłku.",
-                                 "Diety wysokowęglowodanowe też mogą działać, jeśli są oparte na produktach pełnowartościowych."
+                                 "Diety wysokowęglowodanowe też mogą działać, jeśli są oparte na produktach pełnowartościowych.",
+                                 "Tłuszcz, jajka powoduje wzrost cholesterolu i ryzyko miażdzycy.",
+                                 "Poczkowe szybkie chudnięcie na diecie keto? bo zmniejsza się ilość wody zatrzymanej w organizmie."
                              ],
         "contradiction":  [
                               "Low-carb i low-fat często działają przez ten sam mechanizm: łatwiejszy deficyt.",
-                              "Problemem rzadko jest samo makro, częściej forma produktu: napój, ciastko, olej, fast food.",
-                              "Debata miesza odchudzanie, glikemię, cholesterol i sport."
+                              "Tłuszcz może pochodzić np z avocado a nie koniecznie z wieprzowego boczku. Brak zgodności co do poprawności piramidy żywieniowej - spójrz na spór tego dotyczący."
                           ],
-        "conclusion":  "Najbardziej uczciwa odpowiedź brzmi: działa ta strategia, która poprawia jakość diety i da się utrzymać bez rozwalania zdrowia.",
+        "conclusion":  "Najbardziej uczciwa odpowiedź brzmi: działa ta strategia, która poprawia jakość diety i da się utrzymać bez rozwalania zdrowia. Pytanie komu wierzyć skoro część dietetyków i lekarzy stawia zupełnie przeciwne tezy.",
         "question":  "A ty ograniczasz tłuszcze czy węglowodany?",
         "sources":  [
                         [
@@ -194,11 +195,11 @@ window.DIET_WARS = [
                                  "Klasyczne zalecenia ostrożności są kierowane zwłaszcza do osób z chorobami serca."
                              ],
         "contradiction":  [
-                              "Jedna osoba dobrze toleruje jajka, inna widzi wzrost LDL.",
+                              "Jedna osoba dobrze toleruje jajka, inna zaobserwuje u siebie wzrost LDL.",
                               "Spór dotyczy nie tylko jajek, ale całego talerza: boczek, masło, pieczywo, warzywa.",
                               "Cholesterol pokarmowy nie jest tym samym co całkowite ryzyko sercowe."
                           ],
-        "conclusion":  "Jajka mogą być zdrowym produktem, ale pytanie brzmi: dla kogo, ile i w jakim wzorcu diety?",
+        "conclusion":  "Jajka mogą być zdrowym produktem, ale pytanie brzmi: dla kogo, ile i w jakim wzorcu diety? Skrajności nigdy nie są dobre.",
         "question":  "Ile jajek jesz tygodniowo i jakie masz wyniki badań?",
         "sources":  [
                         [
@@ -239,20 +240,22 @@ window.DIET_WARS = [
         "argumentsFor":  [
                              "Dla części osób okno żywieniowe jest prostsze niż liczenie kalorii.",
                              "Może wspierać redukcję masy i poprawiać kontrolę glikemii.",
-                             "Zwolennicy widzą w nim naturalny sposób jedzenia, nie ciągłe podjadanie."
+                             "Zwolennicy widzą w nim naturalny sposób jedzenia, nie ciągłe podjadanie.",
+                             "W skrajnym przypadku proponują metodę OMD jednego posiłku dziennie.",
+                             "Post przerywany poprawia jasnosność myślenia, reguluje sen."
                          ],
         "argumentsAgainst":  [
                                  "Brakuje bardzo długich badań dla wielu popularnych protokołów.",
                                  "U niektórych osób post może nasilać napady głodu, kompulsje albo stres.",
-                                 "Nie jest dobrym pomysłem dla każdego, zwłaszcza przy chorobach, lekach, ciąży lub zaburzeniach odżywiania."
+                                 "Nie jest dobrym pomysłem dla każdego, zwłaszcza przy chorobach, lekach, ciąży lub zaburzeniach odżywiania. Może także wpływać na zmiany w gospodarce hormonalnej."
                              ],
         "contradiction":  [
-                              "Inne efekty daje 12/12, inne 16/8, a inne długie posty.",
+                              "Inne efekty daje 12/12, inne 16/8, a inne długie posty nawet kilkudniowe.",
                               "Redukcja kalorii bywa mylona z magicznym efektem samego okna.",
                               "Krótkoterminowa poprawa nie zawsze odpowiada na pytanie o lata stosowania."
                           ],
-        "conclusion":  "Post może być narzędziem, ale nie religią. Najważniejsze jest, czy poprawia cały styl życia i nie robi szkody.",
-        "question":  "Stosujesz post czy jesz regularnie?",
+        "conclusion":  "Post może być narzędziem, ale powinien być stosowany mądrze. Najważniejsze jest, czy poprawia cały styl życia i nie robi szkody w organizmie. Co z tego że schudniesz, jak dostaniesz udaru?",
+        "question":  "Czy próbowałeś postu przerywanego? jak się czułeś?",
         "sources":  [
                         [
                             "NEJM: intermittent fasting review",
@@ -270,8 +273,8 @@ window.DIET_WARS = [
     },
     {
         "id":  "sol-niszczy-czy-ratuje",
-        "title":  "Sól: niszczy serce czy ratuje życie?",
-        "kicker":  "Instytucje mówią: ograniczać. Kontra odpowiada: bez sodu organizm nie działa.",
+        "title":  "Sól: niszczy serce i naczynia krwionośne czy ratuje życie?",
+        "kicker":  "Lekarze mówią: kontrolować dzienną ilość i ograniczać. Inni: bez sodu organizm nie działa poprawnie.",
         "badge":  "ciśnienie",
         "category":  "Serce",
         "sideA":  "Sól jest kluczowa",
@@ -297,14 +300,14 @@ window.DIET_WARS = [
         "argumentsAgainst":  [
                                  "Wysokie spożycie sodu może podnosić ciśnienie.",
                                  "Nadciśnienie uszkadza naczynia i zwiększa ryzyko sercowo-naczyniowe.",
-                                 "Instytucje zalecają ograniczanie soli, bo większość ludzi dostaje jej dużo z żywności przetworzonej."
+                                 "Lekarze zalecają ograniczanie soli, bo większość ludzi dostaje jej dużo z żywności przetworzonej."
                              ],
         "contradiction":  [
                               "Potrzeba sodu nie oznacza, że im więcej soli, tym lepiej.",
                               "Aktywna osoba jedząca domowo to inny przypadek niż osoba na diecie z wędlin, chipsów i gotowców.",
                               "Problemem bywa ukryta sól, nie tylko solniczka."
                           ],
-        "conclusion":  "Spór nie brzmi: sól albo brak soli. Prawdziwe pytanie to dawka, ciśnienie, pot, aktywność i ile soli dostarczają produkty gotowe.",
+        "conclusion":  "Spór nie brzmi: sól albo brak soli. Prawdziwe pytanie to czy stosujesz konkretną dietę, jakie masz ciśnienie, pot i aktywność i ile soli dostarczają produkty gotowe.",
         "question":  "Solimy za dużo czy za mało?",
         "sources":  [
                         [
@@ -324,13 +327,13 @@ window.DIET_WARS = [
     {
         "id":  "deficyt-kaloryczny",
         "title":  "Deficyt kaloryczny: wszystko czy za mało?",
-        "kicker":  "Dietetyka mówi: bez deficytu nie schudniesz. Kontra pyta: a hormony, adaptacja i głód?",
+        "kicker":  "Dietetycy mówią: bez deficytukalorycznego nie schudniesz. Inni pytają: a hormony, adaptacja i głód? Co z efektem jojo?",
         "badge":  "odchudzanie",
         "category":  "Redukcja",
         "sideA":  "Kalorie decydują",
         "sideB":  "Hormony decydują",
         "authorityA":  "Klasyczna dietetyka",
-        "authorityB":  "Bracia Rodzeń / krytycy prostego CICO",
+        "authorityB":  "krytycy prostego CICO (kalorie zjedzone/klorie spalone)",
         "votes":  1420,
         "comments":  244,
         "heat":  93,
@@ -354,10 +357,9 @@ window.DIET_WARS = [
                              ],
         "contradiction":  [
                               "Jedni mówią o prawie energii, drudzy o sterowaniu zachowaniem i głodem.",
-                              "Krótki deficyt działa inaczej niż wieloletnia walka z masą ciała.",
-                              "Kalorie są warunkiem, ale nie zawsze najlepszym narzędziem dla człowieka."
+                              "Podkreśla się, że kalorie nie są równe - czym innym są te dostarczone w cukrach prostych czy tłuszczach a czym innym te z białka."
                           ],
-        "conclusion":  "Kalorie mają znaczenie, ale człowiek nie jest kalkulatorem. Skuteczna dieta musi uwzględniać sytość, sen, stres, aktywność i trwałość.",
+        "conclusion":  "Kalorie mają znaczenie, ale człowiek nie jest kalkulatorem. Skuteczna dieta musi uwzględniać sytość, sen, stres, aktywność i trwałość. Niestety, jeżeli ograniczamy kalorię, organizm zaczyna w sposób naturalny zmniejszać zapotrzebowanie na nie i wpadamy w błędne koło.",
         "question":  "Liczyć kalorie czy budować nawyki bez liczenia?",
         "sources":  [
                         [
@@ -460,11 +462,11 @@ window.DIET_WARS = [
                              ],
         "contradiction":  [
                               "Prawdziwy mechanizm nie oznacza automatycznie skutecznej terapii.",
-                              "Nobel za odkrycie procesu nie jest Noblem za konkretną dietę.",
+                              "Nobel za odkrycie procesu dotyczył badań na drożdżach! nie jest Noblem za badanie na ludziach czy konkretną dietę.",
                               "Teoria komórkowa bywa sprzedawana jako gotowy plan zdrowotny."
                           ],
-        "conclusion":  "Autofagia jest nauką. Internetowa obietnica odmłodzenia przez post bywa już interpretacją, która wymaga mocniejszych dowodów u ludzi.",
-        "question":  "Wierzysz w autofagię jako argument za postem?",
+        "conclusion":  "Autofagia jest procesem zbadanym u prostych organizmów - drożdży. Na szeroką skalę nie ma badań które dotyczą tego zjawiska u ludzi.  Internetowa obietnica odmłodzenia przez post bywa już interpretacją, która wymaga mocniejszych dowodów u ludzi.",
+        "question":  "Też słyszałeś od niektórych dietetyków o Noblu za odkrycie autofagii jako argumencie za postem przerywanym?",
         "sources":  [
                         [
                             "Nobel Prize: Yoshinori Ohsumi and autophagy",
@@ -509,14 +511,15 @@ window.DIET_WARS = [
         "argumentsAgainst":  [
                                  "To bardzo niskokaloryczny model, który może powodować osłabienie i utratę masy mięśniowej.",
                                  "Długie stosowanie grozi niedoborami białka, tłuszczów i części mikroskładników.",
-                                 "Hasło detoks bywa mylące, bo organizm nie działa jak filtr resetowany sokiem i warzywami."
+                                 "Hasło detoks bywa mylące, bo organizm nie działa jak filtr resetowany sokiem i warzywami.",
+                                 "Dieta owocowo warzywna jako źródł dużej ilości węglowodanów."
                              ],
         "contradiction":  [
                               "Krótkotrwała poprawa po odstawieniu śmieciowego jedzenia nie dowodzi leczniczości całego protokołu.",
                               "Warzywa są zdrowe, ale sama dieta warzywna nie musi być zbilansowana.",
                               "Efekt psychologiczny rytuału bywa mylony z dowodem medycznym."
                           ],
-        "conclusion":  "To może być silny impuls do zmiany, ale jako terapia wymaga ostrożności, nadzoru i pytania: co dzieje się po zakończeniu?",
+        "conclusion":  "To może być silny impuls do zmiany, ale jako terapia wymaga ostrożności, nadzoru i pytania: co dzieje się po zakończeniu? Czy rzeczywiście dieta ta leczy z nowotworów?",
         "question":  "Próbowałeś tej diety? Pomogła, zaszkodziła, czy dała tylko chwilowy efekt?",
         "sources":  [
                         [

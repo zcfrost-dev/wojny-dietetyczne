@@ -88,18 +88,12 @@ function renderHome() {
     </a>
   `;
 
-  $("#sidePromos").innerHTML = ordered.slice(1, 5).map(item => cardTemplate(item, "small")).join("");
+  $("#sidePromos").innerHTML = ordered.slice(1, 3).map(item => cardTemplate(item, "underlead")).join("");
   const rankingList = $("#rankingList");
   if (rankingList) {
     rankingList.innerHTML = ordered
-      .slice(0, 6)
-      .map((item, index) => `
-        <a class="ranking-item" href="war.html?id=${item.id}">
-          <b>${index + 1}</b>
-          <span>${item.title}</span>
-          <em>${item.comments} komentarzy</em>
-        </a>
-      `).join("");
+      .slice(3, 9)
+      .map(item => cardTemplate(item, "rail")).join("");
   }
   $("#tickerItems").innerHTML = ordered.slice(0, 12).map(item => `<a href="war.html?id=${item.id}">${item.title}</a>`).join("");
 

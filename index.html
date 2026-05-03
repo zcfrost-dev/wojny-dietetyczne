@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wojny Dietetyczne</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=202605021045">
+  <link rel="stylesheet" href="styles.css?v=202605031130">
 </head>
 <body>
   <div class="info-strip">
@@ -35,20 +35,23 @@
 
   <main>
     <section class="hero-news">
-      <article class="lead-story" id="leadStory"></article>
-      <section class="side-promos" id="sidePromos" aria-label="Promowane spory"></section>
+      <div class="hero-main">
+        <article class="lead-story" id="leadStory"></article>
+        <section class="side-promos" id="sidePromos" aria-label="Promowane spory"></section>
+      </div>
       <aside class="right-rail">
-        <section class="motto">
-          <p class="eyebrow">Idea projektu</p>
-          <h1>Czy to, co jemy, zmienia nasze zdrowie fizyczne i psychiczne?</h1>
-          <p>Jesli tak, dlaczego specjalisci spieraja sie w sprawach fundamentalnych? Kto ma racje, skoro wyksztalceni lekarze i dietetycy potrafia mowic rzeczy przeciwne?</p>
-        </section>
         <section class="ranking-box">
           <p class="eyebrow">Najbardziej gorące</p>
           <h2>Ranking sporów</h2>
           <div id="rankingList"></div>
         </section>
       </aside>
+    </section>
+
+    <section class="motto home-motto">
+      <p class="eyebrow">Idea projektu</p>
+      <h1>Czy to, co jemy, zmienia nasze zdrowie fizyczne i psychiczne?</h1>
+      <p>Jesli tak, dlaczego specjalisci spieraja sie w sprawach fundamentalnych? Kto ma racje, skoro wyksztalceni lekarze i dietetycy potrafia mowic rzeczy przeciwne?</p>
     </section>
 
     <section class="ticker" aria-label="Pasek tematow">
@@ -98,6 +101,6 @@
   </footer>
 
   <script src="data.js?v=202605012205" charset="utf-8"></script>
-  <script src="app.js?v=202605012205" charset="utf-8"></script>
+  <script src="app.js?v=202605031115" charset="utf-8"></script>
 </body>
 </html>

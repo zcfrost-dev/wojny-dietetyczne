@@ -62,7 +62,6 @@ function cardTemplate(war, size = "normal") {
         <span class="scoreline">
           <span>${war.comments} komentarzy</span>
           <span>${war.votes} głosów</span>
-          <span>${war.heat}°C</span>
         </span>
       </span>
     </a>

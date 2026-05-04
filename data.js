@@ -1,60 +1,74 @@
 window.DIET_WARS = [
     {
         "id":  "nowy-temat-1777918778601",
-        "title":  "Naturalne wędzenie czy \"malowaniem\" aromatem dymu wędzarniczego?",
-        "kicker":  "Czy naturalne wędzenie powoduje raka?",
-        "badge":  "szkic",
+        "title":  "Naturalne wędzenie czy „malowanie” aromatem dymu wędzarniczego?",
+        "kicker":  "Czy aromat dymu jest bezpieczniejszą technologią, czy tylko przemysłową imitacją tradycji?",
+        "badge":  "nowe badania",
         "category":  "Nowe",
-        "sideA":  "Zwolennicy wykorzystywania roztworu dymu wędzarniczego",
-        "sideB":  "Zwolennicy naturalnego wędzenia",
-        "authorityA":  "International Agency for Research on Cancer",
-        "authorityB":  "Tradycyjne rzemiosło",
-        "votes":  0,
-        "comments":  0,
+        "sideA":  "Roztwór dymu wędzarniczego",
+        "sideB":  "Naturalne wędzenie",
+        "authorityA":  "EFSA / bezpieczeństwo dodatków",
+        "authorityB":  "Tradycyjne wędzarnictwo",
+        "votes":  54,
+        "comments":  2,
         "heat":  75,
         "image":  "photos/mieso-rak-czy-mit.jpg",
         "tags":  [
-                     "mięso",
-                     "rak",
-                     "IARC"
+                     "wędzenie",
+                     "dym wędzarniczy",
+                     "PAH",
+                     "benzo(a)piren"
                  ],
-        "summary":  "Chyba każdy z nas lubi zapach wędzonych wędlin i kiełbas. Kojarzy się nam ze swojskim jedzeniem. Czy faktycznie jest on rakotwórczy? a jeżeli tak to dlaczego.",
-        "hook":  "Przemysłowa produkcja czy swojskie wyroby? co jest zdrowsze?",
-        "argumentsFor":  "Benznopiren obecny w dymie rozpuszcza si� w t�uszczach, ma udowodnione dzia�anie rakotw�cze i uszkadzaj�ce DNA.",
-        "argumentsAgainst":  "Od lat wędzenie jest najlepszym sposobem konserwacji wyrobów nie tylko mięsnych ale także serów a nawet owoców.",
-        "contradiction":  "Smak w�dlin oferowanych w marketach coraz mniej przypomina swojskie wyroby. W�dzonki cz�sto przypominaj� nam pi�kne chwile z dzieci�stwa. Co tu du�o m�wi�: w�dzona kie�basa czy szynka smakuje wyoborowo. Czy tak samo korzystnie wp�ywa na nasze zdrowie?",
-        "conclusion":  "Poprawne w�dzenie w ni�szej temperaturze, z generatorem dymu, unikanie palenia si� skapuj�cego t�uszczu to podstawowe sposoby zmniejszenia ekspozycji na wielopier�cieniowe w�glowodory aromatyczne (w tym benzarpiren). Umiarkowane spo�ycie powinno ograniczy� ryzyko chor�b nowotworowych.",
-        "question":  "Wybierasz lepszy smak wędzonki czy zaufanie do instytucji badawczych?",
+        "summary":  "Chyba każdy z nas lubi zapach wędzonych wędlin i kiełbas. Kojarzy się nam ze swojskim jedzeniem. Czy faktycznie może być rakotwórczy, a jeżeli tak, to dlaczego?",
+        "hook":  "Przemysłowa produkcja czy swojskie wyroby? Co jest zdrowsze?",
+        "argumentsFor":  [
+                             "Dym i obróbka w wysokiej temperaturze mogą zwiększać obecność wielopierścieniowych węglowodorów aromatycznych, w tym związków o potencjale rakotwórczym.",
+                             "Kontrolowany aromat dymu pozwala ograniczać część zanieczyszczeń typowych dla źle prowadzonego wędzenia.",
+                             "Instytucje bezpieczeństwa żywności coraz uważniej oceniają genotoksyczność aromatów dymu i produktów wędzonych."
+                         ],
+        "argumentsAgainst":  [
+                                 "Naturalne wędzenie od lat jest sposobem konserwacji mięsa, serów i ryb, a problemem może być przede wszystkim zła technika, nie sama tradycja.",
+                                 "Niższa temperatura, dobre drewno, brak kapania tłuszczu na ogień i krótsza ekspozycja mogą znacząco ograniczać ryzyko.",
+                                 "Dla wielu osób przemysłowy aromat dymu nie zastępuje prawdziwego procesu wędzenia ani jakości rzemieślniczego produktu."
+                             ],
+        "contradiction":  [
+                              "Często miesza się tradycyjne wędzenie, grillowanie, przypalanie i przemysłowe aromaty dymu.",
+                              "Ryzyko zależy od temperatury, czasu, rodzaju drewna, tłuszczu i częstotliwości jedzenia.",
+                              "Jedni patrzą na toksykologię związków, inni na praktykę kulinarną i dawkę w realnej diecie."
+                          ],
+        "conclusion":  "Moim zdaniem problemem nie jest samo hasło „wędzone”, tylko technika, dawka i częstotliwość. Źle prowadzone wędzenie i przypalanie może zwiększać ekspozycję na szkodliwe związki. Dobrze kontrolowany proces i okazjonalne spożycie to zupełnie inna rozmowa niż codzienne jedzenie mocno przetworzonych wędlin.",
+        "question":  "Czy naturalne wędzenie jest zdrowszą tradycją, czy ryzykiem ukrytym pod zapachem swojskości?",
         "sources":  [
-
+                        [
+                            "EFSA: smoke flavourings",
+                            "https://www.efsa.europa.eu/en/topics/topic/smoke-flavourings"
+                        ],
+                        [
+                            "NCI: chemicals in cooked meats and cancer risk",
+                            "https://www.cancer.gov/about-cancer/causes-prevention/risk/diet/cooked-meats-fact-sheet"
+                        ],
+                        [
+                            "EFSA: Q\u0026A o aromatach dymu wędzarniczego",
+                            "https://www.efsa.europa.eu/en/news/smoke-flavourings-qa-wim-mennes-efsas-working-group-chair-flavourings"
+                        ]
                     ],
         "seedComments":  [
                              {
                                  "id":  "seed-a-1",
-                                 "author":  "AP",
-                                 "likes":  36,
-                                 "text":  "nie jem mięsa więc nie mam problemu z wyoborem",
                                  "side":  "a",
-                                 "replies":  {
-
-                                             }
-                             },
-                             {
-                                 "id":  "seed-a-2",
-                                 "author":  "Anonim",
+                                 "author":  "Anna",
                                  "likes":  22,
-                                 "text":  "To po co zabierasz głos?",
-                                 "side":  "a",
+                                 "text":  "Jeżeli dym zawiera związki rakotwórcze, to nie można udawać, że swojski zapach automatycznie oznacza zdrowie.",
                                  "replies":  {
 
                                              }
                              },
                              {
                                  "id":  "seed-b-1",
-                                 "author":  "Marek",
-                                 "likes":  45,
-                                 "text":  "mam większe zaufanie do intuicji i wieloletniego doświadczenia niż jakiś dziwnych ideologicznych instytucji.",
                                  "side":  "b",
+                                 "author":  "Marek",
+                                 "likes":  32,
+                                 "text":  "Naturalne wędzenie jest częścią tradycji. Problemem jest przemysłowa masówka i zła technika, a nie każdy kawałek wędliny.",
                                  "replies":  {
 
                                              }
@@ -64,11 +78,11 @@ window.DIET_WARS = [
     {
         "id":  "mieso-rak-czy-mit",
         "title":  "Mięso: rak czy mit?",
-        "kicker":  "American Cancer Society ostrzega: mi�so powoduje raka, Bracia Rodze� m�wi�: mi�so jest najlepszym po�ywieniem dla cz�owieka. Kto ma racj�?",
+        "kicker":  "American Cancer Society ostrzega przed ryzykiem, Bracia Rodzeń mówią: korelacje to nie wyrok.",
         "badge":  "kontrowersyjne",
-        "category":  "Onkologia, choroby",
-        "sideA":  "Mięso powoduje raka",
-        "sideB":  "Mięso to najlepszy pokarm dla ludzi",
+        "category":  "Onkologia",
+        "sideA":  "Rakotwórcze ryzyko",
+        "sideB":  "Przesadzony strach",
         "authorityA":  "American Cancer Society / IARC / WCRF",
         "authorityB":  "Bracia Rodzeń i nurt low-carb",
         "votes":  1842,
@@ -81,26 +95,24 @@ window.DIET_WARS = [
                      "IARC"
                  ],
         "summary":  "Czy mięso jest realnym czynnikiem ryzyka raka, czy media i instytucje wrzuciły do jednego worka parówki, boczek i świeży stek?",
-        "hook":  "Czy jedzenie mięsa zwiększa ryzyko raka, czy to ideologia wegetariańska?",
+        "hook":  "Czy jedzenie mięsa zwiększa ryzyko raka, czy to przesadzony strach?",
         "argumentsFor":  [
-                             "- Przetworzone mi�so, takie jak kie�basy, boczek i w�dliny, jest powi�zane ze wzrostem ryzyka raka jelita grubego.",
-                             "- Grillowanie, w�dzenie i mocne sma�enie mog� tworzy� potencjalnie szkodliwe zwi�zki.",
-                             "- Część zaleceń sugeruje ograniczanie czerwonego mięsa i minimalizowanie mięsa przetworzonego.",
-                             "- Porównuje się szkodliwość mięsa do palenia papierosów.",
-                             "- w temperaturze powyżej 130C azotyn sodu zmienia się w potencjalnie rakotwórcze nitrozoaminy."
+                             "Przetworzone mięso, takie jak kiełbasy, boczek i wędliny, jest powiązane ze wzrostem ryzyka raka jelita grubego.",
+                             "Grillowanie, wędzenie i mocne smażenie mogą tworzyć potencjalnie szkodliwe związki.",
+                             "Część zaleceń sugeruje ograniczanie czerwonego mięsa i minimalizowanie mięsa przetworzonego."
                          ],
         "argumentsAgainst":  [
-                                 "- Mięso dostarcza B12, żelaza hemowego, cynku i pełnowartościowego białka.",
-                                 "- Dowody dla mi�sa nieprzetworzonego s� mniej jednoznaczne ni� dla mi�sa przetworzonego.",
-                                 "- \"80% azotanów, które zjadamy, pochodzi z warzyw.",
-                                 "Nie z boczku. Nie z kiełbasy.",
-                                 "Z sałaty, buraków, selera i szpinaku\"",
-                                 "- \"Człowiek sam produkuje azotany.",
-                                 "Twój organizm wytwarza ich w ślinie więcej, niż zjesz w kilogramie boczku\"."
+                                 "Mięso dostarcza B12, żelaza hemowego, cynku i pełnowartościowego białka.",
+                                 "Dowody dla mięsa nieprzetworzonego są mniej jednoznaczne niż dla mięsa przetworzonego.",
+                                 "Wiele badań jest obserwacyjnych, więc miesza się tu mięso, styl życia, palenie, alkohol i ogólna jakość diety."
                              ],
-        "contradiction":  "Efekty mog� pojawia� si� dopiero po wielu latach, nie przeprowadza si� eksperyment�w na ludziach, dodatkowo istotne znaczenia ma styl �ycia poza jedzenie b�d� niejedzeniem mi�sa.  Mi�so, w zale�no�ci od sposobu produkcji mo�e zawiera� r�ne obce substancje chemiczne.",
-        "conclusion":  "Najwy�sze ryzyko dotyczy miesa przetworzonego. Przy mi�sie �wie�ym sp�r jest bardziej z�o�ony. Mimo wszystko lekarze s� spolaryzowani: cz�� zaleca mi�so inni odradzaj�.",
-        "question":  "jak stwierdzić kto ma rację? Jesz mięso regularnie czy starasz się je ograniczać?",
+        "contradiction":  [
+                              "Przetworzone mięso bywa mylone ze świeżym mięsem.",
+                              "Ryzyko populacyjne jest przedstawiane jak osobisty wyrok.",
+                              "Jakość produktu i styl życia badanych mocno zmieniają interpretację."
+                          ],
+        "conclusion":  "Największy czerwony alarm dotyczy mięsa przetworzonego. Przy mięsie świeżym spór jest bardziej złożony i wymaga dawki, kontekstu oraz reszty diety.",
+        "question":  "Kto ma rację? Jesz mięso regularnie czy starasz się je ograniczać?",
         "sources":  [
                         [
                             "American Cancer Society: czerwone i przetworzone mięso",
@@ -114,23 +126,7 @@ window.DIET_WARS = [
                             "WCRF: ogranicz czerwone i przetworzone mięso",
                             "https://www.wcrf.org/research-policy/evidence-for-our-recommendations/limit-red-processed-meat/"
                         ]
-                    ],
-        "seedComments":  [
-                             {
-                                 "id":  "seed-a-1",
-                                 "side":  "a",
-                                 "author":  "Marek",
-                                 "likes":  21,
-                                 "text":  "Ludzie od pokole� jedz� i jedli mi�so wi�c to tylko kolejny wydziwianie dietetyk�w. brednie"
-                             },
-                             {
-                                 "id":  "seed-b-1",
-                                 "side":  "b",
-                                 "author":  "Anna",
-                                 "likes":  32,
-                                 "text":  "Jak wam nie �al mordowania zwierz�t. Bierze mnie na wymioty jak widz� mi�so. Zwierz�ta s� traktowane bardzo �le."
-                             }
-                         ]
+                    ]
     },
     {
         "id":  "tluszcze-czy-weglowodany",
@@ -138,10 +134,10 @@ window.DIET_WARS = [
         "kicker":  "Keto mówi: tnij węgle. Klasyczna dietetyka odpowiada: tłuszcz ma najwięcej kalorii.",
         "badge":  "wieczny spór",
         "category":  "Redukcja",
-        "sideA":  "Ogranicz lub wyeliminuj węgle",
+        "sideA":  "Ogranicz węgle",
         "sideB":  "Ogranicz tłuszcz",
         "authorityA":  "Diety keto / low-carb",
-        "authorityB":  "Współczesna dietetyka",
+        "authorityB":  "Współczesna dietetyka populacyjna",
         "votes":  1390,
         "comments":  211,
         "heat":  94,
@@ -151,25 +147,24 @@ window.DIET_WARS = [
                      "keto",
                      "kalorie"
                  ],
-        "summary":  "Jedni widz� problem w insulinie i cukrze, inni w g�sto�ci kalorycznej t�uszczu. U�ytkownik zostaje z pytaniem: co naprawd� tuczy?",
-        "hook":  "Co powoduje tycie: t�uszcz czy w�glowodany? Co bardziej szkodzi: cukry czy t�uszcze? Co z insulin�?",
+        "summary":  "Jedni widzą problem w insulinie i cukrze, inni w gęstości kalorycznej tłuszczu. Użytkownik zostaje z pytaniem: co naprawdę tuczy?",
+        "hook":  "Co bardziej tuczy: tłuszcz czy węglowodany? Co bardziej szkodzi: cukry czy tłuszcze?",
         "argumentsFor":  [
                              "Ograniczenie węglowodanów może stabilizować cukier we krwi.",
                              "Low-carb u części osób zmniejsza napady głodu i ułatwia deficyt.",
                              "Popularność diet keto wynika z prostych reguł i szybkich pierwszych efektów."
                          ],
         "argumentsAgainst":  [
-                                 "T�uszcz ma najwi�cej kalorii na gram, wi�c �atwo przesadzi� z energi�.",
-                                 "W�glowodany s� g��wnym paliwem organizmu, zw�aszcza przy wysi�ku.",
-                                 "Diety wysokow�glowodanowe te� mog� dzia�a�, je�li s� oparte na produktach pe�nowarto�ciowych.",
-                                 "Tłuszcz, jajka powoduje wzrost cholesterolu i ryzyko miażdzycy.",
-                                 "Poczkowe szybkie chudnięcie na diecie keto? bo zmniejsza się ilość wody zatrzymanej w organizmie."
+                                 "Tłuszcz ma najwięcej kalorii na gram, więc łatwo przesadzić z energią.",
+                                 "Węglowodany są głównym paliwem organizmu, zwłaszcza przy wysiłku.",
+                                 "Diety wysokowęglowodanowe też mogą działać, jeśli są oparte na produktach pełnowartościowych."
                              ],
         "contradiction":  [
-                              "Low-carb i low-fat cz�sto dzia�aj� przez ten sam mechanizm: �atwiejszy deficyt.",
-                              "T�uszcz mo�e pochodzi� np z avocado a nie koniecznie z wieprzowego boczku. Brak zgodno�ci co do poprawno�ci piramidy �ywieniowej - sp�jrz na sp�r tego dotycz�cy."
+                              "Low-carb i low-fat często działają przez ten sam mechanizm: łatwiejszy deficyt.",
+                              "Problemem rzadko jest samo makro, częściej forma produktu: napój, ciastko, olej, fast food.",
+                              "Debata miesza odchudzanie, glikemię, cholesterol i sport."
                           ],
-        "conclusion":  "Najbardziej uczciwa odpowiedź brzmi: działa ta strategia, która poprawia jakość diety i da się utrzymać bez rozwalania zdrowia. Pytanie komu wierzyć skoro część dietetyków i lekarzy stawia zupełnie przeciwne tezy.",
+        "conclusion":  "Najbardziej uczciwa odpowiedź brzmi: działa ta strategia, która poprawia jakość diety i da się utrzymać bez rozwalania zdrowia.",
         "question":  "A ty ograniczasz tłuszcze czy węglowodany?",
         "sources":  [
                         [
@@ -184,28 +179,12 @@ window.DIET_WARS = [
                             "WHO: wytyczne o tłuszczach i węglowodanach",
                             "https://www.who.int/news/item/17-07-2023-who-updates-guidelines-on-fats-and-carbohydrates"
                         ]
-                    ],
-        "seedComments":  [
-                             {
-                                 "id":  "seed-a-1",
-                                 "side":  "a",
-                                 "author":  "Tomasz",
-                                 "likes":  11,
-                                 "text":  "jak zwiększam ilosć tłuszczu w diecie, mam mniejsze wyrzuty insuliny, wiec czuję się stabilnie i dobrze cały dzień. Poza tym nawet poprawił mi się sen - śpię idealnie i tyle samo jak z zegarkiem."
-                             },
-                             {
-                                 "id":  "seed-b-1",
-                                 "side":  "b",
-                                 "author":  "Anonim",
-                                 "likes":  22,
-                                 "text":  "kolejne brednie, a potem si� dziwi�, ze ludzie maj� zawa�y i inne problemy. Moze jeszcze jak kto� je avocado to lepiej, ale t�uszcze nasycone, mas�o, boczek to podnosi ryzyko mia�s�ycy, zwi�ksza z�y cholesterol."
-                             }
-                         ]
+                    ]
     },
     {
         "id":  "nabial-zdrowy-czy-nie",
         "title":  "Nabiał: zdrowy czy podejrzany?",
-        "kicker":  "Jedni m�wi�: mleko to: wap�, bia�ko i wzmacnia ko�ci. Inni: mleko nie jest niezb�dne dla doros�ego cz�owieka.",
+        "kicker":  "Jedni mówią: wapń, białko i kości. Inni: mleko nie jest obowiązkiem dorosłego człowieka.",
         "badge":  "klasyczny spór",
         "category":  "Produkty",
         "sideA":  "Wspiera zdrowie",
@@ -221,25 +200,24 @@ window.DIET_WARS = [
                      "mleko",
                      "wapń"
                  ],
-        "summary":  "Nabia� bywa przedstawiany jako fundament zdrowych ko�ci, ale krytycy pytaj�, czy doros�y cz�owiek naprawd� musi pi� mleko.",
-        "hook":  "Nabiał wzmacnia organizm czy tylko napędza biznes producentom?",
+        "summary":  "Nabiał bywa przedstawiany jako fundament zdrowych kości, ale krytycy pytają, czy dorosły człowiek naprawdę musi pić mleko.",
+        "hook":  "Nabiał wzmacnia organizm czy tylko korzysta z wieloletniej reklamy?",
         "argumentsFor":  [
-                             "Mleko, jogurt i kefir s� bardzo dobrym �r�d�em wapnia, bia�ka i jodu.",
-                             "Fermentowane produkty mleczne mog� by� lepszym wyborem ni� s�odzone desery.",
-                             "Dla wielu os�b nabia� zwi�ksza g�sto�� od�ywcz� diety."
+                             "Mleko, jogurt i kefir są wygodnym źródłem wapnia, białka i jodu.",
+                             "Fermentowane produkty mleczne mogą być lepszym wyborem niż słodzone desery.",
+                             "Dla wielu osób nabiał zwiększa gęstość odżywczą diety."
                          ],
         "argumentsAgainst":  [
-                                 "Wap� mo�na uzyska� z innych �r�de�, a nabia� nie jest obowi�zkowy.",
+                                 "Wapń można uzyskać z innych źródeł, a nabiał nie jest obowiązkowy.",
                                  "Część osób ma nietolerancję laktozy, alergie albo źle reaguje na konkretne produkty.",
-                                 "Mleko zawiera hormony, niezb�dne dla ciel�t a szkodliwe w nadmiarze dla cz�owieka.",
-                                 "S�odzone produkty mleczne s� cz�sto deserem, nie zdrow� baz� diety."
+                                 "Słodzone produkty mleczne są często deserem, nie zdrową bazą diety."
                              ],
         "contradiction":  [
-                              "Jogurt naturalny i s�odzony deser mleczny s� wrzucane do jednej kategorii.",
+                              "Jogurt naturalny i słodzony deser mleczny są wrzucane do jednej kategorii.",
                               "Spiera się produkt, a często chodzi o cały styl żywienia.",
-                              "Indywidualna tolerancja bywa mylona z uniwersaln� zasad�."
+                              "Indywidualna tolerancja bywa mylona z uniwersalną zasadą."
                           ],
-        "conclusion":  "Nabiał może być wartościowy, ale nie jest  konieczny dla każdego. Poza tym warto poznać także mleko kozie czy mleka roślinne.",
+        "conclusion":  "Nabiał może być wartościowy, ale nie jest magiczny ani konieczny dla każdego.",
         "question":  "Nabiał ci służy, szkodzi, czy po prostu jest neutralnym elementem diety?",
         "sources":  [
                         [
@@ -254,30 +232,12 @@ window.DIET_WARS = [
                             "WHO: healthy diet",
                             "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
                         ]
-                    ],
-        "seedComments":  [
-                             {
-                                 "id":  "seed-a-1",
-                                 "author":  "Anna",
-                                 "likes":  23,
-                                 "text":  "Kiedy� by�o tylko mleko krowie, pi�o si� je codzinnie, nawet w szkole i nikt nie mia� nietoleracji czy problem�w z tym zwi�zanych.",
-                                 "side":  "a",
-                                 "replies":  null
-                             },
-                             {
-                                 "id":  "seed-b-1",
-                                 "author":  "Małgośka",
-                                 "likes":  34,
-                                 "text":  "mleko to tak�e t�uszcze nasycone i mo�e obci��a� uk�ad kr��enia.  Mleko = mocne ko�ci to po prostu mit.",
-                                 "side":  "b",
-                                 "replies":  null
-                             }
-                         ]
+                    ]
     },
     {
         "id":  "ile-jajek-dziennie",
         "title":  "Ile jajek można zjeść dziennie?",
-        "kicker":  "Bracia Rodze� m�wi�: jedz �mia�o. Klasyczna medycyna pyta: a co z cholesterolem?",
+        "kicker":  "Bracia Rodzeń mówią: jedz śmiało. Klasyczna medycyna pyta: a co z cholesterolem?",
         "badge":  "cholesterol",
         "category":  "Serce",
         "sideA":  "Jedz, ile chcesz",
@@ -293,24 +253,24 @@ window.DIET_WARS = [
                      "cholesterol",
                      "serce"
                  ],
-        "summary":  "Jajko raz jest superfoodem, raz bomb� cholesterolow�. Konflikt robi si� ostry, bo dotyka codziennego �niadania.",
+        "summary":  "Jajko raz jest superfoodem, raz bombą cholesterolową. Konflikt robi się ostry, bo dotyka codziennego śniadania.",
         "hook":  "Jajka to superfood czy bomba cholesterolowa?",
         "argumentsFor":  [
-                             "Jajka s� jednym z najbardziej od�ywczych produkt�w: bia�ko, cholina, witaminy i minera�y.",
+                             "Jajka są jednym z najbardziej odżywczych produktów: białko, cholina, witaminy i minerały.",
                              "Cholesterol z jedzenia nie zawsze mocno przekłada się na cholesterol we krwi.",
-                             "Zwolennicy pokazuj� przyk�ady os�b jedz�cych du�o jajek i maj�cych dobre wyniki bada�."
+                             "Zwolennicy pokazują przykłady osób jedzących dużo jajek i mających dobre wyniki badań."
                          ],
         "argumentsAgainst":  [
-                                 "Jajka zawieraj� du�o cholesterolu pokarmowego.",
+                                 "Jajka zawierają dużo cholesterolu pokarmowego.",
                                  "U części osób, szczególnie z ryzykiem sercowo-naczyniowym, reakcja lipidowa może mieć znaczenie.",
-                                 "Klasyczne zalecenia ostro�no�ci s� kierowane zw�aszcza do os�b z chorobami serca."
+                                 "Klasyczne zalecenia ostrożności są kierowane zwłaszcza do osób z chorobami serca."
                              ],
         "contradiction":  [
-                              "Jedna osoba dobrze toleruje jajka, inna zaobserwuje u siebie wzrost LDL.",
+                              "Jedna osoba dobrze toleruje jajka, inna widzi wzrost LDL.",
                               "Spór dotyczy nie tylko jajek, ale całego talerza: boczek, masło, pieczywo, warzywa.",
                               "Cholesterol pokarmowy nie jest tym samym co całkowite ryzyko sercowe."
                           ],
-        "conclusion":  "Jajka mog� by� zdrowym produktem, ale pytanie brzmi: dla kogo, ile i w jakim wzorcu diety? Skrajno�ci nigdy nie s� dobre.",
+        "conclusion":  "Jajka mogą być zdrowym produktem, ale pytanie brzmi: dla kogo, ile i w jakim wzorcu diety?",
         "question":  "Ile jajek jesz tygodniowo i jakie masz wyniki badań?",
         "sources":  [
                         [
@@ -325,23 +285,7 @@ window.DIET_WARS = [
                             "ACC: dietary cholesterol summary",
                             "https://www.acc.org/Latest-in-Cardiology/ten-points-to-remember/2019/12/30/15/23/Dietary-Cholesterol-and-CV-Risk"
                         ]
-                    ],
-        "seedComments":  [
-                             {
-                                 "id":  "seed-a-1",
-                                 "side":  "a",
-                                 "author":  "Anonim",
-                                 "likes":  44,
-                                 "text":  "to najlepszej jakości białko, świetnie przyswajalne. Poza tym jajka to też cholina i wzmacnia pamięć, koncentrację i poprawia działanie układu nerwowego."
-                             },
-                             {
-                                 "id":  "seed-b-1",
-                                 "side":  "b",
-                                 "author":  "Anonim",
-                                 "likes":  64,
-                                 "text":  "jajka to źródło cholesterolu. Wystarczy badać poziom LDL i zmienić dietę, od razu widać zmianę."
-                             }
-                         ]
+                    ]
     },
     {
         "id":  "post-przerywany",
@@ -363,26 +307,24 @@ window.DIET_WARS = [
                      "metabolizm"
                  ],
         "summary":  "Post przerywany jest przedstawiany jako naturalny rytm człowieka albo metoda, która działa tylko dlatego, że jemy mniej.",
-        "hook":  "Post przerywany leczy organizm czy go obci��a?",
+        "hook":  "Post przerywany leczy organizm czy go obciąża?",
         "argumentsFor":  [
                              "Dla części osób okno żywieniowe jest prostsze niż liczenie kalorii.",
                              "Może wspierać redukcję masy i poprawiać kontrolę glikemii.",
-                             "Zwolennicy widz� w nim naturalny spos�b jedzenia, nie ci�g�e podjadanie.",
-                             "W skrajnym przypadku proponuj� metod� OMD jednego posi�ku dziennie.",
-                             "Post przerywany poprawia jasnosność myślenia, reguluje sen."
+                             "Zwolennicy widzą w nim naturalny sposób jedzenia, nie ciągłe podjadanie."
                          ],
         "argumentsAgainst":  [
                                  "Brakuje bardzo długich badań dla wielu popularnych protokołów.",
                                  "U niektórych osób post może nasilać napady głodu, kompulsje albo stres.",
-                                 "Nie jest dobrym pomys�em dla ka�dego, zw�aszcza przy chorobach, lekach, ci��y lub zaburzeniach od�ywiania. Mo�e tak�e wp�ywa� na zmiany w gospodarce hormonalnej."
+                                 "Nie jest dobrym pomysłem dla każdego, zwłaszcza przy chorobach, lekach, ciąży lub zaburzeniach odżywiania."
                              ],
         "contradiction":  [
-                              "Inne efekty daje 12/12, inne 16/8, a inne długie posty nawet kilkudniowe.",
+                              "Inne efekty daje 12/12, inne 16/8, a inne długie posty.",
                               "Redukcja kalorii bywa mylona z magicznym efektem samego okna.",
                               "Krótkoterminowa poprawa nie zawsze odpowiada na pytanie o lata stosowania."
                           ],
-        "conclusion":  "Post mo�e by� narz�dziem, ale powinien by� stosowany m�drze. Najwa�niejsze jest, czy poprawia ca�y styl �ycia i nie robi szkody w organizmie. Co z tego �e schudniesz, jak dostaniesz udaru?",
-        "question":  "Czy próbowałeś postu przerywanego? jak się czułeś?",
+        "conclusion":  "Post może być narzędziem, ale nie religią. Najważniejsze jest, czy poprawia cały styl życia i nie robi szkody.",
+        "question":  "Stosujesz post czy jesz regularnie?",
         "sources":  [
                         [
                             "NEJM: intermittent fasting review",
@@ -396,28 +338,12 @@ window.DIET_WARS = [
                             "JAMA Network: time-restricted eating trial",
                             "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2771095"
                         ]
-                    ],
-        "seedComments":  [
-                             {
-                                 "id":  "seed-a-1",
-                                 "side":  "a",
-                                 "author":  "Anonimous",
-                                 "likes":  59,
-                                 "text":  "zdecydowanie za, schudłem prawie 40kg, mniej podjadam i nie muszę liczyć kalorii."
-                             },
-                             {
-                                 "id":  "seed-b-1",
-                                 "side":  "b",
-                                 "author":  "Krystyna",
-                                 "likes":  48,
-                                 "text":  "na mnie działa, mam napady głodu, a rano źle się czuje jak nie zjem."
-                             }
-                         ]
+                    ]
     },
     {
         "id":  "sol-niszczy-czy-ratuje",
-        "title":  "Sól: niszczy serce i naczynia krwionośne czy ratuje życie?",
-        "kicker":  "Lekarze m�wi�: kontrolowa� dzienn� ilo�� i ogranicza�. Inni: bez sodu organizm nie dzia�a poprawnie.",
+        "title":  "Sól: niszczy serce czy ratuje życie?",
+        "kicker":  "Instytucje mówią: ograniczać. Kontra odpowiada: bez sodu organizm nie działa.",
         "badge":  "ciśnienie",
         "category":  "Serce",
         "sideA":  "Sól jest kluczowa",
@@ -438,19 +364,19 @@ window.DIET_WARS = [
         "argumentsFor":  [
                              "Sód jest potrzebny do pracy nerwów, mięśni i gospodarki wodnej.",
                              "Niedobór sodu także może być groźny.",
-                             "Zwolennicy ostrzegaj� przed bezmy�lnym demonizowaniem soli u os�b aktywnych i jedz�cych nieprzetworzenie."
+                             "Zwolennicy ostrzegają przed bezmyślnym demonizowaniem soli u osób aktywnych i jedzących nieprzetworzenie."
                          ],
         "argumentsAgainst":  [
                                  "Wysokie spożycie sodu może podnosić ciśnienie.",
                                  "Nadciśnienie uszkadza naczynia i zwiększa ryzyko sercowo-naczyniowe.",
-                                 "Lekarze zalecaj� ograniczanie soli, bo wi�kszo�� ludzi dostaje jej du�o z �ywno�ci przetworzonej."
+                                 "Instytucje zalecają ograniczanie soli, bo większość ludzi dostaje jej dużo z żywności przetworzonej."
                              ],
         "contradiction":  [
                               "Potrzeba sodu nie oznacza, że im więcej soli, tym lepiej.",
-                              "Aktywna osoba jedz�ca domowo to inny przypadek ni� osoba na diecie z w�dlin, chips�w i gotowc�w.",
+                              "Aktywna osoba jedząca domowo to inny przypadek niż osoba na diecie z wędlin, chipsów i gotowców.",
                               "Problemem bywa ukryta sól, nie tylko solniczka."
                           ],
-        "conclusion":  "Sp�r nie brzmi: s�l albo brak soli. Prawdziwe pytanie to czy stosujesz konkretn� diet�, jakie masz ci�nienie, pot i aktywno�� i ile soli dostarczaj� produkty gotowe.",
+        "conclusion":  "Spór nie brzmi: sól albo brak soli. Prawdziwe pytanie to dawka, ciśnienie, pot, aktywność i ile soli dostarczają produkty gotowe.",
         "question":  "Solimy za dużo czy za mało?",
         "sources":  [
                         [
@@ -465,36 +391,18 @@ window.DIET_WARS = [
                             "WHO: sodium reduction",
                             "https://www.who.int/news-room/fact-sheets/detail/salt-reduction"
                         ]
-                    ],
-        "seedComments":  [
-                             {
-                                 "id":  "seed-a-1",
-                                 "author":  "Anonim",
-                                 "likes":  11,
-                                 "text":  "s�l zwi�ksza zatrzymanie wody w organizmie, podnosi ci�nienia, niszczy nerki. To chyba wystarczaj�co przebadane. Tylko jak kto� chce by� oryginalny jak wspominani dietetycy to m�wi g�upoty przeciwe. Wg WHO nadmiar soli jest gorszy ni� niedob�r.",
-                                 "side":  "a",
-                                 "replies":  null
-                             },
-                             {
-                                 "id":  "seed-b-1",
-                                 "author":  "RPp",
-                                 "likes":  15,
-                                 "text":  "sól pomaga mi bo mam niskie ciśnienie. Poza tym WHO to żaden autorytet. Bracia Rodzeń udowodnili że bardzo jest niezbędna sól dla zdrowia.",
-                                 "side":  "b",
-                                 "replies":  null
-                             }
-                         ]
+                    ]
     },
     {
         "id":  "deficyt-kaloryczny",
         "title":  "Deficyt kaloryczny: wszystko czy za mało?",
-        "kicker":  "Dietetycy m�wi�: bez deficytukalorycznego nie schudniesz. Inni pytaj�: a hormony, adaptacja i g��d? Co z efektem jojo?",
+        "kicker":  "Dietetyka mówi: bez deficytu nie schudniesz. Kontra pyta: a hormony, adaptacja i głód?",
         "badge":  "odchudzanie",
         "category":  "Redukcja",
-        "sideA":  "Kalorie decyduj�",
-        "sideB":  "Hormony decyduj�",
+        "sideA":  "Kalorie decydują",
+        "sideB":  "Hormony decydują",
         "authorityA":  "Klasyczna dietetyka",
-        "authorityB":  "krytycy prostego CICO (kalorie zjedzone/klorie spalone)",
+        "authorityB":  "Bracia Rodzeń / krytycy prostego CICO",
         "votes":  1420,
         "comments":  244,
         "heat":  93,
@@ -504,23 +412,24 @@ window.DIET_WARS = [
                      "hormony",
                      "waga"
                  ],
-        "summary":  "Czy wystarczy je�� mniej, �eby schudn��? Prosta zasada zaczyna trzeszcze�, gdy organizm odpowiada g�odem, spadkiem energii i adaptacj�.",
-        "hook":  "Czy wystarczy je�� mniej, �eby schudn��?",
+        "summary":  "Czy wystarczy jeść mniej, żeby schudnąć? Prosta zasada zaczyna trzeszczeć, gdy organizm odpowiada głodem, spadkiem energii i adaptacją.",
+        "hook":  "Czy wystarczy jeść mniej, żeby schudnąć?",
         "argumentsFor":  [
                              "Deficyt energetyczny jest koniecznym warunkiem utraty masy ciała.",
-                             "Bilans energii jest podstawow� zasad� fizjologii.",
-                             "Liczenie kalorii mo�e pokaza�, gdzie naprawd� uciekaj� porcje i przek�ski."
+                             "Bilans energii jest podstawową zasadą fizjologii.",
+                             "Liczenie kalorii może pokazać, gdzie naprawdę uciekają porcje i przekąski."
                          ],
         "argumentsAgainst":  [
-                                 "Organizm adaptuje wydatek energetyczny, apetyt i spontaniczn� aktywno��.",
-                                 "Hormony, sen, stres i syto�� decyduj�, czy deficyt da si� utrzyma�.",
+                                 "Organizm adaptuje wydatek energetyczny, apetyt i spontaniczną aktywność.",
+                                 "Hormony, sen, stres i sytość decydują, czy deficyt da się utrzymać.",
                                  "Samo liczenie kalorii nie mówi nic o jakości diety i zdrowiu metabolicznym."
                              ],
         "contradiction":  [
-                              "Jedni m�wi� o prawie energii, drudzy o sterowaniu zachowaniem i g�odem.",
-                              "Podkre�la si�, �e kalorie nie s� r�wne - czym innym s� te dostarczone w cukrach prostych czy t�uszczach a czym innym te z bia�ka."
+                              "Jedni mówią o prawie energii, drudzy o sterowaniu zachowaniem i głodem.",
+                              "Krótki deficyt działa inaczej niż wieloletnia walka z masą ciała.",
+                              "Kalorie są warunkiem, ale nie zawsze najlepszym narzędziem dla człowieka."
                           ],
-        "conclusion":  "Kalorie maj� znaczenie, ale cz�owiek nie jest kalkulatorem. Skuteczna dieta musi uwzgl�dnia� syto��, sen, stres, aktywno�� i trwa�o��. Niestety, je�eli ograniczamy kalori�, organizm zaczyna w spos�b naturalny zmniejsza� zapotrzebowanie na nie i wpadamy w b��dne ko�o.",
+        "conclusion":  "Kalorie mają znaczenie, ale człowiek nie jest kalkulatorem. Skuteczna dieta musi uwzględniać sytość, sen, stres, aktywność i trwałość.",
         "question":  "Liczyć kalorie czy budować nawyki bez liczenia?",
         "sources":  [
                         [
@@ -535,34 +444,16 @@ window.DIET_WARS = [
                             "Look AHEAD trial, NEJM",
                             "https://www.nejm.org/doi/full/10.1056/NEJMoa1212914"
                         ]
-                    ],
-        "seedComments":  [
-                             {
-                                 "id":  "seed-a-1",
-                                 "author":  "Łukasz",
-                                 "likes":  54,
-                                 "text":  "Zdrowy tryb �ycia, troch� ruchu i niewielki deficyt za�atwia spraw�. Jak chcesz dobrze wygl�dac to musisz w�o�y� troch� wysi�ku. Za to potem nie wstyd wyj�� na pla�� :)",
-                                 "side":  "a",
-                                 "replies":  null
-                             },
-                             {
-                                 "id":  "seed-b-1",
-                                 "author":  "Łukasz",
-                                 "likes":  11,
-                                 "text":  "szczerze m�wi�c to musia�bym ca�y czas chodzi g�odny �eby nie przytyc a co dopiero schudn��. Jak masz siedz�cy tryb �ycia to chyba jest si� skazanym na nadwag�.",
-                                 "side":  "b",
-                                 "replies":  null
-                             }
-                         ]
+                    ]
     },
     {
         "id":  "keto-odchudza-czy-oszukuje",
-        "title":  "Keto: na pewno odchudza ale czy jest niebezpieczna dla zdrowia?",
-        "kicker":  "Zwolennicy pokazuj� szybkie kilogramy. Krytycy odpowiadaj�: najpierw tracisz wod� z organizmu.",
-        "badge":  "gor�cy trend",
+        "title":  "Keto: odchudza czy oszukuje wagę?",
+        "kicker":  "Zwolennicy pokazują szybkie kilogramy. Krytycy odpowiadają: najpierw schodzi woda.",
+        "badge":  "gorący trend",
         "category":  "Metabolizm",
         "sideA":  "Keto działa",
-        "sideB":  "Keto maskuje problemy",
+        "sideB":  "Keto myli wynik",
         "authorityA":  "Bracia Rodzeń / low-carb",
         "authorityB":  "Część dietetyków klinicznych",
         "votes":  1516,
@@ -574,12 +465,12 @@ window.DIET_WARS = [
                      "waga",
                      "cukier"
                  ],
-        "summary":  "Keto potrafi da� szybki efekt na wadze, ale sp�r dotyczy tego, czy tracimy tkank� t�uszczow�, wod�, czy po prostu �atwiej jemy mniej.",
-        "hook":  "Keto odchudza czy tylko oszukuje wagę? Czy jest niebezpieczne?",
+        "summary":  "Keto potrafi dać szybki efekt na wadze, ale spór dotyczy tego, czy tracimy tkankę tłuszczową, wodę, czy po prostu łatwiej jemy mniej.",
+        "hook":  "Keto odchudza czy tylko oszukuje wagę?",
         "argumentsFor":  [
                              "Keto może szybko obniżać masę ciała i apetyt.",
                              "U części osób poprawia kontrolę cukru we krwi.",
-                             "Ograniczenie w�glowodan�w bywa prost� regu��, kt�ra ogranicza podjadanie."
+                             "Ograniczenie węglowodanów bywa prostą regułą, która ogranicza podjadanie."
                          ],
         "argumentsAgainst":  [
                                  "Pierwszy spadek wagi często wynika z utraty glikogenu i wody.",
@@ -589,9 +480,9 @@ window.DIET_WARS = [
         "contradiction":  [
                               "Waga nie odróżnia wody od tłuszczu.",
                               "Keto terapeutyczne to nie to samo co internetowe keto z boczkiem.",
-                              "Skuteczno�� w 8 tygodni nie odpowiada na pytanie o skutki kt�re pojawi� si� po 8 latach albo wcze�niej."
+                              "Skuteczność w 8 tygodni nie odpowiada na pytanie o 8 lat."
                           ],
-        "conclusion":  "Keto mo�e dzia�a� jako narz�dzie, ale nie dowodzi, �e w�glowodany s� trucizn�. Kluczowe s� sk�ad, wyniki bada� i trwa�o��.",
+        "conclusion":  "Keto może działać jako narzędzie, ale nie dowodzi, że węglowodany są trucizną. Kluczowe są skład, wyniki badań i trwałość.",
         "question":  "Keto działa czy to iluzja szybkiej wagi?",
         "sources":  [
                         [
@@ -606,30 +497,12 @@ window.DIET_WARS = [
                             "Virta Health, 2-year nutritional ketosis results",
                             "https://www.frontiersin.org/articles/10.3389/fendo.2019.00348/full"
                         ]
-                    ],
-        "seedComments":  [
-                             {
-                                 "id":  "seed-a-1",
-                                 "author":  "Anonim",
-                                 "likes":  49,
-                                 "text":  "To samo co w dyskusji o tłuszczach - jednemu służy innemu nie. Ja czuję się świetnie.",
-                                 "side":  "a",
-                                 "replies":  null
-                             },
-                             {
-                                 "id":  "seed-b-1",
-                                 "author":  "Anonim",
-                                 "likes":  92,
-                                 "text":  "tak? a ja znam przynajmniej dwie osoby, kt�re super schud�y jedz�c boczek a w potem niestety m�odo zmar�y. Oczywiscie niekoniecznie z powodu diety, moze to tylko zbiego okoliczno�ci.",
-                                 "side":  "b",
-                                 "replies":  null
-                             }
-                         ]
+                    ]
     },
     {
         "id":  "autofagia-przelom-czy-marketing",
         "title":  "Autofagia: przełom czy marketing?",
-        "kicker":  "Biohackerzy m�wi�: Nobel i oczyszczanie kom�rek. Naukowcy: spokojnie, to nie jest dow�d na ka�dy post.",
+        "kicker":  "Biohackerzy mówią: Nobel i oczyszczanie komórek. Naukowcy: spokojnie, to nie jest dowód na każdy post.",
         "badge":  "hype naukowy",
         "category":  "Biohacking",
         "sideA":  "Komórkowy reset",
@@ -645,25 +518,25 @@ window.DIET_WARS = [
                      "post",
                      "Nobel"
                  ],
-        "summary":  "Autofagia jest prawdziwym procesem biologicznym. Sporne jest to, czy popularne posty u ludzi daj� takie efekty, jakie obiecuje internet.",
+        "summary":  "Autofagia jest prawdziwym procesem biologicznym. Sporne jest to, czy popularne posty u ludzi dają takie efekty, jakie obiecuje internet.",
         "hook":  "Autofagia to przełom zdrowia czy marketing oparty na słowie Nobel?",
         "argumentsFor":  [
                              "Autofagia jest realnym procesem recyklingu komórkowego.",
-                             "Odkrycia dotycz�ce mechanizm�w autofagii zosta�y nagrodzone Noblem.",
-                             "Zwolennicy postu twierdz�, �e organizm usuwa uszkodzone elementy kom�rek."
+                             "Odkrycia dotyczące mechanizmów autofagii zostały nagrodzone Noblem.",
+                             "Zwolennicy postu twierdzą, że organizm usuwa uszkodzone elementy komórek."
                          ],
         "argumentsAgainst":  [
                                  "Wiele danych pochodzi z badań podstawowych, komórkowych lub zwierzęcych.",
-                                 "Nie ma prostego przelicznika: po ilu godzinach postu cz�owiek osi�ga obiecany efekt.",
+                                 "Nie ma prostego przelicznika: po ilu godzinach postu człowiek osiąga obiecany efekt.",
                                  "Marketing często zamienia proces biologiczny w hasło detoksu."
                              ],
         "contradiction":  [
                               "Prawdziwy mechanizm nie oznacza automatycznie skutecznej terapii.",
-                              "Nobel za odkrycie procesu dotyczy� bada� na dro�d�ach! nie jest Noblem za badanie na ludziach czy konkretn� diet�.",
+                              "Nobel za odkrycie procesu nie jest Noblem za konkretną dietę.",
                               "Teoria komórkowa bywa sprzedawana jako gotowy plan zdrowotny."
                           ],
-        "conclusion":  "Autofagia jest procesem zbadanym u prostych organizm�w - dro�d�y. Na szerok� skal� nie ma bada� kt�re dotycz� tego zjawiska u ludzi.  Internetowa obietnica odm�odzenia przez post bywa ju� interpretacj�, kt�ra wymaga mocniejszych dowod�w u ludzi.",
-        "question":  "Też słyszałeś od niektórych dietetyków o Noblu za odkrycie autofagii jako argumencie za postem przerywanym?",
+        "conclusion":  "Autofagia jest nauką. Internetowa obietnica odmłodzenia przez post bywa już interpretacją, która wymaga mocniejszych dowodów u ludzi.",
+        "question":  "Wierzysz w autofagię jako argument za postem?",
         "sources":  [
                         [
                             "Nobel Prize: Yoshinori Ohsumi and autophagy",
@@ -677,38 +550,12 @@ window.DIET_WARS = [
                             "NEJM: intermittent fasting",
                             "https://www.nejm.org/doi/full/10.1056/NEJMra1905136"
                         ]
-                    ],
-        "seedComments":  [
-                             {
-                                 "id":  "seed-a-1",
-                                 "author":  "Wojtek",
-                                 "likes":  23,
-                                 "text":  "Przekonuje mnie zwyk�a logika: ludzie zawsze mieli przerwy naturalne w jedzeniu, wszystkie religie tak samo zalecaj� okres postu, czy nawet dwa dni postu w tygodniu.",
-                                 "side":  "a",
-                                 "replies":  null
-                             },
-                             {
-                                 "id":  "seed-a-2",
-                                 "author":  "Anonim",
-                                 "likes":  71,
-                                 "text":  "a co ma religia do autofagii??",
-                                 "side":  "a",
-                                 "replies":  null
-                             },
-                             {
-                                 "id":  "seed-b-1",
-                                 "author":  "Anonim",
-                                 "likes":  11,
-                                 "text":  "Łatwo przekroczyć granicę i wejsć w niedożywienie, taka głodówka mi nigdy nie służyła bo się odbijała na masie mięśniowej. Poza tym to kolejne wydziwianie i nie zbadane porzadnie zjawisko.  jestem na nie.",
-                                 "side":  "b",
-                                 "replies":  null
-                             }
-                         ]
+                    ]
     },
     {
         "id":  "dieta-dabrowskiej",
-        "title":  "Dieta D�browskiej: leczy czy szkodzi?",
-        "kicker":  "Zwolennicy m�wi�: detoks i lekko��. Krytycy: g�od�wka, niedobory i super efekt ale tylko na chwil�.",
+        "title":  "Dieta Dąbrowskiej: leczy czy szkodzi?",
+        "kicker":  "Zwolennicy mówią: detoks i lekkość. Krytycy: głodówka, niedobory i efekt wow na chwilę.",
         "badge":  "detoks",
         "category":  "Diety",
         "sideA":  "Warzywny restart",
@@ -720,29 +567,28 @@ window.DIET_WARS = [
         "heat":  85,
         "image":  "photos/dieta-dabrowskiej.jpg",
         "tags":  [
-                     "D�browska",
+                     "Dąbrowska",
                      "detoks",
                      "restrykcja"
                  ],
-        "summary":  "Dieta warzywno-owocowa mo�e dawa� szybk� popraw� samopoczucia przez radykaln� zmian� jedzenia, ale cena restrykcji bywa wysoka.",
+        "summary":  "Dieta warzywno-owocowa może dawać szybką poprawę samopoczucia przez radykalną zmianę jedzenia, ale cena restrykcji bywa wysoka.",
         "hook":  "Dieta warzywno-owocowa leczy czy szkodzi?",
         "argumentsFor":  [
-                             "Zwolennicy opisuj� popraw� samopoczucia, lekko�� i szybki spadek masy.",
+                             "Zwolennicy opisują poprawę samopoczucia, lekkość i szybki spadek masy.",
                              "Dieta wymusza odstawienie alkoholu, słodyczy, fast foodów i produktów ultra-przetworzonych.",
                              "Duża ilość warzyw zwiększa podaż części witamin, potasu i błonnika."
                          ],
         "argumentsAgainst":  [
                                  "To bardzo niskokaloryczny model, który może powodować osłabienie i utratę masy mięśniowej.",
                                  "Długie stosowanie grozi niedoborami białka, tłuszczów i części mikroskładników.",
-                                 "Has�o detoks bywa myl�ce, bo organizm nie dzia�a jak filtr resetowany sokiem i warzywami.",
-                                 "Dieta owocowo warzywna jako źródł dużej ilości węglowodanów."
+                                 "Hasło detoks bywa mylące, bo organizm nie działa jak filtr resetowany sokiem i warzywami."
                              ],
         "contradiction":  [
                               "Krótkotrwała poprawa po odstawieniu śmieciowego jedzenia nie dowodzi leczniczości całego protokołu.",
-                              "Warzywa s� zdrowe, ale sama dieta warzywna nie musi by� zbilansowana.",
+                              "Warzywa są zdrowe, ale sama dieta warzywna nie musi być zbilansowana.",
                               "Efekt psychologiczny rytuału bywa mylony z dowodem medycznym."
                           ],
-        "conclusion":  "To może być silny impuls do zmiany, ale jako terapia wymaga ostrożności, nadzoru i pytania: co dzieje się po zakończeniu? Czy rzeczywiście dieta ta leczy z nowotworów?",
+        "conclusion":  "To może być silny impuls do zmiany, ale jako terapia wymaga ostrożności, nadzoru i pytania: co dzieje się po zakończeniu?",
         "question":  "Próbowałeś tej diety? Pomogła, zaszkodziła, czy dała tylko chwilowy efekt?",
         "sources":  [
                         [
@@ -757,41 +603,7 @@ window.DIET_WARS = [
                             "BMJ: ultra-processed foods and health",
                             "https://www.bmj.com/content/384/bmj-2023-077310"
                         ]
-                    ],
-        "seedComments":  [
-                             {
-                                 "id":  "seed-a-1",
-                                 "author":  "Andrzej",
-                                 "likes":  76,
-                                 "text":  "stosuję od lat, czuje się bardzo dobrze - zdecydowanie polecam!",
-                                 "side":  "a",
-                                 "replies":  null
-                             },
-                             {
-                                 "id":  "seed-a-2",
-                                 "author":  "Anonim",
-                                 "likes":  19,
-                                 "text":  "może masz dobre zdrowie, to dieta ta Ci nie szkodzi a innym może nie służyć.",
-                                 "side":  "a",
-                                 "replies":  null
-                             },
-                             {
-                                 "id":  "seed-b-1",
-                                 "author":  "AN79",
-                                 "likes":  51,
-                                 "text":  "Typowa dieta z bardzo mocnym ograniczeniem kalorii. Niby się chudnie a potem mocny efekt jojo. Nie lubię i nie służy mi.",
-                                 "side":  "b",
-                                 "replies":  null
-                             },
-                             {
-                                 "id":  "seed-b-2",
-                                 "author":  "Anonim",
-                                 "likes":  42,
-                                 "text":  "Dokładnie a do tego jak ktoś trenuje regularnie to się po prostu nie da.",
-                                 "side":  "b",
-                                 "replies":  null
-                             }
-                         ]
+                    ]
     }
 ];
 

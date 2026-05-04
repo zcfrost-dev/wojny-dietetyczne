@@ -55,20 +55,30 @@ window.DIET_WARS = [
         "seedComments":  [
                              {
                                  "id":  "seed-a-1",
+                                 "author":  "AP",
+                                 "likes":  36,
+                                 "text":  "nie jem mięsa więc nie mam problemu z wyoborem",
                                  "side":  "a",
-                                 "author":  "Anna",
+                                 "replies":  {
+
+                                             }
+                             },
+                             {
+                                 "id":  "seed-a-2",
+                                 "author":  "Anonim",
                                  "likes":  22,
-                                 "text":  "Jeżeli dym zawiera związki rakotwórcze, to nie można udawać, że swojski zapach automatycznie oznacza zdrowie.",
+                                 "text":  "To po co zabierasz głos?",
+                                 "side":  "a",
                                  "replies":  {
 
                                              }
                              },
                              {
                                  "id":  "seed-b-1",
-                                 "side":  "b",
                                  "author":  "Marek",
-                                 "likes":  32,
-                                 "text":  "Naturalne wędzenie jest częścią tradycji. Problemem jest przemysłowa masówka i zła technika, a nie każdy kawałek wędliny.",
+                                 "likes":  45,
+                                 "text":  "mam większe zaufanie do intuicji i wieloletniego doświadczenia niż jakiś dziwnych ideologicznych instytucji.",
+                                 "side":  "b",
                                  "replies":  {
 
                                              }
@@ -126,7 +136,23 @@ window.DIET_WARS = [
                             "WCRF: ogranicz czerwone i przetworzone mięso",
                             "https://www.wcrf.org/research-policy/evidence-for-our-recommendations/limit-red-processed-meat/"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "side":  "a",
+                                 "author":  "Marek",
+                                 "likes":  21,
+                                 "text":  "Ludzie od pokoleń jedzą i jedli mięso więc to tylko kolejny wydziwianie dietetyków. brednie"
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "side":  "b",
+                                 "author":  "Anna",
+                                 "likes":  32,
+                                 "text":  "Jak wam nie żal mordowania zwierząt. Bierze mnie na wymioty jak widzę mięso. Zwierzęta są traktowane bardzo źle."
+                             }
+                         ]
     },
     {
         "id":  "tluszcze-czy-weglowodany",
@@ -179,7 +205,23 @@ window.DIET_WARS = [
                             "WHO: wytyczne o tłuszczach i węglowodanach",
                             "https://www.who.int/news/item/17-07-2023-who-updates-guidelines-on-fats-and-carbohydrates"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "side":  "a",
+                                 "author":  "Tomasz",
+                                 "likes":  11,
+                                 "text":  "jak zwiększam ilosć tłuszczu w diecie, mam mniejsze wyrzuty insuliny, wiec czuję się stabilnie i dobrze cały dzień. Poza tym nawet poprawił mi się sen - śpię idealnie i tyle samo jak z zegarkiem."
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "side":  "b",
+                                 "author":  "Anonim",
+                                 "likes":  22,
+                                 "text":  "kolejne brednie, a potem się dziwić, ze ludzie mają zawały i inne problemy. Moze jeszcze jak ktoś je avocado to lepiej, ale tłuszcze nasycone, masło, boczek to podnosi ryzyko miażsżycy, zwiększa zły cholesterol."
+                             }
+                         ]
     },
     {
         "id":  "nabial-zdrowy-czy-nie",
@@ -232,7 +274,25 @@ window.DIET_WARS = [
                             "WHO: healthy diet",
                             "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "author":  "Anna",
+                                 "likes":  23,
+                                 "text":  "Kiedyś było tylko mleko krowie, piło się je codzinnie, nawet w szkole i nikt nie miał nietoleracji czy problemów z tym związanych.",
+                                 "side":  "a",
+                                 "replies":  null
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "author":  "Małgośka",
+                                 "likes":  34,
+                                 "text":  "mleko to także tłuszcze nasycone i może obciążać układ krążenia.  Mleko = mocne kości to po prostu mit.",
+                                 "side":  "b",
+                                 "replies":  null
+                             }
+                         ]
     },
     {
         "id":  "ile-jajek-dziennie",
@@ -285,7 +345,23 @@ window.DIET_WARS = [
                             "ACC: dietary cholesterol summary",
                             "https://www.acc.org/Latest-in-Cardiology/ten-points-to-remember/2019/12/30/15/23/Dietary-Cholesterol-and-CV-Risk"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "side":  "a",
+                                 "author":  "Anonim",
+                                 "likes":  44,
+                                 "text":  "to najlepszej jakości białko, świetnie przyswajalne. Poza tym jajka to też cholina i wzmacnia pamięć, koncentrację i poprawia działanie układu nerwowego."
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "side":  "b",
+                                 "author":  "Anonim",
+                                 "likes":  64,
+                                 "text":  "jajka to źródło cholesterolu. Wystarczy badać poziom LDL i zmienić dietę, od razu widać zmianę."
+                             }
+                         ]
     },
     {
         "id":  "post-przerywany",
@@ -338,7 +414,23 @@ window.DIET_WARS = [
                             "JAMA Network: time-restricted eating trial",
                             "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2771095"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "side":  "a",
+                                 "author":  "Anonimous",
+                                 "likes":  59,
+                                 "text":  "zdecydowanie za, schudłem prawie 40kg, mniej podjadam i nie muszę liczyć kalorii."
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "side":  "b",
+                                 "author":  "Krystyna",
+                                 "likes":  48,
+                                 "text":  "na mnie działa, mam napady głodu, a rano źle się czuje jak nie zjem."
+                             }
+                         ]
     },
     {
         "id":  "sol-niszczy-czy-ratuje",
@@ -391,7 +483,25 @@ window.DIET_WARS = [
                             "WHO: sodium reduction",
                             "https://www.who.int/news-room/fact-sheets/detail/salt-reduction"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "author":  "Anonim",
+                                 "likes":  11,
+                                 "text":  "sól zwiększa zatrzymanie wody w organizmie, podnosi ciśnienia, niszczy nerki. To chyba wystarczająco przebadane. Tylko jak ktoś chce być oryginalny jak wspominani dietetycy to mówi głupoty przeciwe. Wg WHO nadmiar soli jest gorszy niż niedobór.",
+                                 "side":  "a",
+                                 "replies":  null
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "author":  "RPp",
+                                 "likes":  15,
+                                 "text":  "sól pomaga mi bo mam niskie ciśnienie. Poza tym WHO to żaden autorytet. Bracia Rodzeń udowodnili że bardzo jest niezbędna sól dla zdrowia.",
+                                 "side":  "b",
+                                 "replies":  null
+                             }
+                         ]
     },
     {
         "id":  "deficyt-kaloryczny",
@@ -444,7 +554,25 @@ window.DIET_WARS = [
                             "Look AHEAD trial, NEJM",
                             "https://www.nejm.org/doi/full/10.1056/NEJMoa1212914"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "author":  "Łukasz",
+                                 "likes":  54,
+                                 "text":  "Zdrowy tryb życia, trochę ruchu i niewielki deficyt załatwia sprawę. Jak chcesz dobrze wyglądac to musisz włożyć trochę wysiłku. Za to potem nie wstyd wyjść na plażę :)",
+                                 "side":  "a",
+                                 "replies":  null
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "author":  "Łukasz",
+                                 "likes":  11,
+                                 "text":  "szczerze mówiąc to musiałbym cały czas chodzi głodny żeby nie przytyc a co dopiero schudnąć. Jak masz siedzący tryb życia to chyba jest się skazanym na nadwagę.",
+                                 "side":  "b",
+                                 "replies":  null
+                             }
+                         ]
     },
     {
         "id":  "keto-odchudza-czy-oszukuje",
@@ -497,7 +625,25 @@ window.DIET_WARS = [
                             "Virta Health, 2-year nutritional ketosis results",
                             "https://www.frontiersin.org/articles/10.3389/fendo.2019.00348/full"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "author":  "Anonim",
+                                 "likes":  49,
+                                 "text":  "To samo co w dyskusji o tłuszczach - jednemu służy innemu nie. Ja czuję się świetnie.",
+                                 "side":  "a",
+                                 "replies":  null
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "author":  "Anonim",
+                                 "likes":  92,
+                                 "text":  "tak? a ja znam przynajmniej dwie osoby, które super schudły jedząc boczek a w potem niestety młodo zmarły. Oczywiscie niekoniecznie z powodu diety, moze to tylko zbiego okoliczności.",
+                                 "side":  "b",
+                                 "replies":  null
+                             }
+                         ]
     },
     {
         "id":  "autofagia-przelom-czy-marketing",
@@ -550,7 +696,33 @@ window.DIET_WARS = [
                             "NEJM: intermittent fasting",
                             "https://www.nejm.org/doi/full/10.1056/NEJMra1905136"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "author":  "Wojtek",
+                                 "likes":  23,
+                                 "text":  "Przekonuje mnie zwykła logika: ludzie zawsze mieli przerwy naturalne w jedzeniu, wszystkie religie tak samo zalecają okres postu, czy nawet dwa dni postu w tygodniu.",
+                                 "side":  "a",
+                                 "replies":  null
+                             },
+                             {
+                                 "id":  "seed-a-2",
+                                 "author":  "Anonim",
+                                 "likes":  71,
+                                 "text":  "a co ma religia do autofagii??",
+                                 "side":  "a",
+                                 "replies":  null
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "author":  "Anonim",
+                                 "likes":  11,
+                                 "text":  "Łatwo przekroczyć granicę i wejsć w niedożywienie, taka głodówka mi nigdy nie służyła bo się odbijała na masie mięśniowej. Poza tym to kolejne wydziwianie i nie zbadane porzadnie zjawisko.  jestem na nie.",
+                                 "side":  "b",
+                                 "replies":  null
+                             }
+                         ]
     },
     {
         "id":  "dieta-dabrowskiej",
@@ -603,7 +775,41 @@ window.DIET_WARS = [
                             "BMJ: ultra-processed foods and health",
                             "https://www.bmj.com/content/384/bmj-2023-077310"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "author":  "Andrzej",
+                                 "likes":  76,
+                                 "text":  "stosuję od lat, czuje się bardzo dobrze - zdecydowanie polecam!",
+                                 "side":  "a",
+                                 "replies":  null
+                             },
+                             {
+                                 "id":  "seed-a-2",
+                                 "author":  "Anonim",
+                                 "likes":  19,
+                                 "text":  "może masz dobre zdrowie, to dieta ta Ci nie szkodzi a innym może nie służyć.",
+                                 "side":  "a",
+                                 "replies":  null
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "author":  "AN79",
+                                 "likes":  51,
+                                 "text":  "Typowa dieta z bardzo mocnym ograniczeniem kalorii. Niby się chudnie a potem mocny efekt jojo. Nie lubię i nie służy mi.",
+                                 "side":  "b",
+                                 "replies":  null
+                             },
+                             {
+                                 "id":  "seed-b-2",
+                                 "author":  "Anonim",
+                                 "likes":  42,
+                                 "text":  "Dokładnie a do tego jak ktoś trenuje regularnie to się po prostu nie da.",
+                                 "side":  "b",
+                                 "replies":  null
+                             }
+                         ]
     }
 ];
 

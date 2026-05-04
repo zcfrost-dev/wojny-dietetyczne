@@ -737,7 +737,7 @@ window.DIET_WARS = [
                              },
                              {
                                  "id":  "seed-b-1",
-                                 "author":  "Anonim",
+                                 "author":  "AN79",
                                  "likes":  51,
                                  "text":  "Typowa dieta z bardzo mocnym ograniczeniem kalorii. Niby się chudnie a potem mocny efekt jojo. Nie lubię i nie służy mi.",
                                  "side":  "b",

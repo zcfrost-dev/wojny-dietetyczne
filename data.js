@@ -664,7 +664,7 @@ window.DIET_WARS = [
     {
         "id":  "dieta-dabrowskiej",
         "title":  "Dieta Dąbrowskiej: leczy czy szkodzi?",
-        "kicker":  "Zwolennicy mówią: detoks i lekkość. Krytycy: głodówka, niedobory i efekt wow na chwilę.",
+        "kicker":  "Zwolennicy mówią: detoks i lekkość. Krytycy: głodówka, niedobory i super efekt ale tylko na chwilę.",
         "badge":  "detoks",
         "category":  "Diety",
         "sideA":  "Warzywny restart",

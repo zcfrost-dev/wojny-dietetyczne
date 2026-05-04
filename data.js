@@ -20,20 +20,12 @@ window.DIET_WARS = [
                  ],
         "summary":  "Chyba każdy z nas lubi zapach wędzonych wędlin i kiełbas. Kojarzy się nam ze swojskim jedzeniem. Czy faktycznie jest on rakotwórczy? a jeżeli tak to dlaczego.",
         "hook":  "Przemysłowa produkcja czy swojskie wyroby? co jest zdrowsze?",
-        "argumentsFor":  [
-                             "Benznopiren obecny w dymie rozpuszcza się w tłuszczach, ma udowodnione działanie rakotwócze i uszkadzające DNA."
-                         ],
-        "argumentsAgainst":  [
-                                 "Od lat wędzenie jest najlepszym sposobem konserwacji wyrobów nie tylko mięsnych ale także serów a nawet owoców."
-                             ],
-        "contradiction":  [
-                              "Smak wędlin oferowanych w marketach coraz mniej przypomina swojskie wyroby. Wędzonki często przypominają nam piękne chwile z dzieciństwa. Co tu dużo mówić: wędzona kiełbasa czy szynka smakuje wyoborowo. Czy tak samo korzystnie wpływa na nasze zdrowie?"
-                          ],
+        "argumentsFor":  "Benznopiren obecny w dymie rozpuszcza się w tłuszczach, ma udowodnione działanie rakotwócze i uszkadzające DNA.",
+        "argumentsAgainst":  "Od lat wędzenie jest najlepszym sposobem konserwacji wyrobów nie tylko mięsnych ale także serów a nawet owoców.",
+        "contradiction":  "Smak wędlin oferowanych w marketach coraz mniej przypomina swojskie wyroby. Wędzonki często przypominają nam piękne chwile z dzieciństwa. Co tu dużo mówić: wędzona kiełbasa czy szynka smakuje wyoborowo. Czy tak samo korzystnie wpływa na nasze zdrowie?",
         "conclusion":  "Poprawne wędzenie w niższej temperaturze, z generatorem dymu, unikanie palenia się skapującego tłuszczu to podstawowe sposoby zmniejszenia ekspozycji na wielopierścieniowe węglowodory aromatyczne (w tym benzarpiren). Umiarkowane spożycie powinno ograniczyć ryzyko chorób nowotworowych.",
         "question":  "Wybierasz lepszy smak wędzonki czy zaufanie do instytucji badawczych?",
-        "sources":  [
-
-                    ],
+        "sources":  null,
         "seedComments":  [
                              {
                                  "id":  "seed-a-1",
@@ -41,9 +33,7 @@ window.DIET_WARS = [
                                  "likes":  36,
                                  "text":  "nie jem mięsa więc nie mam problemu z wyoborem",
                                  "side":  "a",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              },
                              {
                                  "id":  "seed-a-2",
@@ -51,9 +41,7 @@ window.DIET_WARS = [
                                  "likes":  22,
                                  "text":  "To po co zabierasz głos?",
                                  "side":  "a",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              },
                              {
                                  "id":  "seed-b-1",
@@ -61,9 +49,7 @@ window.DIET_WARS = [
                                  "likes":  45,
                                  "text":  "mam większe zaufanie do intuicji i wieloletniego doświadczenia niż jakiś dziwnych ideologicznych instytucji.",
                                  "side":  "b",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              }
                          ]
     },
@@ -104,24 +90,16 @@ window.DIET_WARS = [
                                  "- \"Człowiek sam produkuje azotany.",
                                  "Twój organizm wytwarza ich w ślinie więcej, niż zjesz w kilogramie boczku\"."
                              ],
-        "contradiction":  [
-                              "Efekty mogą pojawiać się dopiero po wielu latach, nie przeprowadza się eksperymentów na ludziach, dodatkowo istotne znaczenia ma styl życia poza jedzenie bądź niejedzeniem mięsa.  Mięso, w zależności od sposobu produkcji może zawierać różne obce substancje chemiczne."
-                          ],
+        "contradiction":  "Efekty mogą pojawiać się dopiero po wielu latach, nie przeprowadza się eksperymentów na ludziach, dodatkowo istotne znaczenia ma styl życia poza jedzenie bądź niejedzeniem mięsa.  Mięso, w zależności od sposobu produkcji może zawierać różne obce substancje chemiczne.",
         "conclusion":  "Najwyższe ryzyko dotyczy miesa przetworzonego. Przy mięsie świeżym spór jest bardziej złożony. Mimo wszystko lekarze są spolaryzowani: część zaleca mięso inni odradzają.",
         "question":  "jak stwierdzić kto ma rację? Jesz mięso regularnie czy starasz się je ograniczać?",
         "sources":  [
-                        [
-                            "American Cancer Society: czerwone i przetworzone mięso",
-                            "https://www.cancer.org/cancer/risk-prevention/diet-physical-activity/red-meat-processed-meat-and-cancer-risk.html"
-                        ],
-                        [
-                            "IARC: ocena czerwonego i przetworzonego mięsa",
-                            "https://www.iarc.who.int/news-events/iarc-monographs-volume-114-evaluation-of-consumption-of-red-meat-and-processed-meat/"
-                        ],
-                        [
-                            "WCRF: ogranicz czerwone i przetworzone mięso",
-                            "https://www.wcrf.org/research-policy/evidence-for-our-recommendations/limit-red-processed-meat/"
-                        ]
+                        "American Cancer Society: czerwone i przetworzone mięso",
+                        "https://www.cancer.org/cancer/risk-prevention/diet-physical-activity/red-meat-processed-meat-and-cancer-risk.html",
+                        "IARC: ocena czerwonego i przetworzonego mięsa",
+                        "https://www.iarc.who.int/news-events/iarc-monographs-volume-114-evaluation-of-consumption-of-red-meat-and-processed-meat/",
+                        "WCRF: ogranicz czerwone i przetworzone mięso",
+                        "https://www.wcrf.org/research-policy/evidence-for-our-recommendations/limit-red-processed-meat/"
                     ],
         "seedComments":  [
                              {
@@ -180,18 +158,12 @@ window.DIET_WARS = [
         "conclusion":  "Najbardziej uczciwa odpowiedź brzmi: działa ta strategia, która poprawia jakość diety i da się utrzymać bez rozwalania zdrowia. Pytanie komu wierzyć skoro część dietetyków i lekarzy stawia zupełnie przeciwne tezy.",
         "question":  "A ty ograniczasz tłuszcze czy węglowodany?",
         "sources":  [
-                        [
-                            "DIETFITS, JAMA 2018",
-                            "https://jamanetwork.com/journals/jama/fullarticle/2673150"
-                        ],
-                        [
-                            "Cochrane: low-carb vs balanced-carb",
-                            "https://www.cochrane.org/about-us/news/featured-review-low-carbohydrate-versus-balanced-carbohydrate-diets-reducing-weight-and"
-                        ],
-                        [
-                            "WHO: wytyczne o tłuszczach i węglowodanach",
-                            "https://www.who.int/news/item/17-07-2023-who-updates-guidelines-on-fats-and-carbohydrates"
-                        ]
+                        "DIETFITS, JAMA 2018",
+                        "https://jamanetwork.com/journals/jama/fullarticle/2673150",
+                        "Cochrane: low-carb vs balanced-carb",
+                        "https://www.cochrane.org/about-us/news/featured-review-low-carbohydrate-versus-balanced-carbohydrate-diets-reducing-weight-and",
+                        "WHO: wytyczne o tłuszczach i węglowodanach",
+                        "https://www.who.int/news/item/17-07-2023-who-updates-guidelines-on-fats-and-carbohydrates"
                     ],
         "seedComments":  [
                              {
@@ -218,8 +190,8 @@ window.DIET_WARS = [
         "category":  "Produkty",
         "sideA":  "Wspiera zdrowie",
         "sideB":  "Nie jest konieczny",
-        "authorityA":  "Klasyczne zalecenia żywieniowe",
-        "authorityB":  "Krytycy wysokiego spożycia mleka",
+        "authorityA":  "Klasyczne zalecenia ĹĽywieniowe",
+        "authorityB":  "Krytycy wysokiego spoĹĽycia mleka",
         "votes":  804,
         "comments":  116,
         "heat":  77,
@@ -250,18 +222,12 @@ window.DIET_WARS = [
         "conclusion":  "Nabiał może być wartościowy, ale nie jest  konieczny dla każdego. Poza tym warto poznać także mleko kozie czy mleka roślinne.",
         "question":  "Nabiał ci służy, szkodzi, czy po prostu jest neutralnym elementem diety?",
         "sources":  [
-                        [
-                            "NEJM: Milk and Health",
-                            "https://www.nejm.org/doi/full/10.1056/NEJMra1903547"
-                        ],
-                        [
-                            "ACC: Milk and Health summary",
-                            "https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2020/02/13/14/56/milk-and-health"
-                        ],
-                        [
-                            "WHO: healthy diet",
-                            "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
-                        ]
+                        "NEJM: Milk and Health",
+                        "https://www.nejm.org/doi/full/10.1056/NEJMra1903547",
+                        "ACC: Milk and Health summary",
+                        "https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2020/02/13/14/56/milk-and-health",
+                        "WHO: healthy diet",
+                        "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
                     ],
         "seedComments":  [
                              {
@@ -270,9 +236,7 @@ window.DIET_WARS = [
                                  "likes":  23,
                                  "text":  "Kiedyś było tylko mleko krowie, piło się je codzinnie, nawet w szkole i nikt nie miał nietoleracji czy problemów z tym związanych.",
                                  "side":  "a",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              },
                              {
                                  "id":  "seed-b-1",
@@ -280,9 +244,7 @@ window.DIET_WARS = [
                                  "likes":  34,
                                  "text":  "mleko to także tłuszcze nasycone i może obciążać układ krążenia.  Mleko = mocne kości to po prostu mit.",
                                  "side":  "b",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              }
                          ]
     },
@@ -325,18 +287,12 @@ window.DIET_WARS = [
         "conclusion":  "Jajka mogą być zdrowym produktem, ale pytanie brzmi: dla kogo, ile i w jakim wzorcu diety? Skrajności nigdy nie są dobre.",
         "question":  "Ile jajek jesz tygodniowo i jakie masz wyniki badań?",
         "sources":  [
-                        [
-                            "BMJ 2020: eggs and cardiovascular disease",
-                            "https://www.bmj.com/content/368/bmj.m513"
-                        ],
-                        [
-                            "AHA: Dietary Cholesterol and Cardiovascular Risk",
-                            "https://professional.heart.org/en/science-news/dietary-cholesterol-and-cardiovascular-risk"
-                        ],
-                        [
-                            "ACC: dietary cholesterol summary",
-                            "https://www.acc.org/Latest-in-Cardiology/ten-points-to-remember/2019/12/30/15/23/Dietary-Cholesterol-and-CV-Risk"
-                        ]
+                        "BMJ 2020: eggs and cardiovascular disease",
+                        "https://www.bmj.com/content/368/bmj.m513",
+                        "AHA: Dietary Cholesterol and Cardiovascular Risk",
+                        "https://professional.heart.org/en/science-news/dietary-cholesterol-and-cardiovascular-risk",
+                        "ACC: dietary cholesterol summary",
+                        "https://www.acc.org/Latest-in-Cardiology/ten-points-to-remember/2019/12/30/15/23/Dietary-Cholesterol-and-CV-Risk"
                     ],
         "seedComments":  [
                              {
@@ -396,18 +352,12 @@ window.DIET_WARS = [
         "conclusion":  "Post może być narzędziem, ale powinien być stosowany mądrze. Najważniejsze jest, czy poprawia cały styl życia i nie robi szkody w organizmie. Co z tego że schudniesz, jak dostaniesz udaru?",
         "question":  "Czy próbowałeś postu przerywanego? jak się czułeś?",
         "sources":  [
-                        [
-                            "NEJM: intermittent fasting review",
-                            "https://www.nejm.org/doi/full/10.1056/NEJMra1905136"
-                        ],
-                        [
-                            "NEJM Journal Watch: fasting vs calorie restriction",
-                            "https://clinician.nejm.org/intermittent-fasting-daily-caloric-restriction-weight-loss-nejm-jw.NA58641"
-                        ],
-                        [
-                            "JAMA Network: time-restricted eating trial",
-                            "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2771095"
-                        ]
+                        "NEJM: intermittent fasting review",
+                        "https://www.nejm.org/doi/full/10.1056/NEJMra1905136",
+                        "NEJM Journal Watch: fasting vs calorie restriction",
+                        "https://clinician.nejm.org/intermittent-fasting-daily-caloric-restriction-weight-loss-nejm-jw.NA58641",
+                        "JAMA Network: time-restricted eating trial",
+                        "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2771095"
                     ],
         "seedComments":  [
                              {
@@ -465,18 +415,12 @@ window.DIET_WARS = [
         "conclusion":  "Spór nie brzmi: sól albo brak soli. Prawdziwe pytanie to czy stosujesz konkretną dietę, jakie masz ciśnienie, pot i aktywność i ile soli dostarczają produkty gotowe.",
         "question":  "Solimy za dużo czy za mało?",
         "sources":  [
-                        [
-                            "WHO: sodium intake guideline",
-                            "https://www.who.int/publications/i/item/9789241504836"
-                        ],
-                        [
-                            "WHO: healthy diet",
-                            "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
-                        ],
-                        [
-                            "WHO: sodium reduction",
-                            "https://www.who.int/news-room/fact-sheets/detail/salt-reduction"
-                        ]
+                        "WHO: sodium intake guideline",
+                        "https://www.who.int/publications/i/item/9789241504836",
+                        "WHO: healthy diet",
+                        "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+                        "WHO: sodium reduction",
+                        "https://www.who.int/news-room/fact-sheets/detail/salt-reduction"
                     ],
         "seedComments":  [
                              {
@@ -485,9 +429,7 @@ window.DIET_WARS = [
                                  "likes":  11,
                                  "text":  "sól zwiększa zatrzymanie wody w organizmie, podnosi ciśnienia, niszczy nerki. To chyba wystarczająco przebadane. Tylko jak ktoś chce być oryginalny jak wspominani dietetycy to mówi głupoty przeciwe. Wg WHO nadmiar soli jest gorszy niż niedobór.",
                                  "side":  "a",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              },
                              {
                                  "id":  "seed-b-1",
@@ -495,9 +437,7 @@ window.DIET_WARS = [
                                  "likes":  15,
                                  "text":  "sól pomaga mi bo mam niskie ciśnienie. Poza tym WHO to żaden autorytet. Bracia Rodzeń udowodnili że bardzo jest niezbędna sól dla zdrowia.",
                                  "side":  "b",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              }
                          ]
     },
@@ -539,39 +479,29 @@ window.DIET_WARS = [
         "conclusion":  "Kalorie mają znaczenie, ale człowiek nie jest kalkulatorem. Skuteczna dieta musi uwzględniać sytość, sen, stres, aktywność i trwałość. Niestety, jeżeli ograniczamy kalorię, organizm zaczyna w sposób naturalny zmniejszać zapotrzebowanie na nie i wpadamy w błędne koło.",
         "question":  "Liczyć kalorie czy budować nawyki bez liczenia?",
         "sources":  [
-                        [
-                            "NIH: body weight planner and energy balance",
-                            "https://www.niddk.nih.gov/bwp"
-                        ],
-                        [
-                            "DIETFITS, JAMA 2018",
-                            "https://jamanetwork.com/journals/jama/fullarticle/2673150"
-                        ],
-                        [
-                            "Look AHEAD trial, NEJM",
-                            "https://www.nejm.org/doi/full/10.1056/NEJMoa1212914"
-                        ]
+                        "NIH: body weight planner and energy balance",
+                        "https://www.niddk.nih.gov/bwp",
+                        "DIETFITS, JAMA 2018",
+                        "https://jamanetwork.com/journals/jama/fullarticle/2673150",
+                        "Look AHEAD trial, NEJM",
+                        "https://www.nejm.org/doi/full/10.1056/NEJMoa1212914"
                     ],
         "seedComments":  [
                              {
                                  "id":  "seed-a-1",
-                                 "author":  "Łukasz",
+                                 "author":  "Ĺukasz",
                                  "likes":  54,
                                  "text":  "Zdrowy tryb życia, trochę ruchu i niewielki deficyt załatwia sprawę. Jak chcesz dobrze wyglądac to musisz włożyć trochę wysiłku. Za to potem nie wstyd wyjść na plażę :)",
                                  "side":  "a",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              },
                              {
                                  "id":  "seed-b-1",
-                                 "author":  "Łukasz",
+                                 "author":  "Ĺukasz",
                                  "likes":  11,
                                  "text":  "szczerze mówiąc to musiałbym cały czas chodzi głodny żeby nie przytyc a co dopiero schudnąć. Jak masz siedzący tryb życia to chyba jest się skazanym na nadwagę.",
                                  "side":  "b",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              }
                          ]
     },
@@ -614,18 +544,12 @@ window.DIET_WARS = [
         "conclusion":  "Keto może działać jako narzędzie, ale nie dowodzi, że węglowodany są trucizną. Kluczowe są skład, wyniki badań i trwałość.",
         "question":  "Keto działa czy to iluzja szybkiej wagi?",
         "sources":  [
-                        [
-                            "Cochrane: low-carb diets",
-                            "https://www.cochrane.org/about-us/news/featured-review-low-carbohydrate-versus-balanced-carbohydrate-diets-reducing-weight-and"
-                        ],
-                        [
-                            "DIETFITS, PubMed",
-                            "https://pubmed.ncbi.nlm.nih.gov/29466592/"
-                        ],
-                        [
-                            "Virta Health, 2-year nutritional ketosis results",
-                            "https://www.frontiersin.org/articles/10.3389/fendo.2019.00348/full"
-                        ]
+                        "Cochrane: low-carb diets",
+                        "https://www.cochrane.org/about-us/news/featured-review-low-carbohydrate-versus-balanced-carbohydrate-diets-reducing-weight-and",
+                        "DIETFITS, PubMed",
+                        "https://pubmed.ncbi.nlm.nih.gov/29466592/",
+                        "Virta Health, 2-year nutritional ketosis results",
+                        "https://www.frontiersin.org/articles/10.3389/fendo.2019.00348/full"
                     ],
         "seedComments":  [
                              {
@@ -634,9 +558,7 @@ window.DIET_WARS = [
                                  "likes":  49,
                                  "text":  "To samo co w dyskusji o tłuszczach - jednemu służy innemu nie. Ja czuję się świetnie.",
                                  "side":  "a",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              },
                              {
                                  "id":  "seed-b-1",
@@ -644,9 +566,7 @@ window.DIET_WARS = [
                                  "likes":  92,
                                  "text":  "tak? a ja znam przynajmniej dwie osoby, które super schudły jedząc boczek a w potem niestety młodo zmarły. Oczywiscie niekoniecznie z powodu diety, moze to tylko zbiego okoliczności.",
                                  "side":  "b",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              }
                          ]
     },
@@ -659,7 +579,7 @@ window.DIET_WARS = [
         "sideA":  "Komórkowy reset",
         "sideB":  "Nadinterpretacja",
         "authorityA":  "Biohacking i zwolennicy postów",
-        "authorityB":  "Ostrożni naukowcy",
+        "authorityB":  "OstroĹĽni naukowcy",
         "votes":  1092,
         "comments":  179,
         "heat":  87,
@@ -689,18 +609,12 @@ window.DIET_WARS = [
         "conclusion":  "Autofagia jest procesem zbadanym u prostych organizmów - drożdży. Na szeroką skalę nie ma badań które dotyczą tego zjawiska u ludzi.  Internetowa obietnica odmłodzenia przez post bywa już interpretacją, która wymaga mocniejszych dowodów u ludzi.",
         "question":  "Też słyszałeś od niektórych dietetyków o Noblu za odkrycie autofagii jako argumencie za postem przerywanym?",
         "sources":  [
-                        [
-                            "Nobel Prize: Yoshinori Ohsumi and autophagy",
-                            "https://www.nobelprize.org/prizes/medicine/2016/press-release/"
-                        ],
-                        [
-                            "Nature: autophagy overview",
-                            "https://www.nature.com/articles/nrm.2017.56"
-                        ],
-                        [
-                            "NEJM: intermittent fasting",
-                            "https://www.nejm.org/doi/full/10.1056/NEJMra1905136"
-                        ]
+                        "Nobel Prize: Yoshinori Ohsumi and autophagy",
+                        "https://www.nobelprize.org/prizes/medicine/2016/press-release/",
+                        "Nature: autophagy overview",
+                        "https://www.nature.com/articles/nrm.2017.56",
+                        "NEJM: intermittent fasting",
+                        "https://www.nejm.org/doi/full/10.1056/NEJMra1905136"
                     ],
         "seedComments":  [
                              {
@@ -709,9 +623,7 @@ window.DIET_WARS = [
                                  "likes":  23,
                                  "text":  "Przekonuje mnie zwykła logika: ludzie zawsze mieli przerwy naturalne w jedzeniu, wszystkie religie tak samo zalecają okres postu, czy nawet dwa dni postu w tygodniu.",
                                  "side":  "a",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              },
                              {
                                  "id":  "seed-a-2",
@@ -719,9 +631,7 @@ window.DIET_WARS = [
                                  "likes":  71,
                                  "text":  "a co ma religia do autofagii??",
                                  "side":  "a",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              },
                              {
                                  "id":  "seed-b-1",
@@ -729,9 +639,7 @@ window.DIET_WARS = [
                                  "likes":  11,
                                  "text":  "Łatwo przekroczyć granicę i wejsć w niedożywienie, taka głodówka mi nigdy nie służyła bo się odbijała na masie mięśniowej. Poza tym to kolejne wydziwianie i nie zbadane porzadnie zjawisko.  jestem na nie.",
                                  "side":  "b",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              }
                          ]
     },
@@ -775,18 +683,12 @@ window.DIET_WARS = [
         "conclusion":  "To może być silny impuls do zmiany, ale jako terapia wymaga ostrożności, nadzoru i pytania: co dzieje się po zakończeniu? Czy rzeczywiście dieta ta leczy z nowotworów?",
         "question":  "Próbowałeś tej diety? Pomogła, zaszkodziła, czy dała tylko chwilowy efekt?",
         "sources":  [
-                        [
-                            "WHO: healthy diet",
-                            "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
-                        ],
-                        [
-                            "WHO: carbohydrates and fruit/vegetables",
-                            "https://www.who.int/publications/i/item/9789240073593"
-                        ],
-                        [
-                            "BMJ: ultra-processed foods and health",
-                            "https://www.bmj.com/content/384/bmj-2023-077310"
-                        ]
+                        "WHO: healthy diet",
+                        "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+                        "WHO: carbohydrates and fruit/vegetables",
+                        "https://www.who.int/publications/i/item/9789240073593",
+                        "BMJ: ultra-processed foods and health",
+                        "https://www.bmj.com/content/384/bmj-2023-077310"
                     ],
         "seedComments":  [
                              {
@@ -795,9 +697,7 @@ window.DIET_WARS = [
                                  "likes":  76,
                                  "text":  "stosuję od lat, czuje się bardzo dobrze - zdecydowanie polecam!",
                                  "side":  "a",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              },
                              {
                                  "id":  "seed-a-2",
@@ -805,9 +705,7 @@ window.DIET_WARS = [
                                  "likes":  19,
                                  "text":  "może masz dobre zdrowie, to dieta ta Ci nie szkodzi a innym może nie służyć.",
                                  "side":  "a",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              },
                              {
                                  "id":  "seed-b-1",
@@ -815,9 +713,7 @@ window.DIET_WARS = [
                                  "likes":  51,
                                  "text":  "Typowa dieta z bardzo mocnym ograniczeniem kalorii. Niby się chudnie a potem mocny efekt jojo. Nie lubię i nie służy mi.",
                                  "side":  "b",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              },
                              {
                                  "id":  "seed-b-2",
@@ -825,9 +721,7 @@ window.DIET_WARS = [
                                  "likes":  42,
                                  "text":  "Dokładnie a do tego jak ktoś trenuje regularnie to się po prostu nie da.",
                                  "side":  "b",
-                                 "replies":  [
-
-                                             ]
+                                 "replies":  null
                              }
                          ]
     }

@@ -1612,6 +1612,13 @@ select {
     width: min(100% - 20px, 1220px);
   }
 
+  .info-strip {
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
   .topbar,
   .footer,
   .section-head,
@@ -1643,7 +1650,25 @@ select {
   }
 
   .lead-link {
-    min-height: 0;
+    aspect-ratio: auto;
+    min-height: 430px;
+  }
+
+  .lead-copy {
+    width: calc(100% - 20px);
+    margin: 0 10px 10px;
+    padding: 14px;
+  }
+
+  .lead-copy h1 {
+    margin: 8px 0;
+    font-size: 30px;
+    line-height: 1.02;
+  }
+
+  .lead-copy p {
+    font-size: 15px;
+    line-height: 1.35;
   }
 
   .side-promos,
@@ -1667,7 +1692,20 @@ select {
 
   .topic-card.underlead {
     grid-template-rows: 1fr;
+    aspect-ratio: 4 / 3;
     min-height: 0;
+  }
+
+  .topic-card.underlead .card-body {
+    padding: 12px;
+  }
+
+  .topic-card.underlead .kicker {
+    display: none;
+  }
+
+  .topic-card.underlead .card-body strong {
+    font-size: 18px;
   }
 
   .topic-grid .topic-card:nth-child(1),
@@ -1681,6 +1719,88 @@ select {
 
   .war-title h1,
   .lead-copy h1 {
-    font-size: 36px;
+    font-size: 30px;
+  }
+
+  .war-hero {
+    min-height: 0;
+  }
+
+  .war-photo {
+    min-height: 230px;
+  }
+
+  .war-title {
+    padding: 18px;
+  }
+
+  .war-title h2 {
+    font-size: 21px;
+  }
+
+  .versus {
+    grid-template-columns: 1fr;
+  }
+
+  .versus b {
+    width: 46px;
+    height: 46px;
+    margin: -4px auto;
+  }
+
+  .score-values,
+  .scoreline {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 430px) {
+  main {
+    width: min(100% - 14px, 1220px);
+  }
+
+  .brand {
+    font-size: 18px;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .nav a {
+    padding: 8px 6px;
+    font-size: 13px;
+  }
+
+  .lead-link {
+    min-height: 450px;
+  }
+
+  .lead-copy h1 {
+    font-size: 27px;
+  }
+
+  .topic-card {
+    grid-template-rows: 165px 1fr;
+  }
+
+  .topic-card.small,
+  .topic-card.rail {
+    grid-template-columns: 112px 1fr;
+    min-height: 112px;
+  }
+
+  .topic-card.rail .card-body strong {
+    font-size: 14px;
+  }
+
+  .comment {
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .reply-thread {
+    padding-left: 8px;
   }
 }

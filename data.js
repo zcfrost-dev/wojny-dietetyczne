@@ -413,17 +413,23 @@ window.DIET_WARS = [
         "seedComments":  [
                              {
                                  "id":  "seed-a-1",
-                                 "side":  "a",
                                  "author":  "Anonim",
                                  "likes":  11,
-                                 "text":  "sól zwiększa zatrzymanie wody w organizmie, podnosi ciśnienia, niszczy nerki. To chyba wystarczająco przebadane. Tylko jak ktoś chce być oryginalny jak wspominani dietetycy to mówi głupoty przeciwe. Wg WHO nadmiar soli jest gorszy niż niedobór."
+                                 "text":  "sól zwiększa zatrzymanie wody w organizmie, podnosi ciśnienia, niszczy nerki. To chyba wystarczająco przebadane. Tylko jak ktoś chce być oryginalny jak wspominani dietetycy to mówi głupoty przeciwe. Wg WHO nadmiar soli jest gorszy niż niedobór.",
+                                 "side":  "a",
+                                 "replies":  [
+
+                                             ]
                              },
                              {
                                  "id":  "seed-b-1",
+                                 "author":  "RPp",
+                                 "likes":  15,
+                                 "text":  "sól pomaga mi bo mam niskie ciśnienie. Poza tym WHO to żaden autorytet. Bracia Rodzeń udowodnili że bardzo jest niezbędna sól dla zdrowia.",
                                  "side":  "b",
-                                 "author":  "Anonim",
-                                 "likes":  11,
-                                 "text":  "sól pomaga mi bo mam niskie ciśnienie. Poza tym WHO to żaden autorytet. Bracia Rodzeń udowodnili że bardzo jest niezbędna sól dla zdrowia."
+                                 "replies":  [
+
+                                             ]
                              }
                          ]
     },

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wojny Dietetyczne</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=202605041130">
+  <link rel="stylesheet" href="styles.css?v=202605041320">
 </head>
 <body>
   <div class="info-strip">
@@ -19,8 +19,8 @@
     </a>
     <nav class="nav">
       <a href="#ring">Ring</a>
+      <a href="#zaproponuj">Zaproponuj bitwę</a>
       <a href="#mapa">Mapa sprzeczności</a>
-      <a href="admin.html">Panel redakcyjny</a>
     </nav>
   </header>
   <nav class="category-nav" aria-label="Kategorie">
@@ -86,6 +86,42 @@
       </div>
       <div class="map-canvas" id="mapCanvas"></div>
     </section>
+
+    <section class="battle-proposal" id="zaproponuj">
+      <div class="proposal-copy">
+        <p class="eyebrow">Masz temat?</p>
+        <h2>Zaproponuj kolejną bitwę dietetyczną</h2>
+        <p>Podaj spór, dwie przeciwne tezy i źródła, które warto sprawdzić. Najciekawsze propozycje mogą trafić na ring po opracowaniu redakcyjnym.</p>
+      </div>
+      <form class="proposal-form" name="propozycja-bitwy" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="propozycja-bitwy">
+        <p class="hidden-field">
+          <label>Nie wypełniaj: <input name="bot-field"></label>
+        </p>
+        <label>Temat sporu
+          <input name="temat" required maxlength="120" placeholder="Np. Nabiał: wzmacnia kości czy szkodzi jelitom?">
+        </label>
+        <div class="proposal-row">
+          <label>Teza ZA
+            <input name="teza-za" maxlength="140" placeholder="Jedna strona sporu">
+          </label>
+          <label>Teza PRZECIW
+            <input name="teza-przeciw" maxlength="140" placeholder="Druga strona sporu">
+          </label>
+        </div>
+        <label>Dlaczego to ważne?
+          <textarea name="opis" required maxlength="900" placeholder="Napisz, kto mówi co, gdzie widzisz sprzeczność i dlaczego temat warto opracować."></textarea>
+        </label>
+        <label>Źródła lub nazwiska autorytetów
+          <textarea name="zrodla" maxlength="900" placeholder="Linki, nazwiska, publikacje, filmy, wypowiedzi ekspertów."></textarea>
+        </label>
+        <label>Twój kontakt, opcjonalnie
+          <input name="kontakt" maxlength="120" placeholder="E-mail albo podpis">
+        </label>
+        <button class="primary-button" type="submit">Wyślij propozycję</button>
+        <p class="proposal-status" id="proposalStatus"></p>
+      </form>
+    </section>
   </main>
 
   <footer class="footer">
@@ -94,6 +130,6 @@
   </footer>
 
   <script src="data.js?v=202605012205" charset="utf-8"></script>
-  <script src="app.js?v=202605041130" charset="utf-8"></script>
+  <script src="app.js?v=202605041320" charset="utf-8"></script>
 </body>
 </html>

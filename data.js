@@ -126,13 +126,26 @@ window.DIET_WARS = [
                         ]
                     ],
         "seedComments":  [
-
+                             {
+                                 "id":  "seed-a-1",
+                                 "side":  "a",
+                                 "author":  "Tomasz",
+                                 "likes":  11,
+                                 "text":  "jak zwiększam ilosć tłuszczu w diecie, mam mniejsze wyrzuty insuliny, wiec czuję się stabilnie i dobrze cały dzień. Poza tym nawet poprawił mi się sen - śpię idealnie i tyle samo jak z zegarkiem."
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "side":  "b",
+                                 "author":  "Anonim",
+                                 "likes":  22,
+                                 "text":  "kolejne brednie, a potem się dziwić, ze ludzie mają zawały i inne problemy. Moze jeszcze jak ktoś je avocado to lepiej, ale tłuszcze nasycone, masło, boczek to podnosi ryzyko miażsżycy, zwiększa zły cholesterol."
+                             }
                          ]
     },
     {
         "id":  "nabial-zdrowy-czy-nie",
         "title":  "Nabiał: zdrowy czy podejrzany?",
-        "kicker":  "Jedni mówią: wapń, białko i kości. Inni: mleko nie jest obowiązkiem dorosłego człowieka.",
+        "kicker":  "Jedni mówią: mleko to: wapń, białko i wzmacnia kości. Inni: mleko nie jest niezbędne dla dorosłego człowieka.",
         "badge":  "klasyczny spór",
         "category":  "Produkty",
         "sideA":  "Wspiera zdrowie",
@@ -149,15 +162,16 @@ window.DIET_WARS = [
                      "wapń"
                  ],
         "summary":  "Nabiał bywa przedstawiany jako fundament zdrowych kości, ale krytycy pytają, czy dorosły człowiek naprawdę musi pić mleko.",
-        "hook":  "Nabiał wzmacnia organizm czy tylko korzysta z wieloletniej reklamy?",
+        "hook":  "Nabiał wzmacnia organizm czy tylko napędza biznes producentom?",
         "argumentsFor":  [
-                             "Mleko, jogurt i kefir są wygodnym źródłem wapnia, białka i jodu.",
+                             "Mleko, jogurt i kefir są bardzo dobrym źródłem wapnia, białka i jodu.",
                              "Fermentowane produkty mleczne mogą być lepszym wyborem niż słodzone desery.",
                              "Dla wielu osób nabiał zwiększa gęstość odżywczą diety."
                          ],
         "argumentsAgainst":  [
                                  "Wapń można uzyskać z innych źródeł, a nabiał nie jest obowiązkowy.",
                                  "Część osób ma nietolerancję laktozy, alergie albo źle reaguje na konkretne produkty.",
+                                 "Mleko zawiera hormony, niezbędne dla cieląt a szkodliwe w nadmiarze dla człowieka.",
                                  "Słodzone produkty mleczne są często deserem, nie zdrową bazą diety."
                              ],
         "contradiction":  [
@@ -165,7 +179,7 @@ window.DIET_WARS = [
                               "Spiera się produkt, a często chodzi o cały styl żywienia.",
                               "Indywidualna tolerancja bywa mylona z uniwersalną zasadą."
                           ],
-        "conclusion":  "Nabiał może być wartościowy, ale nie jest magiczny ani konieczny dla każdego.",
+        "conclusion":  "Nabiał może być wartościowy, ale nie jest  konieczny dla każdego. Poza tym warto poznać także mleko kozie czy mleka roślinne.",
         "question":  "Nabiał ci służy, szkodzi, czy po prostu jest neutralnym elementem diety?",
         "sources":  [
                         [
@@ -182,7 +196,26 @@ window.DIET_WARS = [
                         ]
                     ],
         "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "author":  "Anna",
+                                 "likes":  23,
+                                 "text":  "Kiedyś było tylko mleko krowie, piło się je codzinnie, nawet w szkole i nikt nie miał nietoleracji czy problemów z tym związanych.",
+                                 "side":  "a",
+                                 "replies":  [
 
+                                             ]
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "author":  "Małgośka",
+                                 "likes":  34,
+                                 "text":  "mleko to także tłuszcze nasycone i może obciążać układ krążenia.  Mleko = mocne kości to po prostu mit.",
+                                 "side":  "b",
+                                 "replies":  [
+
+                                             ]
+                             }
                          ]
     },
     {
@@ -238,7 +271,20 @@ window.DIET_WARS = [
                         ]
                     ],
         "seedComments":  [
-
+                             {
+                                 "id":  "seed-a-1",
+                                 "side":  "a",
+                                 "author":  "Anonim",
+                                 "likes":  44,
+                                 "text":  "to najlepszej jakości białko, świetnie przyswajalne. Poza tym jajka to też cholina i wzmacnia pamięć, koncentrację i poprawia działanie układu nerwowego."
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "side":  "b",
+                                 "author":  "Anonim",
+                                 "likes":  64,
+                                 "text":  "jajka to źródło cholesterolu. Wystarczy badać poziom LDL i zmienić dietę, od razu widać zmianę."
+                             }
                          ]
     },
     {
@@ -296,7 +342,20 @@ window.DIET_WARS = [
                         ]
                     ],
         "seedComments":  [
-
+                             {
+                                 "id":  "seed-a-1",
+                                 "side":  "a",
+                                 "author":  "Anonimous",
+                                 "likes":  59,
+                                 "text":  "zdecydowanie za, schudłem prawie 40kg, mniej podjadam i nie muszę liczyć kalorii."
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "side":  "b",
+                                 "author":  "Krystyna",
+                                 "likes":  48,
+                                 "text":  "na mnie działa, mam napady głodu, a rano źle się czuje jak nie zjem."
+                             }
                          ]
     },
     {
@@ -352,7 +411,20 @@ window.DIET_WARS = [
                         ]
                     ],
         "seedComments":  [
-
+                             {
+                                 "id":  "seed-a-1",
+                                 "side":  "a",
+                                 "author":  "Anonim",
+                                 "likes":  11,
+                                 "text":  "sól zwiększa zatrzymanie wody w organizmie, podnosi ciśnienia, niszczy nerki. To chyba wystarczająco przebadane. Tylko jak ktoś chce być oryginalny jak wspominani dietetycy to mówi głupoty przeciwe. Wg WHO nadmiar soli jest gorszy niż niedobór."
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "side":  "b",
+                                 "author":  "Anonim",
+                                 "likes":  11,
+                                 "text":  "sól pomaga mi bo mam niskie ciśnienie. Poza tym WHO to żaden autorytet. Bracia Rodzeń udowodnili że bardzo jest niezbędna sól dla zdrowia."
+                             }
                          ]
     },
     {
@@ -407,17 +479,36 @@ window.DIET_WARS = [
                         ]
                     ],
         "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "author":  "Łukasz",
+                                 "likes":  54,
+                                 "text":  "Zdrowy tryb życia, trochę ruchu i niewielki deficyt załatwia sprawę. Jak chcesz dobrze wyglądac to musisz włożyć trochę wysiłku. Za to potem nie wstyd wyjść na plażę :)",
+                                 "side":  "a",
+                                 "replies":  [
 
+                                             ]
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "author":  "Łukasz",
+                                 "likes":  11,
+                                 "text":  "szczerze mówiąc to musiałbym cały czas chodzi głodny żeby nie przytyc a co dopiero schudnąć. Jak masz siedzący tryb życia to chyba jest się skazanym na nadwagę.",
+                                 "side":  "b",
+                                 "replies":  [
+
+                                             ]
+                             }
                          ]
     },
     {
         "id":  "keto-odchudza-czy-oszukuje",
-        "title":  "Keto: odchudza czy oszukuje wagę?",
-        "kicker":  "Zwolennicy pokazują szybkie kilogramy. Krytycy odpowiadają: najpierw schodzi woda.",
+        "title":  "Keto: na pewno odchudza ale czy jest niebezpieczna dla zdrowia?",
+        "kicker":  "Zwolennicy pokazują szybkie kilogramy. Krytycy odpowiadają: najpierw tracisz wodę z organizmu.",
         "badge":  "gorący trend",
         "category":  "Metabolizm",
         "sideA":  "Keto działa",
-        "sideB":  "Keto myli wynik",
+        "sideB":  "Keto maskuje problemy",
         "authorityA":  "Bracia Rodzeń / low-carb",
         "authorityB":  "Część dietetyków klinicznych",
         "votes":  1516,
@@ -430,7 +521,7 @@ window.DIET_WARS = [
                      "cukier"
                  ],
         "summary":  "Keto potrafi dać szybki efekt na wadze, ale spór dotyczy tego, czy tracimy tkankę tłuszczową, wodę, czy po prostu łatwiej jemy mniej.",
-        "hook":  "Keto odchudza czy tylko oszukuje wagę?",
+        "hook":  "Keto odchudza czy tylko oszukuje wagę? Czy jest niebezpieczne?",
         "argumentsFor":  [
                              "Keto może szybko obniżać masę ciała i apetyt.",
                              "U części osób poprawia kontrolę cukru we krwi.",
@@ -444,7 +535,7 @@ window.DIET_WARS = [
         "contradiction":  [
                               "Waga nie odróżnia wody od tłuszczu.",
                               "Keto terapeutyczne to nie to samo co internetowe keto z boczkiem.",
-                              "Skuteczność w 8 tygodni nie odpowiada na pytanie o 8 lat."
+                              "Skuteczność w 8 tygodni nie odpowiada na pytanie o skutki które pojawią się po 8 latach albo wcześniej."
                           ],
         "conclusion":  "Keto może działać jako narzędzie, ale nie dowodzi, że węglowodany są trucizną. Kluczowe są skład, wyniki badań i trwałość.",
         "question":  "Keto działa czy to iluzja szybkiej wagi?",
@@ -463,7 +554,26 @@ window.DIET_WARS = [
                         ]
                     ],
         "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "author":  "Anonim",
+                                 "likes":  49,
+                                 "text":  "To samo co w dyskusji o tłuszczach - jednemu służy innemu nie. Ja czuję się świetnie.",
+                                 "side":  "a",
+                                 "replies":  [
 
+                                             ]
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "author":  "Anonim",
+                                 "likes":  92,
+                                 "text":  "tak? a ja znam przynajmniej dwie osoby, które super schudły jedząc boczek a w potem niestety młodo zmarły. Oczywiscie niekoniecznie z powodu diety, moze to tylko zbiego okoliczności.",
+                                 "side":  "b",
+                                 "replies":  [
+
+                                             ]
+                             }
                          ]
     },
     {
@@ -519,7 +629,36 @@ window.DIET_WARS = [
                         ]
                     ],
         "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "author":  "Wojtek",
+                                 "likes":  23,
+                                 "text":  "Przekonuje mnie zwykła logika: ludzie zawsze mieli przerwy naturalne w jedzeniu, wszystkie religie tak samo zalecają okres postu, czy nawet dwa dni postu w tygodniu.",
+                                 "side":  "a",
+                                 "replies":  [
 
+                                             ]
+                             },
+                             {
+                                 "id":  "seed-a-2",
+                                 "author":  "Anonim",
+                                 "likes":  71,
+                                 "text":  "a co ma religia do autofagii??",
+                                 "side":  "a",
+                                 "replies":  [
+
+                                             ]
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "author":  "Anonim",
+                                 "likes":  11,
+                                 "text":  "Łatwo przekroczyć granicę i wejsć w niedożywienie, taka głodówka mi nigdy nie służyła bo się odbijała na masie mięśniowej. Poza tym to kolejne wydziwianie i nie zbadane porzadnie zjawisko.  jestem na nie.",
+                                 "side":  "b",
+                                 "replies":  [
+
+                                             ]
+                             }
                          ]
     },
     {
@@ -576,7 +715,46 @@ window.DIET_WARS = [
                         ]
                     ],
         "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "author":  "Andrzej",
+                                 "likes":  76,
+                                 "text":  "stosuję od lat, czuje się bardzo dobrze - zdecydowanie polecam!",
+                                 "side":  "a",
+                                 "replies":  [
 
+                                             ]
+                             },
+                             {
+                                 "id":  "seed-a-2",
+                                 "author":  "Anonim",
+                                 "likes":  19,
+                                 "text":  "może masz dobre zdrowie, to dieta ta Ci nie szkodzi a innym może nie służyć.",
+                                 "side":  "a",
+                                 "replies":  [
+
+                                             ]
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "author":  "Anonim",
+                                 "likes":  51,
+                                 "text":  "Typowa dieta z bardzo mocnym ograniczeniem kalorii. Niby się chudnie a potem mocny efekt jojo. Nie lubię i nie służy mi.",
+                                 "side":  "b",
+                                 "replies":  [
+
+                                             ]
+                             },
+                             {
+                                 "id":  "seed-b-2",
+                                 "author":  "Anonim",
+                                 "likes":  42,
+                                 "text":  "Dokładnie a do tego jak ktoś trenuje regularnie to się po prostu nie da.",
+                                 "side":  "b",
+                                 "replies":  [
+
+                                             ]
+                             }
                          ]
     }
 ];

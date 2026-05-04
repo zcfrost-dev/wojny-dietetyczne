@@ -75,7 +75,7 @@ function scoreTemplate(war, compact = false) {
         <i class="side-a" style="width:${score.aPct}%"></i>
         <i class="side-b" style="width:${score.bPct}%"></i>
       </span>
-      <span class="score-values"><b>Za ${score.a}</b><b>Przeciw ${score.b}</b></span>
+      <span class="score-values"><b>Za ${score.a}</b><b>Przeciw ${score.b}</b><b>Razem ${score.total}</b></span>
     </span>
   `;
 }
@@ -83,6 +83,7 @@ function scoreTemplate(war, compact = false) {
 function cardTemplate(war, size = "normal") {
   const href = `war.html?id=${encodeURIComponent(war.id)}`;
   const compactScore = size === "rail";
+  const score = debateScore(war);
   return `
     <a class="topic-card ${size}" href="${href}">
       <span class="thumb"><img src="${imageSrc(war.image)}" alt="" loading="lazy"></span>
@@ -93,7 +94,7 @@ function cardTemplate(war, size = "normal") {
         ${scoreTemplate(war, compactScore)}
         <span class="scoreline">
           <span>${war.comments} komentarzy</span>
-          <span>${war.votes} głosów</span>
+          <span>${score.total} głosów łącznie</span>
         </span>
       </span>
     </a>
@@ -104,6 +105,7 @@ function renderHome() {
   const ordered = seededShuffle(wars, dailySeed())
     .sort((a, b) => Math.floor(b.heat / 10) - Math.floor(a.heat / 10));
   const lead = ordered[0];
+  const leadScore = debateScore(lead);
   const leadStory = $("#leadStory");
   if (!leadStory) return;
 
@@ -115,7 +117,7 @@ function renderHome() {
         <h1>${lead.title}</h1>
         <p>${lead.summary}</p>
         ${scoreTemplate(lead)}
-        <span class="scoreline"><span>${lead.comments} komentarzy</span><span>${lead.votes} głosów</span></span>
+        <span class="scoreline"><span>${lead.comments} komentarzy</span><span>${leadScore.total} głosów łącznie</span></span>
       </span>
     </a>
   `;
@@ -214,28 +216,48 @@ function seedCommentsForWar(war) {
   ];
 }
 
+function normalizeReply(reply, index) {
+  return {
+    id: reply.id || `reply-${index + 1}`,
+    author: reply.author || "Czytelnik",
+    text: reply.text || "",
+    likes: Number(reply.likes) || 0
+  };
+}
+
+function normalizeComment(comment, index) {
+  return {
+    ...comment,
+    id: comment.id || `comment-${index + 1}`,
+    side: comment.side === "b" ? "b" : (comment.side === "a" ? "a" : (index % 2 ? "b" : "a")),
+    likes: Number(comment.likes) || 0,
+    replies: Array.isArray(comment.replies) ? comment.replies.map(normalizeReply).filter(reply => reply.text) : []
+  };
+}
+
 function getComments(war) {
-  const seedComments = seedCommentsForWar(war);
+  const seedComments = seedCommentsForWar(war).map(normalizeComment);
   const storedComments = readJson(`comments:${war.id}`, null);
-  const storedList = Array.isArray(storedComments) ? storedComments : [];
+  const storedList = Array.isArray(storedComments) ? storedComments.map(normalizeComment) : [];
   const storedById = Object.fromEntries(storedList.map(comment => [comment.id, comment]));
   const localComments = storedList.filter(comment => !String(comment.id || "").startsWith("seed-"));
   const mergedComments = storedList.length
     ? [
-      ...seedComments.map(comment => ({
-        ...comment,
-        likes: Math.max(Number(comment.likes) || 0, Number(storedById[comment.id]?.likes) || 0)
-      })),
+      ...seedComments.map(comment => {
+        const storedComment = storedById[comment.id];
+        const localReplies = (storedComment?.replies || []).filter(reply => String(reply.id || "").startsWith("local-reply-"));
+        return {
+          ...comment,
+          likes: Math.max(Number(comment.likes) || 0, Number(storedComment?.likes) || 0),
+          replies: [...comment.replies, ...localReplies]
+        };
+      }),
       ...localComments
     ]
     : seedComments;
 
   return mergedComments
-    .map((comment, index) => ({
-      ...comment,
-      side: comment.side === "b" ? "b" : (comment.side === "a" ? "a" : (index % 2 ? "b" : "a")),
-      likes: Number(comment.likes) || 0
-    }))
+    .map(normalizeComment)
     .sort((a, b) => b.likes - a.likes);
 }
 
@@ -260,6 +282,21 @@ function renderComments(war) {
     a: comments.filter(comment => comment.side === "a"),
     b: comments.filter(comment => comment.side === "b")
   };
+  const renderReplies = comment => `
+    <div class="reply-thread">
+      ${(comment.replies || []).map(reply => `
+        <article class="comment-reply">
+          <strong>${reply.author}</strong>
+          <p>${reply.text}</p>
+        </article>
+      `).join("")}
+      <form class="reply-form" data-comment="${comment.id}">
+        <input name="author" maxlength="40" placeholder="Podpis" required>
+        <input name="text" maxlength="280" placeholder="Odpowiedz na ten komentarz" required>
+        <button type="submit">Odpowiedz</button>
+      </form>
+    </div>
+  `;
   const renderColumn = (side, title) => {
     const items = groups[side];
     return `
@@ -276,6 +313,7 @@ function renderComments(war) {
                 ${index === 0 ? `<em>Najmocniejszy głos tej strony</em>` : ""}
                 <strong>${comment.author}</strong>
                 <p>${comment.text}</p>
+                ${renderReplies(comment)}
               </div>
               <button class="like-button" data-comment="${comment.id}" type="button" aria-label="${hasLikedComment(war.id, comment.id) ? "Ten komentarz jest już polubiony" : "Polub komentarz"}" ${hasLikedComment(war.id, comment.id) ? "disabled" : ""}>
                 <span aria-hidden="true">👍</span> ${comment.likes}
@@ -389,6 +427,24 @@ function renderDetail() {
     renderDetail();
   });
 
+  $all(".reply-form").forEach(form => {
+    form.addEventListener("submit", event => {
+      event.preventDefault();
+      const comments = getComments(war);
+      const comment = comments.find(item => item.id === form.dataset.comment);
+      if (!comment) return;
+      comment.replies = Array.isArray(comment.replies) ? comment.replies : [];
+      comment.replies.push({
+        id: `local-reply-${Date.now()}`,
+        author: form.author.value.trim(),
+        text: form.text.value.trim(),
+        likes: 0
+      });
+      writeJson(`comments:${war.id}`, comments);
+      renderDetail();
+    });
+  });
+
   $all(".like-button").forEach(button => {
     button.addEventListener("click", () => {
       if (hasLikedComment(war.id, button.dataset.comment)) return;
@@ -435,6 +491,27 @@ function renderAdmin() {
   });
 }
 
+function renderProposalForm() {
+  const form = $(".proposal-form");
+  if (!form) return;
+  const status = $("#proposalStatus");
+  const isLocalPreview = location.protocol === "file:" || location.hostname === "localhost" || location.hostname === "127.0.0.1";
+  if (!isLocalPreview) return;
+
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+    const proposals = readJson("battle-proposals", []);
+    const data = Object.fromEntries(new FormData(form).entries());
+    proposals.push({ ...data, createdAt: new Date().toISOString() });
+    writeJson("battle-proposals", proposals);
+    form.reset();
+    if (status) {
+      status.textContent = "Zapisano lokalnie w tej przeglądarce. Po publikacji na Netlify propozycje będą wpadać do Forms.";
+    }
+  });
+}
+
 renderHome();
 renderDetail();
 renderAdmin();
+renderProposalForm();

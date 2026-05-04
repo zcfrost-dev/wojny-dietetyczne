@@ -1,5 +1,73 @@
 window.DIET_WARS = [
     {
+        "id":  "nowy-temat-1777918778601",
+        "title":  "Naturalne wędzenie czy \"malowaniem\" aromatem dymu wędzarniczego?",
+        "kicker":  "Czy naturalne wędzenie powoduje raka?",
+        "badge":  "szkic",
+        "category":  "Nowe",
+        "sideA":  "Zwolennicy wykorzystywania roztworu dymu wędzarniczego",
+        "sideB":  "Zwolennicy naturalnego wędzenia",
+        "authorityA":  "International Agency for Research on Cancer",
+        "authorityB":  "",
+        "votes":  0,
+        "comments":  0,
+        "heat":  75,
+        "image":  "photos/mieso-rak-czy-mit.jpg",
+        "tags":  [
+                     "mięso",
+                     "rak",
+                     "IARC"
+                 ],
+        "summary":  "Chyba każdy z nas lubi zapach wędzonych wędlin i kiełbas. Kojarzy się nam ze swojskim jedzeniem. Czy faktycznie jest on rakotwórczy? a jeżeli tak to dlaczego.",
+        "hook":  "Przemysłowa produkcja czy swojskie wyroby? co jest zdrowsze?",
+        "argumentsFor":  [
+                             "Benznopiren obecny w dymie rozpuszcza się w tłuszczach, ma udowodnione działanie rakotwócze i uszkadzające DNA."
+                         ],
+        "argumentsAgainst":  [
+                                 "Od lat wędzenie jest najlepszym sposobem konserwacji wyrobów nie tylko mięsnych ale także serów a nawet owoców."
+                             ],
+        "contradiction":  [
+                              "Smak wędlin oferowanych w marketach coraz mniej przypomina swojskie wyroby. Wędzonki często przypominają nam piękne chwile z dzieciństwa. Co tu dużo mówić: wędzona kiełbasa czy szynka smakuje wyoborowo. Czy tak samo korzystnie wpływa na nasze zdrowie?"
+                          ],
+        "conclusion":  "Poprawne wędzenie w niższej temperaturze, z generatorem dymu, unikanie palenia się skapującego tłuszczu to podstawowe sposoby zmniejszenia ekspozycji na wielopierścieniowe węglowodory aromatyczne (w tym benzarpiren). Umiarkowane spożycie powinno ograniczyć ryzyko chorób nowotworowych.",
+        "question":  "Wybierasz lepszy smak wędzonki czy zaufanie do instytucji badawczych?",
+        "sources":  [
+
+                    ],
+        "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "author":  "AP",
+                                 "likes":  36,
+                                 "text":  "nie jem mięsa więc nie mam problemu z wyoborem",
+                                 "side":  "a",
+                                 "replies":  [
+
+                                             ]
+                             },
+                             {
+                                 "id":  "seed-a-2",
+                                 "author":  "Anonim",
+                                 "likes":  22,
+                                 "text":  "To po co zabierasz głos?",
+                                 "side":  "a",
+                                 "replies":  [
+
+                                             ]
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "author":  "Marek",
+                                 "likes":  45,
+                                 "text":  "mam większe zaufanie do intuicji i wieloletniego doświadczenia niż jakiś dziwnych ideologicznych instytucji.",
+                                 "side":  "b",
+                                 "replies":  [
+
+                                             ]
+                             }
+                         ]
+    },
+    {
         "id":  "mieso-rak-czy-mit",
         "title":  "Mięso: rak czy mit?",
         "kicker":  "American Cancer Society ostrzega: mięso powoduje raka, Bracia Rodzeń mówią: mięso jest najlepszym pożywieniem dla człowieka. Kto ma rację?",

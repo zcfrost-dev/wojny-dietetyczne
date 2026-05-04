@@ -8,6 +8,35 @@ function imageSrc(path) {
   return path || "";
 }
 
+function normalizeSources(sources) {
+  if (!Array.isArray(sources)) return [];
+  const normalized = [];
+
+  for (let index = 0; index < sources.length; index += 1) {
+    const source = sources[index];
+    if (Array.isArray(source)) {
+      const [name, url] = source;
+      if (name && url) normalized.push([name, url]);
+      continue;
+    }
+    if (source && typeof source === "object") {
+      const name = source.name || source.title || source.label;
+      const url = source.url || source.href || source.link;
+      if (name && url) normalized.push([name, url]);
+      continue;
+    }
+    if (typeof source === "string") {
+      const next = sources[index + 1];
+      if (typeof next === "string" && /^https?:\/\//i.test(next)) {
+        normalized.push([source, next]);
+        index += 1;
+      }
+    }
+  }
+
+  return normalized;
+}
+
 function $(selector, root = document) {
   return root.querySelector(selector);
 }
@@ -358,6 +387,7 @@ function renderDetail() {
   const detail = $("#detail");
   if (!detail) return;
   const war = findCurrentWar();
+  const sources = normalizeSources(war.sources);
   document.title = `${war.title} - Wojny Dietetyczne`;
   detail.innerHTML = `
     <article class="war-hero">
@@ -400,7 +430,7 @@ function renderDetail() {
     <section class="sources-panel">
       <h2>Materiały źródłowe</h2>
       <div class="source-list">
-        ${war.sources.map(([name, url]) => `<a href="${url}" target="_blank" rel="noreferrer">${name}</a>`).join("")}
+        ${sources.length ? sources.map(([name, url]) => `<a href="${url}" target="_blank" rel="noreferrer">${name}</a>`).join("") : `<p>Źródła zostaną dodane po opracowaniu tej bitwy.</p>`}
       </div>
     </section>
 

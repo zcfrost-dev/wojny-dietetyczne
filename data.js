@@ -39,7 +39,7 @@ window.DIET_WARS = [
         "contradiction":  [
                               "Efekty mogą pojawiać się dopiero po wielu latach, nie przeprowadza się eksperymentów na ludziach, dodatkowo istotne znaczenia ma styl życia poza jedzenie bądź niejedzeniem mięsa.  Mięso, w zależności od sposobu produkcji może zawierać różne obce substancje chemiczne."
                           ],
-        "conclusion":  "Największy czerwony alarm dotyczy mięsa przetworzonego. Przy mięsie świeżym spór jest bardziej złożony i wymaga dawki, kontekstu oraz reszty diety.",
+        "conclusion":  "Najwyższe ryzyko dotyczy miesa przetworzonego. Przy mięsie świeżym spór jest bardziej złożony. Mimo wszystko lekarze są spolaryzowani: część zaleca mięso inni odradzają.",
         "question":  "jak stwierdzić kto ma rację? Jesz mięso regularnie czy starasz się je ograniczać?",
         "sources":  [
                         [
@@ -54,7 +54,23 @@ window.DIET_WARS = [
                             "WCRF: ogranicz czerwone i przetworzone mięso",
                             "https://www.wcrf.org/research-policy/evidence-for-our-recommendations/limit-red-processed-meat/"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "side":  "a",
+                                 "author":  "Marek",
+                                 "likes":  21,
+                                 "text":  "Ludzie od pokoleń jedzą i jedli mięso więc to tylko kolejny wydziwianie dietetyków. brednie"
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "side":  "b",
+                                 "author":  "Anna",
+                                 "likes":  32,
+                                 "text":  "Jak wam nie żal mordowania zwierząt. Bierze mnie na wymioty jak widzę mięso. Zwierzęta są traktowane bardzo źle."
+                             }
+                         ]
     },
     {
         "id":  "tluszcze-czy-weglowodany",
@@ -108,7 +124,10 @@ window.DIET_WARS = [
                             "WHO: wytyczne o tłuszczach i węglowodanach",
                             "https://www.who.int/news/item/17-07-2023-who-updates-guidelines-on-fats-and-carbohydrates"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+
+                         ]
     },
     {
         "id":  "nabial-zdrowy-czy-nie",
@@ -161,7 +180,10 @@ window.DIET_WARS = [
                             "WHO: healthy diet",
                             "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+
+                         ]
     },
     {
         "id":  "ile-jajek-dziennie",
@@ -214,7 +236,10 @@ window.DIET_WARS = [
                             "ACC: dietary cholesterol summary",
                             "https://www.acc.org/Latest-in-Cardiology/ten-points-to-remember/2019/12/30/15/23/Dietary-Cholesterol-and-CV-Risk"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+
+                         ]
     },
     {
         "id":  "post-przerywany",
@@ -269,7 +294,10 @@ window.DIET_WARS = [
                             "JAMA Network: time-restricted eating trial",
                             "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2771095"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+
+                         ]
     },
     {
         "id":  "sol-niszczy-czy-ratuje",
@@ -322,7 +350,10 @@ window.DIET_WARS = [
                             "WHO: sodium reduction",
                             "https://www.who.int/news-room/fact-sheets/detail/salt-reduction"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+
+                         ]
     },
     {
         "id":  "deficyt-kaloryczny",
@@ -374,7 +405,10 @@ window.DIET_WARS = [
                             "Look AHEAD trial, NEJM",
                             "https://www.nejm.org/doi/full/10.1056/NEJMoa1212914"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+
+                         ]
     },
     {
         "id":  "keto-odchudza-czy-oszukuje",
@@ -427,7 +461,10 @@ window.DIET_WARS = [
                             "Virta Health, 2-year nutritional ketosis results",
                             "https://www.frontiersin.org/articles/10.3389/fendo.2019.00348/full"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+
+                         ]
     },
     {
         "id":  "autofagia-przelom-czy-marketing",
@@ -480,7 +517,10 @@ window.DIET_WARS = [
                             "NEJM: intermittent fasting",
                             "https://www.nejm.org/doi/full/10.1056/NEJMra1905136"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+
+                         ]
     },
     {
         "id":  "dieta-dabrowskiej",
@@ -534,7 +574,10 @@ window.DIET_WARS = [
                             "BMJ: ultra-processed foods and health",
                             "https://www.bmj.com/content/384/bmj-2023-077310"
                         ]
-                    ]
+                    ],
+        "seedComments":  [
+
+                         ]
     }
 ];
 

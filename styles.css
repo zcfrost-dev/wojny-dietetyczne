@@ -430,7 +430,7 @@ main {
 
 .card-body {
   display: grid;
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto auto;
   gap: 7px;
   padding: 12px;
 }
@@ -469,6 +469,80 @@ main {
   color: #f0f0f0;
   font-size: 13px;
   font-weight: 700;
+}
+
+.debate-score {
+  display: grid;
+  gap: 5px;
+  align-self: end;
+}
+
+.winner-label {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.score-bars {
+  display: flex;
+  height: 8px;
+  overflow: hidden;
+  background: #dce9f5;
+  border-radius: 999px;
+}
+
+.score-bars i {
+  display: block;
+  min-width: 4px;
+}
+
+.score-bars .side-a {
+  background: #2f78bd;
+}
+
+.score-bars .side-b {
+  background: #f2b33d;
+}
+
+.score-values {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.15;
+}
+
+.score-values b {
+  font-weight: 900;
+}
+
+.lead-copy .debate-score {
+  max-width: 430px;
+}
+
+.lead-copy .winner-label,
+.topic-card.underlead .winner-label {
+  color: #fff;
+}
+
+.lead-copy .score-bars,
+.topic-card.underlead .score-bars {
+  background: rgba(255, 255, 255, .3);
+}
+
+.lead-copy .score-values,
+.topic-card.underlead .score-values {
+  color: rgba(255, 255, 255, .92);
+}
+
+.debate-score.compact {
+  margin-top: 4px;
+}
+
+.debate-score.compact .score-values {
+  display: none;
 }
 
 .topic-card .scoreline,
@@ -1228,6 +1302,20 @@ textarea {
   display: grid;
   gap: 7px;
   font-weight: 900;
+}
+
+.editor-subsection {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  background: #f8fbfe;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.editor-subsection h2 {
+  margin: 0;
+  font-size: 22px;
 }
 
 .field-hint {

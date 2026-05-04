@@ -2,6 +2,7 @@ const wars = window.DIET_WARS || [];
 const links = window.CONTRADICTION_LINKS || [];
 const storagePrefix = "diet-wars:";
 const assetVersion = "202605012205";
+const pageSeed = Math.floor(Math.random() * 100000);
 
 function imageSrc(path) {
   return path || "";
@@ -35,7 +36,7 @@ function seededShuffle(items, seed) {
 
 function dailySeed() {
   const day = new Date().toISOString().slice(0, 10).replaceAll("-", "");
-  return Number(day) + Number(localStorage.getItem(`${storagePrefix}shuffle`) || 0);
+  return Number(day) + pageSeed + Number(localStorage.getItem(`${storagePrefix}shuffle`) || 0);
 }
 
 function readJson(key, fallback) {
@@ -50,8 +51,38 @@ function writeJson(key, value) {
   localStorage.setItem(`${storagePrefix}${key}`, JSON.stringify(value));
 }
 
+function debateScore(war) {
+  const comments = getComments(war);
+  const points = comments.reduce((result, comment) => {
+    const side = comment.side === "b" ? "b" : "a";
+    result[side] += Number(comment.likes) || 0;
+    return result;
+  }, { a: 0, b: 0 });
+  const total = points.a + points.b;
+  const aPct = total ? Math.round((points.a / total) * 100) : 50;
+  const bPct = total ? 100 - aPct : 50;
+  const winner = points.a === points.b ? "Remis" : (points.a > points.b ? war.sideA : war.sideB);
+
+  return { ...points, total, aPct, bPct, winner };
+}
+
+function scoreTemplate(war, compact = false) {
+  const score = debateScore(war);
+  return `
+    <span class="debate-score ${compact ? "compact" : ""}">
+      <span class="winner-label">${score.winner === "Remis" ? "Remis w komentarzach" : `Prowadzi: ${score.winner}`}</span>
+      <span class="score-bars" aria-label="Wynik lajków komentarzy: za ${score.aPct}%, przeciw ${score.bPct}%">
+        <i class="side-a" style="width:${score.aPct}%"></i>
+        <i class="side-b" style="width:${score.bPct}%"></i>
+      </span>
+      <span class="score-values"><b>Za ${score.a}</b><b>Przeciw ${score.b}</b></span>
+    </span>
+  `;
+}
+
 function cardTemplate(war, size = "normal") {
   const href = `war.html?id=${encodeURIComponent(war.id)}`;
+  const compactScore = size === "rail";
   return `
     <a class="topic-card ${size}" href="${href}">
       <span class="thumb"><img src="${imageSrc(war.image)}" alt="" loading="lazy"></span>
@@ -59,6 +90,7 @@ function cardTemplate(war, size = "normal") {
         <span class="badge">${war.badge}</span>
         <strong>${war.title}</strong>
         <span class="kicker">${war.kicker}</span>
+        ${scoreTemplate(war, compactScore)}
         <span class="scoreline">
           <span>${war.comments} komentarzy</span>
           <span>${war.votes} głosów</span>
@@ -82,6 +114,7 @@ function renderHome() {
         <span class="badge">${lead.badge}</span>
         <h1>${lead.title}</h1>
         <p>${lead.summary}</p>
+        ${scoreTemplate(lead)}
         <span class="scoreline"><span>${lead.comments} komentarzy</span><span>${lead.votes} głosów</span></span>
       </span>
     </a>
@@ -171,12 +204,33 @@ function renderPoll(war) {
   `;
 }
 
-function getComments(id) {
-  const seeded = [
-    { id: "seed-1", side: "a", author: "Czytelnik", text: "Po tej stronie przekonuje mnie ostrożność: w zdrowiu publicznym nawet niewielkie ryzyko może mieć duże znaczenie, jeśli dotyczy milionów ludzi.", likes: 18 },
-    { id: "seed-2", side: "b", author: "Analityczna", text: "Po drugiej stronie ważny jest kontekst. Bez rozróżnienia dawki, jakości produktu i stylu życia każdy spór zmienia się w hasło z social mediów.", likes: 12 }
+function seedCommentsForWar(war) {
+  if (Array.isArray(war.seedComments) && war.seedComments.length) {
+    return war.seedComments;
+  }
+  return [
+    { id: "seed-a-1", side: "a", author: "Czytelnik", text: "Po tej stronie przekonuje mnie ostrożność: w zdrowiu publicznym nawet niewielkie ryzyko może mieć duże znaczenie, jeśli dotyczy milionów ludzi.", likes: 18 },
+    { id: "seed-b-1", side: "b", author: "Analityczna", text: "Po drugiej stronie ważny jest kontekst. Bez rozróżnienia dawki, jakości produktu i stylu życia każdy spór zmienia się w hasło z social mediów.", likes: 12 }
   ];
-  return readJson(`comments:${id}`, seeded)
+}
+
+function getComments(war) {
+  const seedComments = seedCommentsForWar(war);
+  const storedComments = readJson(`comments:${war.id}`, null);
+  const storedList = Array.isArray(storedComments) ? storedComments : [];
+  const storedById = Object.fromEntries(storedList.map(comment => [comment.id, comment]));
+  const localComments = storedList.filter(comment => !String(comment.id || "").startsWith("seed-"));
+  const mergedComments = storedList.length
+    ? [
+      ...seedComments.map(comment => ({
+        ...comment,
+        likes: Math.max(Number(comment.likes) || 0, Number(storedById[comment.id]?.likes) || 0)
+      })),
+      ...localComments
+    ]
+    : seedComments;
+
+  return mergedComments
     .map((comment, index) => ({
       ...comment,
       side: comment.side === "b" ? "b" : (comment.side === "a" ? "a" : (index % 2 ? "b" : "a")),
@@ -201,7 +255,7 @@ function markCommentLiked(warId, commentId) {
 }
 
 function renderComments(war) {
-  const comments = getComments(war.id);
+  const comments = getComments(war);
   const groups = {
     a: comments.filter(comment => comment.side === "a"),
     b: comments.filter(comment => comment.side === "b")
@@ -323,7 +377,7 @@ function renderDetail() {
   $("#commentForm").addEventListener("submit", event => {
     event.preventDefault();
     const form = event.currentTarget;
-    const comments = getComments(war.id);
+    const comments = getComments(war);
     comments.push({
       id: `local-${Date.now()}`,
       side: form.side.value === "b" ? "b" : "a",
@@ -338,7 +392,7 @@ function renderDetail() {
   $all(".like-button").forEach(button => {
     button.addEventListener("click", () => {
       if (hasLikedComment(war.id, button.dataset.comment)) return;
-      const comments = getComments(war.id);
+      const comments = getComments(war);
       const item = comments.find(comment => comment.id === button.dataset.comment);
       if (!item) return;
       item.likes += 1;

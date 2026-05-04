@@ -66,6 +66,12 @@ function debateScore(war) {
   return { ...points, total, aPct, bPct, winner };
 }
 
+function discussionCount(war) {
+  return getComments(war).reduce((total, comment) => {
+    return total + 1 + (Array.isArray(comment.replies) ? comment.replies.length : 0);
+  }, 0);
+}
+
 function scoreTemplate(war, compact = false) {
   const score = debateScore(war);
   return `
@@ -75,7 +81,7 @@ function scoreTemplate(war, compact = false) {
         <i class="side-a" style="width:${score.aPct}%"></i>
         <i class="side-b" style="width:${score.bPct}%"></i>
       </span>
-      <span class="score-values"><b>Za ${score.a}</b><b>Przeciw ${score.b}</b><b>Razem ${score.total}</b></span>
+      <span class="score-values"><b>Za ${score.a}</b><b>Przeciw ${score.b}</b></span>
     </span>
   `;
 }
@@ -84,6 +90,7 @@ function cardTemplate(war, size = "normal") {
   const href = `war.html?id=${encodeURIComponent(war.id)}`;
   const compactScore = size === "rail";
   const score = debateScore(war);
+  const commentCount = discussionCount(war);
   return `
     <a class="topic-card ${size}" href="${href}">
       <span class="thumb"><img src="${imageSrc(war.image)}" alt="" loading="lazy"></span>
@@ -93,7 +100,7 @@ function cardTemplate(war, size = "normal") {
         <span class="kicker">${war.kicker}</span>
         ${scoreTemplate(war, compactScore)}
         <span class="scoreline">
-          <span>${war.comments} komentarzy</span>
+          <span>${commentCount} komentarzy</span>
           <span>${score.total} głosów łącznie</span>
         </span>
       </span>
@@ -106,6 +113,7 @@ function renderHome() {
     .sort((a, b) => Math.floor(b.heat / 10) - Math.floor(a.heat / 10));
   const lead = ordered[0];
   const leadScore = debateScore(lead);
+  const leadCommentCount = discussionCount(lead);
   const leadStory = $("#leadStory");
   if (!leadStory) return;
 
@@ -117,7 +125,7 @@ function renderHome() {
         <h1>${lead.title}</h1>
         <p>${lead.summary}</p>
         ${scoreTemplate(lead)}
-        <span class="scoreline"><span>${lead.comments} komentarzy</span><span>${leadScore.total} głosów łącznie</span></span>
+        <span class="scoreline"><span>${leadCommentCount} komentarzy</span><span>${leadScore.total} głosów łącznie</span></span>
       </span>
     </a>
   `;

@@ -1,4 +1,5 @@
 const GA_MEASUREMENT_ID = "G-RRWH7YG41V";
+const GOOGLE_ADS_ID = "AW-973113840";
 
 if (GA_MEASUREMENT_ID && GA_MEASUREMENT_ID !== "G-XXXXXXXXXX") {
   const script = document.createElement("script");
@@ -12,4 +13,8 @@ if (GA_MEASUREMENT_ID && GA_MEASUREMENT_ID !== "G-XXXXXXXXXX") {
   gtag("config", GA_MEASUREMENT_ID, {
     anonymize_ip: true
   });
+
+  if (GOOGLE_ADS_ID && GOOGLE_ADS_ID !== "AW-XXXXXXXXXX") {
+    gtag("config", GOOGLE_ADS_ID);
+  }
 }

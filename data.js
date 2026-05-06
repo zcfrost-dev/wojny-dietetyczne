@@ -47,7 +47,7 @@ window.DIET_WARS = [
                              {
                                  "id":  "seed-b-1",
                                  "author":  "Adam",
-                                 "likes":  63,
+                                 "likes":  78,
                                  "text":  "jak wiesz ze coś Cię truje to jest jak samobójstwo ale rozłożone w czasie.",
                                  "side":  "b",
                                  "replies":  [
@@ -133,7 +133,7 @@ window.DIET_WARS = [
                              {
                                  "id":  "seed-b-1",
                                  "author":  "Marek",
-                                 "likes":  72,
+                                 "likes":  94,
                                  "text":  "mam większe zaufanie do intuicji i wieloletniego doświadczenia niż jakiś dziwnych ideologicznych instytucji.",
                                  "side":  "b",
                                  "replies":  {
@@ -206,7 +206,7 @@ window.DIET_WARS = [
                                  "id":  "seed-b-1",
                                  "side":  "b",
                                  "author":  "Anna",
-                                 "likes":  53,
+                                 "likes":  75,
                                  "text":  "Jak wam nie żal mordowania zwierząt. Bierze mnie na wymioty jak widzę mięso. Zwierzęta są traktowane bardzo źle."
                              }
                          ]
@@ -275,7 +275,7 @@ window.DIET_WARS = [
                                  "id":  "seed-b-1",
                                  "side":  "b",
                                  "author":  "Anonim",
-                                 "likes":  46,
+                                 "likes":  71,
                                  "text":  "kolejne brednie, a potem się dziwić, ze ludzie mają zawały i inne problemy. Moze jeszcze jak ktoś je avocado to lepiej, ale tłuszcze nasycone, masło, boczek to podnosi ryzyko miażsżycy, zwiększa zły cholesterol."
                              }
                          ]
@@ -344,7 +344,7 @@ window.DIET_WARS = [
                              {
                                  "id":  "seed-b-1",
                                  "author":  "Małgośka",
-                                 "likes":  64,
+                                 "likes":  88,
                                  "text":  "mleko to także tłuszcze nasycone i może obciążać układ krążenia.  Mleko = mocne kości to po prostu mit.",
                                  "side":  "b",
                                  "replies":  null
@@ -415,7 +415,7 @@ window.DIET_WARS = [
                                  "id":  "seed-b-1",
                                  "side":  "b",
                                  "author":  "Anonim",
-                                 "likes":  82,
+                                 "likes":  103,
                                  "text":  "jajka to źródło cholesterolu. Wystarczy badać poziom LDL i zmienić dietę, od razu widać zmianę."
                              }
                          ]
@@ -484,7 +484,7 @@ window.DIET_WARS = [
                                  "id":  "seed-b-1",
                                  "side":  "b",
                                  "author":  "Krystyna",
-                                 "likes":  76,
+                                 "likes":  106,
                                  "text":  "na mnie działa, mam napady głodu, a rano źle się czuje jak nie zjem."
                              }
                          ]
@@ -553,7 +553,7 @@ window.DIET_WARS = [
                              {
                                  "id":  "seed-b-1",
                                  "author":  "RPp",
-                                 "likes":  35,
+                                 "likes":  63,
                                  "text":  "sól pomaga mi bo mam niskie ciśnienie. Poza tym WHO to żaden autorytet. Bracia Rodzeń udowodnili że bardzo jest niezbędna sól dla zdrowia.",
                                  "side":  "b",
                                  "replies":  null
@@ -624,7 +624,7 @@ window.DIET_WARS = [
                              {
                                  "id":  "seed-b-1",
                                  "author":  "Łukasz",
-                                 "likes":  34,
+                                 "likes":  54,
                                  "text":  "szczerze mówiąc to musiałbym cały czas chodzi głodny żeby nie przytyc a co dopiero schudnąć. Jak masz siedzący tryb życia to chyba jest się skazanym na nadwagę.",
                                  "side":  "b",
                                  "replies":  null
@@ -695,7 +695,7 @@ window.DIET_WARS = [
                              {
                                  "id":  "seed-b-1",
                                  "author":  "Anonim",
-                                 "likes":  114,
+                                 "likes":  139,
                                  "text":  "tak? a ja znam przynajmniej dwie osoby, które super schudły jedząc boczek a w potem niestety młodo zmarły. Oczywiscie niekoniecznie z powodu diety, moze to tylko zbiego okoliczności.",
                                  "side":  "b",
                                  "replies":  null
@@ -774,7 +774,7 @@ window.DIET_WARS = [
                              {
                                  "id":  "seed-b-1",
                                  "author":  "Anonim",
-                                 "likes":  28,
+                                 "likes":  55,
                                  "text":  "Łatwo przekroczyć granicę i wejsć w niedożywienie, taka głodówka mi nigdy nie służyła bo się odbijała na masie mięśniowej. Poza tym to kolejne wydziwianie i nie zbadane porzadnie zjawisko.  jestem na nie.",
                                  "side":  "b",
                                  "replies":  null
@@ -853,7 +853,7 @@ window.DIET_WARS = [
                              {
                                  "id":  "seed-b-1",
                                  "author":  "AN79",
-                                 "likes":  67,
+                                 "likes":  90,
                                  "text":  "Typowa dieta z bardzo mocnym ograniczeniem kalorii. Niby się chudnie a potem mocny efekt jojo. Nie lubię i nie służy mi.",
                                  "side":  "b",
                                  "replies":  null

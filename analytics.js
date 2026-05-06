@@ -41,41 +41,50 @@ function loadGoogleTags() {
   }
 }
 
-function hideConsentBanner() {
-  const banner = document.querySelector("[data-cookie-consent]");
-  if (banner) banner.remove();
+function unlockPage() {
+  document.documentElement.classList.remove("consent-locked");
+  const modal = document.querySelector("[data-cookie-consent]");
+  if (modal) modal.remove();
 }
 
-function showConsentBanner() {
+function saveConsent(value) {
+  localStorage.setItem(CONSENT_STORAGE_KEY, value);
+  updateConsent(value === "granted");
+  unlockPage();
+}
+
+function showConsentModal() {
   if (localStorage.getItem(CONSENT_STORAGE_KEY)) return;
 
-  const banner = document.createElement("section");
-  banner.className = "cookie-consent";
-  banner.setAttribute("data-cookie-consent", "true");
-  banner.innerHTML = `
-    <div>
-      <strong>Pliki cookies i pomiar reklam</strong>
-      <p>Używamy Google Analytics i Google Ads do mierzenia oglądalności oraz skuteczności reklam. Możesz zaakceptować albo odrzucić pomiar marketingowy.</p>
-      <a href="polityka-prywatnosci.html">Polityka prywatności</a>
-    </div>
-    <div class="cookie-actions">
-      <button type="button" class="ghost-button" data-consent-deny>Odrzuć</button>
-      <button type="button" class="primary-button" data-consent-accept>Akceptuję</button>
+  document.documentElement.classList.add("consent-locked");
+
+  const modal = document.createElement("section");
+  modal.className = "cookie-consent-modal";
+  modal.setAttribute("data-cookie-consent", "true");
+  modal.setAttribute("role", "dialog");
+  modal.setAttribute("aria-modal", "true");
+  modal.setAttribute("aria-labelledby", "cookieConsentTitle");
+  modal.innerHTML = `
+    <div class="cookie-consent-card">
+      <p class="eyebrow">Zgody i prywatność</p>
+      <h2 id="cookieConsentTitle">Zanim wejdziesz na stronę</h2>
+      <p>Potwierdź, że zapoznałeś się z dokumentami serwisu. Strona używa plików cookies, pamięci przeglądarki oraz narzędzi Google Analytics i Google Ads do pomiaru oglądalności i skuteczności reklam.</p>
+      <p class="cookie-links">
+        <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+        <a href="regulamin.html">Regulamin</a>
+        <a href="zastrzezenie.html">Zastrzeżenie medyczne</a>
+      </p>
+      <div class="cookie-actions">
+        <button type="button" class="ghost-button" data-consent-deny>Tylko niezbędne</button>
+        <button type="button" class="primary-button" data-consent-accept>Akceptuję i przechodzę dalej</button>
+      </div>
+      <small>Opcja „Tylko niezbędne” pozwala korzystać ze strony bez zgody na pomiar reklamowy i analityczny.</small>
     </div>
   `;
-  document.body.appendChild(banner);
+  document.body.appendChild(modal);
 
-  banner.querySelector("[data-consent-accept]").addEventListener("click", () => {
-    localStorage.setItem(CONSENT_STORAGE_KEY, "granted");
-    updateConsent(true);
-    hideConsentBanner();
-  });
-
-  banner.querySelector("[data-consent-deny]").addEventListener("click", () => {
-    localStorage.setItem(CONSENT_STORAGE_KEY, "denied");
-    updateConsent(false);
-    hideConsentBanner();
-  });
+  modal.querySelector("[data-consent-accept]").addEventListener("click", () => saveConsent("granted"));
+  modal.querySelector("[data-consent-deny]").addEventListener("click", () => saveConsent("denied"));
 }
 
 const storedConsent = localStorage.getItem(CONSENT_STORAGE_KEY);
@@ -86,7 +95,7 @@ if (storedConsent === "granted") {
 loadGoogleTags();
 
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", showConsentBanner);
+  document.addEventListener("DOMContentLoaded", showConsentModal);
 } else {
-  showConsentBanner();
+  showConsentModal();
 }

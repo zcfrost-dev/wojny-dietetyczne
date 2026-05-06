@@ -12,7 +12,7 @@ window.DIET_WARS = [
         "votes":  0,
         "comments":  0,
         "heat":  80,
-        "image":  "photos/mieso-rak-czy-mit.jpg",
+        "image":  "photos/nowy-temat-1778094688005.jpg",
         "tags":  [
                      "cukier",
                      "węglowodany"

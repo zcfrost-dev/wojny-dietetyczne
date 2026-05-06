@@ -756,6 +756,20 @@ main {
   line-height: 1.35;
 }
 
+.photo-tools {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: -4px;
+}
+
+#photoStatus {
+  color: #2c7d55;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
 .map-nodes {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));

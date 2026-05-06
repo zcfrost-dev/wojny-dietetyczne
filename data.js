@@ -1,5 +1,62 @@
 window.DIET_WARS = [
     {
+        "id":  "nowy-temat-1778094688005",
+        "title":  "Cukier czy węglowodany? czego unikać?",
+        "kicker":  "czy cukier i węglowodany można zrównać w tym jak szkodzą?",
+        "badge":  "gotowe",
+        "category":  "keto, węglowodany, cukier",
+        "sideA":  "zwolennicy cukru",
+        "sideB":  "zwolennicy węglowodanów",
+        "authorityA":  "przemysł spożywczy ;)",
+        "authorityB":  "lekarze i dietetycy głównego nurtu",
+        "votes":  0,
+        "comments":  0,
+        "heat":  80,
+        "image":  "photos/cukier-czy-weglowodany.jpg",
+        "tags":  [
+                     "cukier",
+                     "węglowodany"
+                 ],
+        "summary":  "czy cukier i węglowodany można zrównać w tym jak szkodzą?",
+        "hook":  "i cukier i węglowodany podnoszą poziom glukozy we krwi. Czy ma znaczenie czy zajadamy się cukrem czy chlebem?",
+        "argumentsFor":  [
+                             "Wwoce zawierają glukozę - cukry proste - są znane ludziom od setek lat. Słodycze dają po prostu przyjemność. Nie są zabójcze a poprawiają nastrój."
+                         ],
+        "argumentsAgainst":  [
+                                 "cukry proste to puste kalorie, łatwo je przedawkować: napoje słodzone, słodycze. Węglowodany mają błonnik, mniejszą gęstosć kaloryczną oddziałują szerzej na organizm niż cukier."
+                             ],
+        "contradiction":  [
+                              "węglowodany to białe pieczywo ale też marchewka i buraki. Są różne źródła węglowodanów, jedne korzystnie wpływają na nasze zdrowie a inne nie."
+                          ],
+        "conclusion":  "umiar we wszystkim i złoty środek jest wskazany. Człowiekiem jestem i nic co ludzkie nie jest i obce:)",
+        "question":  "Kto ma rację?",
+        "sources":  [
+
+                    ],
+        "seedComments":  [
+                             {
+                                 "id":  "seed-a-1",
+                                 "author":  "Szymon",
+                                 "likes":  20,
+                                 "text":  "zdrowy środek. Słodycze są szkodliwe ale można czasem pozwolić sobie na nie.",
+                                 "side":  "a",
+                                 "replies":  [
+
+                                             ]
+                             },
+                             {
+                                 "id":  "seed-b-1",
+                                 "author":  "Adam",
+                                 "likes":  33,
+                                 "text":  "jak wiesz ze coś Cię truje to jest jak samobójstwo ale rozłożone w czasie.",
+                                 "side":  "b",
+                                 "replies":  [
+
+                                             ]
+                             }
+                         ]
+    },
+    {
         "id":  "nowy-temat-1777918778601",
         "title":  "Naturalne wędzenie czy „malowanie” aromatem dymu wędzarniczego?",
         "kicker":  "Czy aromat dymu jest bezpieczniejszą technologią, czy tylko przemysłową imitacją tradycji?",
@@ -12,7 +69,7 @@ window.DIET_WARS = [
         "votes":  54,
         "comments":  2,
         "heat":  75,
-        "image":  "photos/mieso-rak-czy-mit.jpg",
+        "image":  "photos/naturalne-wedzenie-czy-aromat-dymu.jpg",
         "tags":  [
                      "wędzenie",
                      "dym wędzarniczy",

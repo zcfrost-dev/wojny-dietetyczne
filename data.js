@@ -28,7 +28,7 @@ window.DIET_WARS = [
         "contradiction":  [
                               "węglowodany to białe pieczywo ale też marchewka i buraki. Są różne źródła węglowodanów, jedne korzystnie wpływają na nasze zdrowie a inne nie."
                           ],
-        "conclusion":  "umiar we wszystkim i złoty środek jest wskazany. Człowiekiem jestem i nic co ludzkie nie jest i obce:)",
+        "conclusion":  "Umiar we wszystkim i złoty środek jest wskazany. Człowiekiem jestem i nic co ludzkie nie jest i obce:)",
         "question":  "Kto ma rację?",
         "sources":  [
 

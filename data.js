@@ -3,7 +3,7 @@ window.DIET_WARS = [
         "id":  "nowy-temat-1778094688005",
         "title":  "Cukier czy węglowodany? czego unikać?",
         "kicker":  "czy cukier i węglowodany można zrównać w tym jak szkodzą?",
-        "badge":  "gotowe",
+        "badge":  "co wybrać?",
         "category":  "keto, węglowodany, cukier",
         "sideA":  "zwolennicy cukru",
         "sideB":  "zwolennicy węglowodanów",
@@ -12,7 +12,7 @@ window.DIET_WARS = [
         "votes":  0,
         "comments":  0,
         "heat":  80,
-        "image":  "photos/cukier-czy-weglowodany.jpg",
+        "image":  "photos/mieso-rak-czy-mit.jpg",
         "tags":  [
                      "cukier",
                      "węglowodany"
@@ -20,7 +20,7 @@ window.DIET_WARS = [
         "summary":  "czy cukier i węglowodany można zrównać w tym jak szkodzą?",
         "hook":  "i cukier i węglowodany podnoszą poziom glukozy we krwi. Czy ma znaczenie czy zajadamy się cukrem czy chlebem?",
         "argumentsFor":  [
-                             "Wwoce zawierają glukozę - cukry proste - są znane ludziom od setek lat. Słodycze dają po prostu przyjemność. Nie są zabójcze a poprawiają nastrój."
+                             "Owoce zawierają glukozę - cukry proste - są znane ludziom od setek lat. Słodycze dają po prostu przyjemność. Nie są zabójcze a poprawiają nastrój."
                          ],
         "argumentsAgainst":  [
                                  "cukry proste to puste kalorie, łatwo je przedawkować: napoje słodzone, słodycze. Węglowodany mają błonnik, mniejszą gęstosć kaloryczną oddziałują szerzej na organizm niż cukier."
@@ -69,7 +69,7 @@ window.DIET_WARS = [
         "votes":  54,
         "comments":  2,
         "heat":  75,
-        "image":  "photos/naturalne-wedzenie-czy-aromat-dymu.jpg",
+        "image":  "photos/mieso-rak-czy-mit.jpg",
         "tags":  [
                      "wędzenie",
                      "dym wędzarniczy",

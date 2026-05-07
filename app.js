@@ -454,12 +454,12 @@ function renderDetail() {
 
     <section class="argument-ring">
       <div class="corner red">
-        <h2>Argumenty za</h2>
+        <h2>${t("argumentsFor")}</h2>
         <h3>${war.authorityA || ""}</h3>
         ${war.argumentsFor.map(item => `<p>${item}</p>`).join("")}
       </div>
       <div class="corner blue">
-        <h2>Argumenty przeciw</h2>
+        <h2>${t("argumentsAgainst")}</h2>
         <h3>${war.authorityB || ""}</h3>
         ${war.argumentsAgainst.map(item => `<p>${item}</p>`).join("")}
       </div>
@@ -467,20 +467,20 @@ function renderDetail() {
 
     <section class="conflict-panel">
       <div>
-        <h2>Dlaczego ta sprzeczność istnieje?</h2>
+        <h2>${t("whyConflict")}</h2>
         ${(war.contradiction || []).map(item => `<p>${item}</p>`).join("")}
       </div>
       <aside>
-        <h2>Moim zdaniem</h2>
+        <h2>${t("myView")}</h2>
         <p>${war.conclusion || "Tu pojawi się Twój wniosek po opracowaniu sporu."}</p>
         <strong>${war.question || "Kto ma rację?"}</strong>
       </aside>
     </section>
 
     <section class="sources-panel">
-      <h2>Materiały źródłowe</h2>
+      <h2>${t("sourceMaterials")}</h2>
       <div class="source-list">
-        ${sources.length ? sources.map(([name, url]) => `<a href="${url}" target="_blank" rel="noreferrer">${name}</a>`).join("") : `<p>Źródła zostaną dodane po opracowaniu tej bitwy.</p>`}
+        ${sources.length ? sources.map(([name, url]) => `<a href="${url}" target="_blank" rel="noreferrer">${name}</a>`).join("") : `<p>${t("noSources")}</p>`}
       </div>
     </section>
 
@@ -599,6 +599,8 @@ function renderProposalForm() {
   });
 }
 
+applyStaticTranslations();
+initLanguageSwitch();
 renderHome();
 renderDetail();
 renderAdmin();

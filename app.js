@@ -155,18 +155,18 @@ function scoreTemplate(war, compact = false) {
   const score = debateScore(war);
   return `
     <span class="debate-score ${compact ? "compact" : ""}">
-      <span class="winner-label">${score.winner === "Remis" ? "Remis w komentarzach" : `Prowadzi: ${score.winner}`}</span>
-      <span class="score-bars" aria-label="Wynik lajków komentarzy: za ${score.aPct}%, przeciw ${score.bPct}%">
+      <span class="winner-label">${score.winner === "Remis" ? t("winnerDraw") : `${t("winnerPrefix")} ${score.winner}`}</span>
+      <span class="score-bars" aria-label="${t("scoreAria")}: ${t("for").toLowerCase()} ${score.aPct}%, ${t("against").toLowerCase()} ${score.bPct}%">
         <i class="side-a" style="width:${score.aPct}%"></i>
         <i class="side-b" style="width:${score.bPct}%"></i>
       </span>
-      <span class="score-values"><b>Za ${score.a}</b><b>Przeciw ${score.b}</b></span>
+      <span class="score-values"><b>${t("for")} ${score.a}</b><b>${t("against")} ${score.b}</b></span>
     </span>
   `;
 }
 
 function cardTemplate(war, size = "normal") {
-  const href = `war.html?id=${encodeURIComponent(war.id)}`;
+  const href = withLangUrl(`war.html?id=${encodeURIComponent(war.id)}`);
   const compactScore = size === "rail";
   const score = debateScore(war);
   const commentCount = discussionCount(war);
@@ -179,8 +179,8 @@ function cardTemplate(war, size = "normal") {
         <span class="kicker">${war.kicker}</span>
         ${scoreTemplate(war, compactScore)}
         <span class="scoreline">
-          <span>${commentCount} komentarzy</span>
-          <span>${score.total} głosów łącznie</span>
+          <span>${commentCount} ${t("commentWord")}</span>
+          <span>${score.total} ${t("totalVotes")}</span>
         </span>
       </span>
     </a>
@@ -197,14 +197,14 @@ function renderHome() {
   if (!leadStory) return;
 
   leadStory.innerHTML = `
-    <a class="lead-link" href="war.html?id=${lead.id}">
+    <a class="lead-link" href="${withLangUrl(`war.html?id=${lead.id}`)}">
       <span class="lead-image"><img src="${imageSrc(lead.image)}" alt=""></span>
       <span class="lead-copy">
         <span class="badge">${lead.badge}</span>
         <h1>${lead.title}</h1>
         <p>${lead.summary}</p>
         ${scoreTemplate(lead)}
-        <span class="scoreline"><span>${leadCommentCount} komentarzy</span><span>${leadScore.total} głosów łącznie</span></span>
+        <span class="scoreline"><span>${leadCommentCount} ${t("commentWord")}</span><span>${leadScore.total} ${t("totalVotes")}</span></span>
       </span>
     </a>
   `;
@@ -216,7 +216,7 @@ function renderHome() {
       .slice(3, 9)
       .map(item => cardTemplate(item, "rail")).join("");
   }
-  $("#tickerItems").innerHTML = ordered.slice(0, 12).map(item => `<a href="war.html?id=${item.id}">${item.title}</a>`).join("");
+  $("#tickerItems").innerHTML = ordered.slice(0, 12).map(item => `<a href="${withLangUrl(`war.html?id=${item.id}`)}">${item.title}</a>`).join("");
 
   let visible = 12;
   const renderGrid = () => {
@@ -248,12 +248,12 @@ function renderMap() {
     const a = byId[from];
     const b = byId[to];
     if (!a || !b) return "";
-    return `<a class="map-link" href="war.html?id=${from}"><span>${a.title}</span><em>${label}</em><span>${b.title}</span></a>`;
+    return `<a class="map-link" href="${withLangUrl(`war.html?id=${from}`)}"><span>${a.title}</span><em>${label}</em><span>${b.title}</span></a>`;
   }).join("");
   canvas.innerHTML = `
     <div class="map-nodes">
       ${featured.map((item, index) => `
-        <a class="map-node tone-${index % 5}" href="war.html?id=${item.id}">
+        <a class="map-node tone-${index % 5}" href="${withLangUrl(`war.html?id=${item.id}`)}">
           <strong>${item.tags[0]}</strong>
           <span>${item.sideA} / ${item.sideB}</span>
         </a>

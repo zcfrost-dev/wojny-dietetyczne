@@ -279,7 +279,7 @@ function renderPoll(war) {
   const bPct = 100 - aPct;
   return `
     <section class="poll-panel">
-      <h2>Sondaż: po której stronie jesteś?</h2>
+      <h2>${t("pollTitle")}</h2>
       <div class="poll-actions">
         <button class="poll-button" data-side="a" ${poll.chosen ? "disabled" : ""}>${war.sideA}</button>
         <button class="poll-button" data-side="b" ${poll.chosen ? "disabled" : ""}>${war.sideB}</button>
@@ -288,7 +288,7 @@ function renderPoll(war) {
         <div><span>${war.sideA}</span><strong>${aPct}%</strong><i style="width:${aPct}%"></i></div>
         <div><span>${war.sideB}</span><strong>${bPct}%</strong><i style="width:${bPct}%"></i></div>
       </div>
-      <p>${total} oddanych głosów lokalnie w tej przeglądarce.</p>
+      <p>${total} ${t("localVotes")}</p>
     </section>
   `;
 }
@@ -378,9 +378,9 @@ function renderComments(war) {
         </article>
       `).join("")}
       <form class="reply-form" data-comment="${comment.id}">
-        <input name="author" maxlength="40" placeholder="Podpis" required>
-        <input name="text" maxlength="280" placeholder="Odpowiedz na ten komentarz" required>
-        <button type="submit">Odpowiedz</button>
+        <input name="author" maxlength="40" placeholder="${t("signature")}" required>
+        <input name="text" maxlength="280" placeholder="${t("replyPlaceholder")}" required>
+        <button type="submit">${t("reply")}</button>
       </form>
     </div>
   `;
@@ -389,24 +389,24 @@ function renderComments(war) {
     return `
       <div class="comment-column ${side === "a" ? "red" : "blue"}">
         <div class="comment-column-head">
-          <span>${side === "a" ? "Za" : "Przeciw"}</span>
+          <span>${side === "a" ? t("for") : t("against")}</span>
           <h3>${title}</h3>
-          <small>${items.length} komentarzy, najmocniejsze na górze</small>
+          <small>${items.length} ${t("commentsStrongest")}</small>
         </div>
         <div class="comment-list">
           ${items.length ? items.map((comment, index) => `
             <article class="comment ${index === 0 ? "top-comment" : ""}">
               <div>
-                ${index === 0 ? `<em>Najmocniejszy głos tej strony</em>` : ""}
+                ${index === 0 ? `<em>${t("strongestVoice")}</em>` : ""}
                 <strong>${comment.author}</strong>
                 <p>${comment.text}</p>
                 ${renderReplies(comment)}
               </div>
-              <button class="like-button" data-comment="${comment.id}" type="button" aria-label="${hasLikedComment(war.id, comment.id) ? "Ten komentarz jest już polubiony" : "Polub komentarz"}" ${hasLikedComment(war.id, comment.id) ? "disabled" : ""}>
+              <button class="like-button" data-comment="${comment.id}" type="button" aria-label="${hasLikedComment(war.id, comment.id) ? t("likedAlready") : t("likeComment")}" ${hasLikedComment(war.id, comment.id) ? "disabled" : ""}>
                 <span aria-hidden="true">👍</span> ${comment.likes}
               </button>
             </article>
-          `).join("") : `<p class="empty-comments">Tu czeka miejsce na pierwszy mocny argument.</p>`}
+          `).join("") : `<p class="empty-comments">${t("emptyComments")}</p>`}
         </div>
       </div>
     `;
@@ -414,16 +414,16 @@ function renderComments(war) {
 
   return `
     <section class="comments-panel">
-      <h2>Komentarze</h2>
+      <h2>${t("comments")}</h2>
       <form class="comment-form" id="commentForm">
         <fieldset class="comment-side-picker">
-          <legend>Po której stronie komentujesz?</legend>
+          <legend>${t("commentLegend")}</legend>
           <label><input type="radio" name="side" value="a" checked> ${war.sideA}</label>
           <label><input type="radio" name="side" value="b"> ${war.sideB}</label>
         </fieldset>
-        <input name="author" maxlength="40" placeholder="Podpis" required>
-        <textarea name="text" maxlength="500" placeholder="Dodaj argument, pytanie albo kontrargument" required></textarea>
-        <button class="primary-button" type="submit">Opublikuj</button>
+        <input name="author" maxlength="40" placeholder="${t("signature")}" required>
+        <textarea name="text" maxlength="500" placeholder="${t("addArgument")}" required></textarea>
+        <button class="primary-button" type="submit">${t("publish")}</button>
       </form>
       <div class="comment-columns">
         ${renderColumn("a", war.sideA)}

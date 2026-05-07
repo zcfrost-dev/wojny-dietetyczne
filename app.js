@@ -36,6 +36,10 @@ function applyStaticTranslations() {
   document.querySelectorAll("[data-lang-href]").forEach(link => {
     link.href = withLangUrl(link.getAttribute("href"));
   });
+  document.querySelectorAll(".category-nav a").forEach((link, index) => {
+    const labels = i18n.ui?.[currentLang]?.categories;
+    if (Array.isArray(labels) && labels[index]) link.textContent = labels[index];
+  });
 }
 
 function initLanguageSwitch() {

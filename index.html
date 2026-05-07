@@ -16,7 +16,7 @@
 <body>
   <div class="info-strip">
     <strong>Wojny Dietetyczne</strong>
-    <span>Najgorętsze spory o jedzenie, zdrowie i odpowiedzialność autorytetów</span>
+    <span data-i18n="tagline">Najgorętsze spory o jedzenie, zdrowie i odpowiedzialność autorytetów</span>
   </div>
   <header class="topbar">
     <a class="brand" href="index.html">
@@ -24,19 +24,20 @@
       <span>Wojny Dietetyczne</span>
     </a>
     <nav class="nav">
-      <a href="#ring">Ring</a>
-      <a href="#zaproponuj">Zaproponuj bitwę</a>
-      <a href="#mapa">Mapa sprzeczności</a>
+      <a href="#ring" data-lang-href data-i18n="ring">Ring</a>
+      <a href="#zaproponuj" data-lang-href data-i18n="suggestBattle">Zaproponuj bitwę</a>
+      <a href="#mapa" data-lang-href data-i18n="contradictionMap">Mapa sprzeczności</a>
+      <button class="language-toggle" id="languageToggle" type="button">🌐 EN</button>
     </nav>
   </header>
   <nav class="category-nav" aria-label="Kategorie">
-    <a href="#ring">Wiadomości</a>
-    <a href="#ring">Rak</a>
-    <a href="#ring">Serce</a>
-    <a href="#ring">Odchudzanie</a>
-    <a href="#ring">Biohacking</a>
-    <a href="#ring">Komentowane</a>
-    <a href="#mapa">Mapa sporów</a>
+    <a href="#ring" data-lang-href>Wiadomości</a>
+    <a href="#ring" data-lang-href>Rak</a>
+    <a href="#ring" data-lang-href>Serce</a>
+    <a href="#ring" data-lang-href>Odchudzanie</a>
+    <a href="#ring" data-lang-href>Biohacking</a>
+    <a href="#ring" data-lang-href>Komentowane</a>
+    <a href="#mapa" data-lang-href>Mapa sporów</a>
   </nav>
 
   <main>
@@ -47,30 +48,30 @@
       </div>
       <aside class="right-rail">
         <section class="ranking-box">
-          <p class="eyebrow">Najbardziej gorące</p>
-          <h2>Ranking sporów</h2>
+          <p class="eyebrow" data-i18n="hottest">Najbardziej gorące</p>
+          <h2 data-i18n="ranking">Ranking sporów</h2>
           <div id="rankingList"></div>
         </section>
       </aside>
     </section>
 
     <section class="motto home-motto">
-      <p class="eyebrow">Idea projektu</p>
-      <h1>Czy to, co jemy, zmienia nasze zdrowie fizyczne i psychiczne?</h1>
-      <p>Jeśli tak, dlaczego specjaliści spierają się w sprawach fundamentalnych? Kto ma rację, skoro wykształceni lekarze i dietetycy potrafią mówić rzeczy przeciwne?</p>
+      <p class="eyebrow" data-i18n="projectIdea">Idea projektu</p>
+      <h1 data-i18n="mottoTitle">Czy to, co jemy, zmienia nasze zdrowie fizyczne i psychiczne?</h1>
+      <p data-i18n="mottoText">Jeśli tak, dlaczego specjaliści spierają się w sprawach fundamentalnych? Kto ma rację, skoro wykształceni lekarze i dietetycy potrafią mówić rzeczy przeciwne?</p>
     </section>
 
     <section class="ticker" aria-label="Pasek tematów">
-      <span>Na ringu:</span>
+      <span data-i18n="onRing">Na ringu:</span>
       <div id="tickerItems"></div>
     </section>
 
     <section class="section-head" id="ring">
       <div>
-        <p class="eyebrow">Ring argumentów</p>
-        <h2>Najgłośniejsze wojny</h2>
+        <p class="eyebrow" data-i18n="argumentRing">Ring argumentów</p>
+        <h2 data-i18n="loudestWars">Najgłośniejsze wojny</h2>
       </div>
-      <button class="ghost-button" id="shuffleBtn" type="button">Przetasuj promowane</button>
+      <button class="ghost-button" id="shuffleBtn" type="button" data-i18n="shuffle">Przetasuj promowane</button>
     </section>
 
     <section class="news-layout">
@@ -85,19 +86,19 @@
     <section class="contradiction-map" id="mapa">
       <div class="section-head compact">
         <div>
-          <p class="eyebrow">Element autorski</p>
-          <h2>Mapa sprzeczności</h2>
+          <p class="eyebrow" data-i18n="authorElement">Element autorski</p>
+          <h2 data-i18n="contradictionMap">Mapa sprzeczności</h2>
         </div>
-        <p>Tematy są połączone tak, jak łączą się w sporach: mięso z rakiem, nabiał z weganizmem, słodziki z cukrem. Kliknij punkt, żeby wejść w wojnę.</p>
+        <p data-i18n="mapText">Tematy są połączone tak, jak łączą się w sporach: mięso z rakiem, nabiał z weganizmem, słodziki z cukrem. Kliknij punkt, żeby wejść w wojnę.</p>
       </div>
       <div class="map-canvas" id="mapCanvas"></div>
     </section>
 
     <section class="battle-proposal" id="zaproponuj">
       <div class="proposal-copy">
-        <p class="eyebrow">Masz temat?</p>
-        <h2>Zaproponuj kolejną bitwę dietetyczną</h2>
-        <p>Podaj spór, dwie przeciwne tezy i źródła, które warto sprawdzić. Najciekawsze propozycje mogą trafić na ring po opracowaniu redakcyjnym.</p>
+        <p class="eyebrow" data-i18n="haveTopic">Masz temat?</p>
+        <h2 data-i18n="suggestTitle">Zaproponuj kolejną bitwę dietetyczną</h2>
+        <p data-i18n="suggestText">Podaj spór, dwie przeciwne tezy i źródła, które warto sprawdzić. Najciekawsze propozycje mogą trafić na ring po opracowaniu redakcyjnym.</p>
       </div>
       <form class="proposal-form" name="propozycja-bitwy" method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="propozycja-bitwy">
@@ -136,7 +137,8 @@
   </footer>
 
   <script src="data.js?v=202605061130" charset="utf-8"></script>
-  <script src="app.js?v=202605061130" charset="utf-8"></script>
+  <script src="translations.js?v=202605071210" charset="utf-8"></script>
+  <script src="app.js?v=202605071210" charset="utf-8"></script>
   <script src="analytics.js?v=202605061205" charset="utf-8"></script>
 </body>
 </html>

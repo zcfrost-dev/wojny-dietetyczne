@@ -1,8 +1,58 @@
-const wars = window.DIET_WARS || [];
+const rawWars = window.DIET_WARS || [];
 const links = window.CONTRADICTION_LINKS || [];
+const i18n = window.WD_I18N || { ui: { pl: {}, en: {} }, wars: { en: {} } };
 const storagePrefix = "diet-wars:";
 const assetVersion = "202605012205";
 const pageSeed = Math.floor(Math.random() * 100000);
+const params = new URLSearchParams(location.search);
+const requestedLang = params.get("lang") || localStorage.getItem(`${storagePrefix}lang`) || "pl";
+const currentLang = requestedLang === "en" ? "en" : "pl";
+localStorage.setItem(`${storagePrefix}lang`, currentLang);
+
+function t(key) {
+  return i18n.ui?.[currentLang]?.[key] || i18n.ui?.pl?.[key] || key;
+}
+
+function localizedWar(war) {
+  if (currentLang !== "en") return war;
+  const translated = i18n.wars?.en?.[war.id];
+  return translated ? { ...war, ...translated } : war;
+}
+
+const wars = rawWars.map(localizedWar);
+
+function withLangUrl(url) {
+  if (currentLang !== "en") return url;
+  const [base, hash = ""] = url.split("#");
+  const separator = base.includes("?") ? "&" : "?";
+  return `${base}${separator}lang=en${hash ? `#${hash}` : ""}`;
+}
+
+function applyStaticTranslations() {
+  document.documentElement.lang = currentLang;
+  document.querySelectorAll("[data-i18n]").forEach(element => {
+    element.textContent = t(element.dataset.i18n);
+  });
+  document.querySelectorAll("[data-lang-href]").forEach(link => {
+    link.href = withLangUrl(link.getAttribute("href"));
+  });
+}
+
+function initLanguageSwitch() {
+  const button = $("#languageToggle");
+  if (!button) return;
+  button.textContent = currentLang === "en" ? "🌐 PL" : "🌐 EN";
+  button.setAttribute("aria-label", currentLang === "en" ? "Przełącz na polski" : "Switch to English");
+  button.addEventListener("click", () => {
+    const next = currentLang === "en" ? "pl" : "en";
+    localStorage.setItem(`${storagePrefix}lang`, next);
+    const nextParams = new URLSearchParams(location.search);
+    if (next === "en") nextParams.set("lang", "en");
+    else nextParams.delete("lang");
+    const query = nextParams.toString();
+    location.href = `${location.pathname}${query ? `?${query}` : ""}${location.hash}`;
+  });
+}
 
 function imageSrc(path) {
   return path || "";

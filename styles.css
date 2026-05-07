@@ -159,6 +159,37 @@ main {
   padding: 12px 0;
 }
 
+.claim-check-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: end;
+  margin: 14px 0 4px;
+  padding: clamp(18px, 3vw, 28px);
+  background:
+    linear-gradient(135deg, rgba(31, 104, 173, .12), rgba(42, 166, 161, .08)),
+    #fff;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--blue);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.claim-check-hero h1 {
+  max-width: 860px;
+  margin: 8px 0 10px;
+  font-size: clamp(28px, 3.2vw, 46px);
+  line-height: 1.04;
+}
+
+.claim-check-hero p:not(.eyebrow) {
+  max-width: 920px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
 .hero-main {
   display: grid;
   gap: 18px;

@@ -169,11 +169,172 @@ function scoreTemplate(war, compact = false) {
   `;
 }
 
+function verdictForWar(war) {
+  const generic = {
+    pl: {
+      risk: "Zależy od dawki i kontekstu",
+      known: "Najważniejsze są jakość produktu, częstotliwość i stan zdrowia konkretnej osoby.",
+      disputed: "Eksperci różnie ważą badania obserwacyjne, mechanizmy biologiczne i praktykę kliniczną.",
+      watch: "Uważaj na porady, które obiecują prostą odpowiedź dla każdego organizmu."
+    },
+    en: {
+      risk: "Depends on dose and context",
+      known: "Product quality, frequency and individual health status matter most.",
+      disputed: "Experts weigh observational studies, biological mechanisms and clinical practice differently.",
+      watch: "Be careful with advice that promises one simple answer for every body."
+    }
+  };
+  const verdicts = {
+    "mieso-rak-czy-mit": {
+      pl: {
+        risk: "Najwyższe przy mięsie przetworzonym",
+        known: "Przetworzone mięso jest najczęściej łączone z ryzykiem raka jelita grubego.",
+        disputed: "Spór dotyczy głównie świeżego mięsa, dawki, stylu życia i jakości badań.",
+        watch: "Nie wrzucaj do jednego worka parówek, boczku i świeżego steku."
+      },
+      en: {
+        risk: "Highest with processed meat",
+        known: "Processed meat is most often linked with colorectal cancer risk.",
+        disputed: "The debate is mostly about fresh meat, dose, lifestyle and study quality.",
+        watch: "Do not put sausages, bacon and fresh steak into one category."
+      }
+    },
+    "tluszcze-czy-weglowodany": {
+      pl: {
+        risk: "Skrajności są bardziej ryzykowne niż makro",
+        known: "Deficyt energii i jakość jedzenia zwykle znaczą więcej niż sama etykieta low-fat lub low-carb.",
+        disputed: "Jedni akcentują insulinę i głód, inni kalorie, sytość i trwałość diety.",
+        watch: "Dieta, której nie utrzymasz, rzadko wygra po roku."
+      },
+      en: {
+        risk: "Extremes matter more than macros",
+        known: "Energy balance and food quality often matter more than the low-fat or low-carb label.",
+        disputed: "Some stress insulin and hunger, others calories, satiety and adherence.",
+        watch: "A diet you cannot sustain rarely wins after a year."
+      }
+    },
+    "ile-jajek-mozna-zjesc-dziennie": {
+      pl: {
+        risk: "Indywidualne, szczególnie przy sercu",
+        known: "Jajka są odżywcze, ale reakcja cholesterolu nie jest u wszystkich taka sama.",
+        disputed: "Spór dotyczy tego, kiedy cholesterol z diety jest praktycznie ważny.",
+        watch: "Przy chorobach serca i wysokim LDL nie traktuj cudzych wyników jak własnych."
+      },
+      en: {
+        risk: "Individual, especially for heart risk",
+        known: "Eggs are nutrient-dense, but cholesterol response differs between people.",
+        disputed: "The dispute is when dietary cholesterol is practically important.",
+        watch: "With heart disease or high LDL, do not treat someone else's results as yours."
+      }
+    },
+    "post-przerywany-leczy-czy-niszczy": {
+      pl: {
+        risk: "Może pomagać, ale nie każdemu",
+        known: "Post często działa przez ograniczenie jedzenia i lepszą kontrolę apetytu.",
+        disputed: "Mniej jasne są długoterminowe skutki i przewaga nad zwykłym deficytem.",
+        watch: "Uważaj przy zaburzeniach odżywiania, ciąży, lekach i chorobach przewlekłych."
+      },
+      en: {
+        risk: "May help, but not everyone",
+        known: "Fasting often works by limiting intake and improving appetite control.",
+        disputed: "Long-term effects and superiority over regular calorie deficit are less clear.",
+        watch: "Be cautious with eating disorders, pregnancy, medication and chronic illness."
+      }
+    },
+    "sol-niszczy-serce-i-naczynia-krwionosne-czy-ratuje-zycie": {
+      pl: {
+        risk: "Nadmiar szkodzi szczególnie przy ciśnieniu",
+        known: "U wielu osób ograniczenie sodu pomaga obniżać ciśnienie tętnicze.",
+        disputed: "Spór dotyczy niedoborów, sportu, potliwości i indywidualnej wrażliwości.",
+        watch: "Hasło 'sól jest dobra' bez dawki jest tak samo słabe jak 'sól to trucizna'."
+      },
+      en: {
+        risk: "Excess is risky, especially with blood pressure",
+        known: "For many people, reducing sodium helps lower blood pressure.",
+        disputed: "The dispute involves deficiency, exercise, sweating and individual sensitivity.",
+        watch: "'Salt is good' without dose is as weak as 'salt is poison'."
+      }
+    },
+    "deficyt-kaloryczny-wszystko-czy-za-malo": {
+      pl: {
+        risk: "Prawda biologiczna, ale nie cała praktyka",
+        known: "Bez deficytu energii masa ciała zwykle nie spada.",
+        disputed: "Spór dotyczy głodu, adaptacji, hormonów i tego, jak ten deficyt utrzymać.",
+        watch: "Samo 'jedz mniej' bywa prawdziwe, ale często bezużyteczne bez strategii."
+      },
+      en: {
+        risk: "Biologically true, practically incomplete",
+        known: "Without an energy deficit, body weight usually does not drop.",
+        disputed: "The dispute is hunger, adaptation, hormones and how to sustain the deficit.",
+        watch: "'Eat less' may be true, but often useless without a strategy."
+      }
+    },
+    "keto-na-pewno-odchudza-ale-czy-jest-niebezpieczna-dla-zdrowia": {
+      pl: {
+        risk: "Skuteczne dla części osób, trudne długoterminowo",
+        known: "Keto może szybko obniżać masę i apetyt, zwłaszcza na początku.",
+        disputed: "Spór dotyczy trwałości, lipidów, błonnika, niedoborów i interpretacji wyników.",
+        watch: "Nie myl szybkiej zmiany wagi z pełnym obrazem zdrowia."
+      },
+      en: {
+        risk: "Effective for some, hard long-term",
+        known: "Keto can quickly reduce weight and appetite, especially early on.",
+        disputed: "The debate is sustainability, lipids, fiber, deficiencies and interpreting results.",
+        watch: "Do not confuse fast weight change with the full health picture."
+      }
+    },
+    "autofagia-przelom-czy-marketing": {
+      pl: {
+        risk: "Mechanizm prawdziwy, obietnice często przesadzone",
+        known: "Autofagia istnieje biologicznie i jest ważna dla komórek.",
+        disputed: "Spór dotyczy tego, ile postu u ludzi daje klinicznie mierzalne korzyści.",
+        watch: "Nagroda Nobla za mechanizm nie oznacza dowodu na każdą dietetyczną obietnicę."
+      },
+      en: {
+        risk: "Real mechanism, often oversold",
+        known: "Autophagy is biologically real and important for cells.",
+        disputed: "The dispute is how much fasting in humans produces clinically measurable benefits.",
+        watch: "A Nobel Prize for a mechanism is not proof for every diet promise."
+      }
+    },
+    "dieta-dabrowskiej-leczy-czy-szkodzi": {
+      pl: {
+        risk: "Krótki reset może ukrywać koszt",
+        known: "Bardzo niska kaloryczność może dawać szybkie efekty i poprawę samopoczucia.",
+        disputed: "Spór dotyczy niedoborów, cukru, białka i tego, co dzieje się po zakończeniu.",
+        watch: "Detoks to mocne słowo, które często zastępuje konkretne mechanizmy."
+      },
+      en: {
+        risk: "A short reset may hide a cost",
+        known: "Very low calories can produce quick effects and better short-term wellbeing.",
+        disputed: "The dispute is deficiencies, sugar, protein and what happens afterwards.",
+        watch: "'Detox' is a strong word that often replaces concrete mechanisms."
+      }
+    },
+    "nowy-temat-1778094688005": {
+      pl: {
+        risk: "Największe przy cukrze płynnym i przetworzonym",
+        known: "Cukier łatwo zjeść w nadmiarze, a pełnowartościowe węglowodany działają inaczej niż słodycze.",
+        disputed: "Spór dotyczy granicy między cukrem, skrobią i produktami pełnymi błonnika.",
+        watch: "Nie stawiaj znaku równości między napojem słodzonym a kaszą, warzywami czy owocem."
+      },
+      en: {
+        risk: "Highest with liquid and processed sugar",
+        known: "Sugar is easy to overconsume, while whole-food carbs behave differently from sweets.",
+        disputed: "The debate is where sugar, starch and fiber-rich foods should be separated.",
+        watch: "Do not equate a sweet drink with groats, vegetables or fruit."
+      }
+    }
+  };
+  return verdicts[war.id]?.[currentLang] || verdicts[war.id]?.pl || generic[currentLang] || generic.pl;
+}
+
 function cardTemplate(war, size = "normal") {
   const href = withLangUrl(`war.html?id=${encodeURIComponent(war.id)}`);
   const compactScore = size === "rail";
   const score = debateScore(war);
   const commentCount = discussionCount(war);
+  const verdict = verdictForWar(war);
   return `
     <a class="topic-card ${size}" href="${href}">
       <span class="thumb"><img src="${imageSrc(war.image)}" alt="" loading="lazy"></span>
@@ -181,6 +342,7 @@ function cardTemplate(war, size = "normal") {
         <span class="badge">${war.badge}</span>
         <strong>${war.title}</strong>
         <span class="kicker">${war.kicker}</span>
+        <span class="risk-pill">${t("risk")}: ${verdict.risk}</span>
         ${scoreTemplate(war, compactScore)}
         <span class="scoreline">
           <span>${commentCount} ${t("commentWord")}</span>
@@ -195,6 +357,7 @@ function renderHome() {
   const ordered = seededShuffle(wars, dailySeed())
     .sort((a, b) => Math.floor(b.heat / 10) - Math.floor(a.heat / 10));
   const lead = ordered[0];
+  const leadVerdict = verdictForWar(lead);
   const leadScore = debateScore(lead);
   const leadCommentCount = discussionCount(lead);
   const leadStory = $("#leadStory");
@@ -207,6 +370,7 @@ function renderHome() {
         <span class="badge">${lead.badge}</span>
         <h1>${lead.title}</h1>
         <p>${lead.summary}</p>
+        <span class="risk-pill inverse">${t("risk")}: ${leadVerdict.risk}</span>
         ${scoreTemplate(lead)}
         <span class="scoreline"><span>${leadCommentCount} ${t("commentWord")}</span><span>${leadScore.total} ${t("totalVotes")}</span></span>
       </span>

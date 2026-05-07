@@ -633,7 +633,7 @@ window.DIET_WARS = [
     },
     {
         "id":  "keto-odchudza-czy-oszukuje",
-        "title":  "Keto: odchudza czy oszukuje wagę?",
+        "title":  "Keto: odchudza ale czy może prowadzić do śmierci?",
         "kicker":  "Zwolennicy pokazują szybkie kilogramy. Krytycy odpowiadają: najpierw schodzi woda.",
         "badge":  "gorący trend",
         "category":  "Metabolizm",
@@ -651,7 +651,7 @@ window.DIET_WARS = [
                      "cukier"
                  ],
         "summary":  "Keto potrafi dać szybki efekt na wadze, ale spór dotyczy tego, czy tracimy tkankę tłuszczową, wodę, czy po prostu łatwiej jemy mniej.",
-        "hook":  "Keto odchudza czy tylko oszukuje wagę?",
+        "hook":  "Keto odchudza ale czy jest bezpieczne?",
         "argumentsFor":  [
                              "Keto może szybko obniżać masę ciała i apetyt.",
                              "U części osób poprawia kontrolę cukru we krwi.",
@@ -690,7 +690,9 @@ window.DIET_WARS = [
                                  "likes":  49,
                                  "text":  "To samo co w dyskusji o tłuszczach - jednemu służy innemu nie. Ja czuję się świetnie.",
                                  "side":  "a",
-                                 "replies":  null
+                                 "replies":  [
+
+                                             ]
                              },
                              {
                                  "id":  "seed-b-1",
@@ -698,7 +700,9 @@ window.DIET_WARS = [
                                  "likes":  92,
                                  "text":  "tak? a ja znam przynajmniej dwie osoby, które super schudły jedząc boczek a w potem niestety młodo zmarły. Oczywiscie niekoniecznie z powodu diety, moze to tylko zbiego okoliczności.",
                                  "side":  "b",
-                                 "replies":  null
+                                 "replies":  [
+
+                                             ]
                              }
                          ]
     },

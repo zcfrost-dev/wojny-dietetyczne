@@ -606,6 +606,7 @@ function renderDetail() {
   if (!detail) return;
   const war = findCurrentWar();
   const sources = normalizeSources(war.sources);
+  const verdict = verdictForWar(war);
   document.title = `${war.title} - Wojny Dietetyczne`;
   detail.innerHTML = `
     <article class="war-hero">
@@ -616,9 +617,31 @@ function renderDetail() {
         <h1>${war.title}</h1>
         <h2>${war.hook || war.kicker}</h2>
         <p>${war.summary}</p>
+        <span class="risk-pill inverse">${t("risk")}: ${verdict.risk}</span>
         <div class="versus"><span>${war.sideA}</span><b>VS</b><span>${war.sideB}</span></div>
       </div>
     </article>
+
+    <section class="verdict-panel">
+      <div>
+        <p class="eyebrow">${t("shortVerdict")}</p>
+        <h2>${verdict.risk}</h2>
+      </div>
+      <div class="verdict-grid">
+        <article>
+          <strong>${t("whatKnown")}</strong>
+          <p>${verdict.known}</p>
+        </article>
+        <article>
+          <strong>${t("disputed")}</strong>
+          <p>${verdict.disputed}</p>
+        </article>
+        <article>
+          <strong>${t("watchOut")}</strong>
+          <p>${verdict.watch}</p>
+        </article>
+      </div>
+    </section>
 
     <section class="argument-ring">
       <div class="corner red">

@@ -1816,8 +1816,10 @@ select {
 
 @media (max-width: 1040px) {
   .hero-news,
+  .claim-check-hero,
   .war-hero,
   .news-layout,
+  .verdict-panel,
   .editor-grid {
     grid-template-columns: 1fr;
   }
@@ -1834,6 +1836,10 @@ select {
   .side-promos,
   .topic-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .verdict-grid {
+    grid-template-columns: 1fr;
   }
 
   .side-promos,
@@ -1871,10 +1877,12 @@ select {
   .topbar,
   .footer,
   .section-head,
+  .claim-check-hero,
   .editor-intro,
   .battle-proposal,
   .argument-ring,
   .conflict-panel,
+  .verdict-panel,
   .poll-actions,
   .comment-form,
   .comment-side-picker,

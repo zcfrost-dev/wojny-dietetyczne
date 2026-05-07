@@ -201,6 +201,7 @@ main {
 .side-promos,
 .contradiction-map,
 .sources-panel,
+.verdict-panel,
 .poll-panel,
 .comments-panel,
 .admin-intro,
@@ -447,7 +448,8 @@ main {
 }
 
 .topic-card.underlead .kicker,
-.topic-card.underlead .scoreline {
+.topic-card.underlead .scoreline,
+.topic-card.underlead .risk-pill {
   color: rgba(255, 255, 255, .9);
 }
 
@@ -515,6 +517,26 @@ main {
   color: var(--muted);
   font-size: 14px;
   line-height: 1.35;
+}
+
+.risk-pill {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  padding: 5px 8px;
+  color: var(--navy);
+  background: var(--soft-blue);
+  border: 1px solid rgba(31, 104, 173, .18);
+  border-radius: var(--radius-small);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.risk-pill.inverse {
+  color: #fff;
+  background: rgba(255, 255, 255, .16);
+  border-color: rgba(255, 255, 255, .25);
 }
 
 .badge {

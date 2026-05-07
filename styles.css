@@ -611,6 +611,10 @@ main {
   max-width: 430px;
 }
 
+.lead-copy .risk-pill {
+  margin: 0 0 10px;
+}
+
 .lead-copy .winner-label,
 .topic-card.underlead .winner-label {
   color: #fff;

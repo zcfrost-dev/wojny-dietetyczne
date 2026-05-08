@@ -10,7 +10,7 @@ window.WD_I18N = {
       ranking: "Ranking ryzykownych tez",
       projectIdea: "Po co ta strona?",
       mottoTitle: "Nie ufaj diecie, zanim nie poznasz argumentów drugiej strony.",
-      mottoText: "Influencerzy, lekarze i dietetycy często mówią przeciwne rzeczy o mięsie, keto, jajkach, cukrze i poście. Zbieramy te tezy, pokazujemy argumenty obu stron i pytamy: gdzie kończy się wiedza, a zaczyna pewność bez pokrycia?",
+      mottoText: "Influencerzy, lekarze i dietetycy często mówią przeciwne rzeczy o mięsie, keto, jajkach, cukrze i poście. Zbieramy te tezy, pokazujemy argumenty obu stron i pytamy skąd te różnice.",
       onRing: "Na ringu:",
       argumentRing: "Tezy do sprawdzenia",
       loudestWars: "Tezy, które warto sprawdzić",

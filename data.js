@@ -283,7 +283,7 @@ window.DIET_WARS = [
     {
         "id":  "nabial-zdrowy-czy-nie",
         "title":  "Nabiał: zdrowy czy podejrzany?",
-        "kicker":  "Jedni mówią: wapń, białko i kości. Inni: mleko nie jest obowiązkiem dorosłego człowieka.",
+        "kicker":  "Jedni mówią: wapń, białko i kości. Nie ma lepszego pokarmu. Inni: mleko nie jest dobre dla dorosłych.",
         "badge":  "klasyczny spór",
         "category":  "Produkty",
         "sideA":  "Wspiera zdrowie",
@@ -307,9 +307,9 @@ window.DIET_WARS = [
                              "Dla wielu osób nabiał zwiększa gęstość odżywczą diety."
                          ],
         "argumentsAgainst":  [
-                                 "Wapń można uzyskać z innych źródeł, a nabiał nie jest obowiązkowy.",
+                                 "Wapń można uzyskać z innych źródeł, a nabiał nie jest jedynym źródłem.",
                                  "Część osób ma nietolerancję laktozy, alergie albo źle reaguje na konkretne produkty.",
-                                 "Słodzone produkty mleczne są często deserem, nie zdrową bazą diety."
+                                 "Produkty mleczne zawierają mnóstwo cukrów, nawet przefermoentowany kefir to nadal 25 gramów cukru w 500 gramach produktu."
                              ],
         "contradiction":  [
                               "Jogurt naturalny i słodzony deser mleczny są wrzucane do jednej kategorii.",
@@ -339,7 +339,9 @@ window.DIET_WARS = [
                                  "likes":  23,
                                  "text":  "Kiedyś było tylko mleko krowie, piło się je codzinnie, nawet w szkole i nikt nie miał nietoleracji czy problemów z tym związanych.",
                                  "side":  "a",
-                                 "replies":  null
+                                 "replies":  [
+
+                                             ]
                              },
                              {
                                  "id":  "seed-b-1",
@@ -347,7 +349,9 @@ window.DIET_WARS = [
                                  "likes":  34,
                                  "text":  "mleko to także tłuszcze nasycone i może obciążać układ krążenia.  Mleko = mocne kości to po prostu mit.",
                                  "side":  "b",
-                                 "replies":  null
+                                 "replies":  [
+
+                                             ]
                              }
                          ]
     },

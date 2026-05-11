@@ -562,7 +562,7 @@ window.DIET_WARS = [
     },
     {
         "id":  "deficyt-kaloryczny",
-        "title":  "Deficyt kaloryczny: wszystko czy za mało?",
+        "title":  "Deficyt kaloryczny: jesz mniej niż spalasz, czujesz głód. Czy schudniesz? raczej nie...",
         "kicker":  "Dietetyka mówi: bez deficytu nie schudniesz. Kontra pyta: a hormony, adaptacja i głód?",
         "badge":  "odchudzanie",
         "category":  "Redukcja",
@@ -587,9 +587,8 @@ window.DIET_WARS = [
                              "Liczenie kalorii może pokazać, gdzie naprawdę uciekają porcje i przekąski."
                          ],
         "argumentsAgainst":  [
-                                 "Organizm adaptuje wydatek energetyczny, apetyt i spontaniczną aktywność.",
-                                 "Hormony, sen, stres i sytość decydują, czy deficyt da się utrzymać.",
-                                 "Samo liczenie kalorii nie mówi nic o jakości diety i zdrowiu metabolicznym."
+                                 "Organizm adaptuje wydatek energetyczny, apetyt i spontaniczną aktywność. W rezultacie, jak jesz mniej, to organizm zmniejsza ilość kalorii niezbędnych do funkcjonowania.",
+                                 "Hormony, sen, stres i sytość decydują, czy deficyt da się utrzymać."
                              ],
         "contradiction":  [
                               "Jedni mówią o prawie energii, drudzy o sterowaniu zachowaniem i głodem.",
@@ -619,7 +618,9 @@ window.DIET_WARS = [
                                  "likes":  54,
                                  "text":  "Zdrowy tryb życia, trochę ruchu i niewielki deficyt załatwia sprawę. Jak chcesz dobrze wyglądac to musisz włożyć trochę wysiłku. Za to potem nie wstyd wyjść na plażę :)",
                                  "side":  "a",
-                                 "replies":  null
+                                 "replies":  [
+
+                                             ]
                              },
                              {
                                  "id":  "seed-b-1",
@@ -627,7 +628,9 @@ window.DIET_WARS = [
                                  "likes":  11,
                                  "text":  "szczerze mówiąc to musiałbym cały czas chodzi głodny żeby nie przytyc a co dopiero schudnąć. Jak masz siedzący tryb życia to chyba jest się skazanym na nadwagę.",
                                  "side":  "b",
-                                 "replies":  null
+                                 "replies":  [
+
+                                             ]
                              }
                          ]
     },

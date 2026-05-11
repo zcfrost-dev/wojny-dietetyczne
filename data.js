@@ -309,7 +309,8 @@ window.DIET_WARS = [
         "argumentsAgainst":  [
                                  "Wapń można uzyskać z innych źródeł, a nabiał nie jest jedynym źródłem.",
                                  "Część osób ma nietolerancję laktozy, alergie albo źle reaguje na konkretne produkty.",
-                                 "Produkty mleczne zawierają mnóstwo cukrów, nawet przefermoentowany kefir to nadal 25 gramów cukru w 500 gramach produktu."
+                                 "Produkty mleczne zawierają mnóstwo cukrów, nawet przefermoentowany kefir to nadal 25 gramów cukru w 500 gramach produktu.",
+                                 "Mleko zawiera hormony niezbędne dla cieląt a szkodliwe dla ludzi."
                              ],
         "contradiction":  [
                               "Jogurt naturalny i słodzony deser mleczny są wrzucane do jednej kategorii.",

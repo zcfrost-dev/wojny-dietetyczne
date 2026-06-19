@@ -2451,11 +2451,11 @@ main {
 }
 
 .score-bars .side-a {
-  background: #5b84a1;
+  background: #77818a;
 }
 
 .score-bars .side-b {
-  background: #c46c5c;
+  background: var(--blue);
 }
 
 .score-values,
